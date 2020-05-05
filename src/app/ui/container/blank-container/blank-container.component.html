@@ -1,0 +1,16 @@
+<div class="main" class="tb-height--full" fxLayout="column">
+  <div class="tb-height--full" fxLayout="column">
+    <!-- <mat-toolbar color="primary">
+      <mat-toolbar-row>
+        <button mat-flat-button color="primary">
+          <mat-icon class="tb-icon--18">close</mat-icon>
+        </button>
+        <div class="tb-padding--h-8"></div>
+        <h3 class="tb-typo--h3 tb-color--white tb-font-weight--normal">Create User</h3>
+      </mat-toolbar-row>
+    </mat-toolbar> -->
+    <div fxFlex class="tb-overflow--auto" id="dashboard-content" #contentScroller>
+      <router-outlet (activate)="onActivate($event, outlet)" #outlet></router-outlet>
+    </div>
+  </div>
+</div>

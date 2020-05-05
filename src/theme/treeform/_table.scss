@@ -32,7 +32,7 @@
       // font-size: 14px !important;
       // font-weight: 500 !important;
       color: $tb-theme-primary;
-      background: rgba($color: map-get($map: $app-primary, $key: 500), $alpha: 0.05);
+      background: rgba($color: map-get($map: $treeform-primary, $key: 500), $alpha: 0.05);
     }
 
     tr {
@@ -44,16 +44,16 @@
       .mat-header-cell {
 
         padding: 12px 8px;
-        border-top: solid 1px map-get($map: $app-grey, $key: 500);
-        border-bottom: solid 1px map-get($map: $app-grey, $key: 500);
+        border-top: solid 1px map-get($map: $tb-grey, $key: 500);
+        border-bottom: solid 1px map-get($map: $tb-grey, $key: 500);
       }
 
       .mat-header-cell:first-of-type {
-        border-left: solid 1px map-get($map: $app-grey, $key: 500);
+        border-left: solid 1px map-get($map: $tb-grey, $key: 500);
       }
 
       .mat-header-cell:last-of-type {
-        border-right: solid 1px map-get($map: $app-grey, $key: 500);
+        border-right: solid 1px map-get($map: $tb-grey, $key: 500);
       }
     }
 

@@ -1,0 +1,11 @@
+h4{
+    margin: 0px;
+}
+
+.site-inner-card {
+    display: flex;
+    max-height: 60vw;
+    overflow-y: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+}

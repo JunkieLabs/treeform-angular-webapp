@@ -1,0 +1,74 @@
+.main {
+    // z-index: 1;
+  }
+  .mat-button {
+    box-shadow: -4px 4px 11px -4px #000000 !important;
+  
+  }
+  .logo-area {
+    width: 289px;
+  }
+  .action-menu {
+    position: fixed;
+    right: 36px;
+    top: 36px;
+    z-index: 6;
+    background-color: #404040;
+  }
+  .home-menu {
+    position: fixed;
+    left: 36px;
+    top: 36px;
+    z-index: 6;
+    background-color: #404040;
+  }
+  .example-container {
+    overflow: hidden !important;
+  }
+  .mat-button {
+    min-width: 48px !important;
+  }
+  .sidebar {
+    // width: 56px;
+    // height: 100vh;;
+    background-color: #1c9d57;
+  }
+  .main-sidenav {
+    background-color: #082a27;
+  
+    .router-link {
+      outline: unset;
+      text-decoration: unset;
+      // padding: 8px 22px !important;
+      margin: 0;
+      display: flex;
+      &-header {
+        display: flex;
+        padding: 12px 22px !important;
+      }
+      &-body {
+        margin: 0px;
+        padding: 0px;
+      }
+    }
+  }
+  
+  .drawer-close {
+    position: absolute;
+    top: 24px;
+    z-index: 3;
+    box-sizing: border-box;
+    right: 12px;
+    user-select: none;
+  }
+  a {
+    opacity: 1;
+  }
+  
+  a:active {
+    opacity: 1;
+  }
+  a:hover {
+    opacity: 0.8;
+  }
+  
