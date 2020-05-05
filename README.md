@@ -1,27 +1,52 @@
-# TreeformAngularWebapp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.0.
+# Treeform
+Building with Angular 
 
-## Development server
+### Components:
+1. Rules.
+2. Folders.
+3. Achitecture.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+### Inner Components:
+1. Tb
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Rule:
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+### Git Commits:
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+**` Add `**
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+```cmd
+$ git commit -m "added: component1, component2"
+```
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+**` Update `**
+
+```cmd
+$ git commit -m "updated: component1, component2"
+```
+
+**` refined files `**
+
+```cmd
+$ git commit -m "refined: files, files"
+```
+
+**` Deleted `**
+
+```cmd
+$ git commit -m "deleted: component1, component2"
+```
+
+**` Refactored parts `**
+
+```cmd
+$ git commit -m "Refactored: part1, part2"
+```
+
+
