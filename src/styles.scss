@@ -11,6 +11,11 @@
 
 @import "theme/init";
 
+$tb-theme-primary: map-get($map: $treeform-primary, $key: 500);//#2680EB;
+$tb-theme-primary-dark: map-get($map: $treeform-primary, $key: 700);//#333d84;
+$tb-theme-primary-light:  map-get($map: $treeform-primary, $key: 50);
+$tb-theme-secondary: map-get($map: $treeform-accent, $key: 500); //#8FD2FF;
+$tb-theme-secondary-dark: map-get($map: $treeform-accent, $key: 700); 
 // Define the palettes for your theme using the Material Design palettes available in palette.scss
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
 // hue. Available color palettes: https://material.io/design/color/
