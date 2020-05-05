@@ -1,0 +1,104 @@
+//https://elvery.net/demo/responsive-tables/
+@import "./../../core/typography/variables";
+@import "./../../core/typography/mixin";
+
+.tb-table--container {
+    overflow-x: auto;
+
+    table {
+        min-width: 500px;
+    }
+
+    canvas {
+        min-width: 500px;
+    }
+}
+
+table.tb-table {
+    box-sizing: border-box;
+    width: 100%;
+    border: none;
+    position: relative;
+    border-spacing: 0px;
+    z-index: 0;
+    text-align: center;
+}
+
+.tb-table {
+
+    td,
+    th {
+        padding: 12px 6px; // max-width: 148px;
+    }
+}
+
+
+
+table {
+    tbody {
+
+        td,
+        th {
+            @include tb-typo(body1);
+        }
+    }
+
+    thead {
+
+        td,
+        th {
+            @include tb-typo(h4);
+            font-weight: 600;
+        }
+    }
+}
+
+@media screen and (max-width: $tb-resS) {
+    .tb-table {
+
+        td,
+        th {
+            padding: 8px 4px; // max-width: 148px;
+        }
+    }
+
+    table {
+
+        td,
+        th {
+            @include tb-typo(body3);
+        }
+    }
+}
+
+.tb-table--hover {
+    tbody {
+
+        td,
+        th {
+            border-bottom: solid 1px rgba($color: #000000, $alpha: 0.1);
+        }
+
+        tr {
+            &:hover {
+                background-color: rgba($color: #000000, $alpha: 0.06);
+            }
+        }
+    }
+}
+
+
+.tb-table--strip {
+    tbody {
+
+        tr:nth-child(even) {
+            background-color: rgba($color: #000000, $alpha: 0.04);
+
+        }
+
+        tr:nth-child(odd) {
+            // background-color: #ffffff;
+
+        }
+    }
+}

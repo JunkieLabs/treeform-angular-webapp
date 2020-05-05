@@ -1,0 +1,145 @@
+// .search-area-app {
+//   max-width: 480px;
+//   border-bottom: 1px solid rgba(0, 0, 0, 0.224);
+
+//   input {
+//     max-width: 480px;
+//     height: 100%;
+//     padding: 10px 5px;
+//     border: 0;
+//     background-color: unset;
+//   }
+
+//   input:focus {
+//     outline: 0;
+//     background: transparent;
+//   }
+// }
+
+.app-table {
+
+  //   overflow: auto;
+  .table {
+    width: 100%;
+    overflow: auto;
+
+    .mat-cell {
+      // border-bottom-width: 0px !important;
+      // border-bottom-style: unset !important;
+    }
+
+    .mat-header-cell {
+      // font-size: 14px !important;
+      // font-weight: 500 !important;
+      color: $tb-theme-primary;
+      background: rgba($color: map-get($map: $app-primary, $key: 500), $alpha: 0.05);
+    }
+
+    tr {
+      &.mat-header-row {
+        height: unset;
+        min-height: 40px;
+      }
+
+      .mat-header-cell {
+
+        padding: 12px 8px;
+        border-top: solid 1px map-get($map: $app-grey, $key: 500);
+        border-bottom: solid 1px map-get($map: $app-grey, $key: 500);
+      }
+
+      .mat-header-cell:first-of-type {
+        border-left: solid 1px map-get($map: $app-grey, $key: 500);
+      }
+
+      .mat-header-cell:last-of-type {
+        border-right: solid 1px map-get($map: $app-grey, $key: 500);
+      }
+    }
+
+    th,
+    td {
+      text-align: center !important;
+      padding: 2px 8px;
+    }
+
+    tr {
+      // outline: none !important;
+      // box-shadow: 1px 1px 2px #292c30;
+    }
+
+    .mat-sort-header-container {
+      justify-content: center;
+    }
+
+    th.mat-header-cell:last-of-type {
+      padding-right: 12px;
+
+    }
+
+    td.mat-cell:last-of-type {
+      padding-right: 12px;
+    }
+
+    th.mat-header-cell:first-of-type {
+      padding-left: 8 !important;
+    }
+
+    td.mat-cell:first-of-type {
+      padding-left: 8 !important;
+    }
+  }
+
+  // th.mat-header-cell:last-of-type {
+  //   padding-left: 0 !important;
+  // }
+  // th.mat-header-cell:last-of-type {
+  //   padding-left: 0 !important;
+  // }
+  // td.mat-cell:first-of-type {
+  //   padding-left: 0 !important;
+  // }
+
+  // .mat-table{
+  //     background: unset;
+  // }
+
+  // .mat-paginator{
+  //     background: unset;
+  // }
+  // tr:nth-child(even){
+  //     background-color: #F8F9Fa;
+
+  // }
+  // tr:nth-child(odd){
+  //     background-color: #ffffff;
+
+  // }
+}
+
+.dark-table {
+
+  .mat-row,
+  mat-header-row,
+  mat-footer-row,
+  th.mat-header-cell {
+    border-bottom-color: rgba(255, 255, 255, 0.19);
+  }
+
+  .mat-row,
+  mat-header-row,
+  mat-footer-row,
+  td.mat-cell,
+  td.mat-footer-cell {
+    border-bottom-color: #3b3f44 !important;
+  }
+}
+
+.mat-checkbox-inner-container {
+  height: 16px !important;
+  width: 16px !important;
+}
+
+// .mat-cell{
+//     font-size: 0.875rem;
+// }

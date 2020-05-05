@@ -1,0 +1,26 @@
+.tb-circle--white-54{
+    border-radius: 100%;
+    background-color: rgba($color: #ffffff, $alpha: 0.54) 
+}
+
+.tb-circle--white-75{
+    border-radius: 100%;
+    background-color: rgba($color: #ffffff, $alpha: 0.75) 
+}
+
+.tb-circle {
+    border-radius: 50%;
+}
+
+.tb-circle--4 {
+    border-radius: 50%;
+    height: 4px;
+    width: 4px;
+}
+
+
+.tb-circle--8 {
+    border-radius: 50%;
+    height: 8px;
+    width: 8px;
+}

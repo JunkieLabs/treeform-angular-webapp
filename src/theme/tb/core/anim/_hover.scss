@@ -1,0 +1,130 @@
+.tb-hover--move-top {
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+    &:hover {
+        transform: translate(0px, -10px);
+    }
+}
+
+.tb-hover--move-top-shadow {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+    &:hover {
+        transform: translate(0px, -10px);
+    }
+}
+
+.tb-hover--card-up-light {
+    box-shadow: 0px 0px 0px grey, .8px .9px 3px rgb(187, 187, 187);
+    transition: box-shadow .2s ease-in-out;
+    &:hover {
+        box-shadow: 1px 8px 20px rgb(216, 216, 216);
+        transition: box-shadow .2s ease-in-out;
+    }
+}
+
+.tb-hover--button {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.24s cubic-bezier(.25, .8, .25, 1);
+    &:hover {
+        box-shadow: 0 7px 14px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.22);
+    }
+    &:active{
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    
+    }
+}
+
+.tb-hover--card-up {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.24s cubic-bezier(.25, .8, .25, 1);
+    &:hover {
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    }
+    &:active{
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    
+    }
+}
+
+.tb-hover--up {
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+    &:hover {
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    }
+}
+
+.tb-hover--up-thin {
+    transition: all 0.24s cubic-bezier(.25, .8, .25, 1);
+    &:hover {
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.18);
+    }
+}
+
+/* The slow way */
+
+.tb-hover--card-slow {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.14);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+    &:hover {
+        box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.12), 2px 5px 5px rgba(0, 0, 0, 0.12);
+    }
+}
+
+/* The fast way */
+
+.tb-hover--card-fast {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), 0 0px 2px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+    &:hover {
+        box-shadow: 0 10px 12px rgba(0, 0, 0, 0.07), 0 2px 5px rgba(0, 0, 0, 0.12);
+    }
+}
+
+
+
+
+
+.tb-active-down {
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+    &:active {
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    }
+}
+
+.tb-hover--button-normal {
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.18);
+    &:hover {
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.18);
+    }
+    &:active {
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.18);
+    }
+}
+
+.tb-hover--color-bg-grey{
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+    &:hover{
+        background-color: rgba($color: #000000, $alpha: 0.1);
+    }
+}
+
+/**
+*/
+
+.tb-hover--opacity {
+    opacity: 0.8;
+    &:hover {
+        opacity: 1;
+    }
+}
+// .tb-hover--opacity {
+//     opacity: 0.8;
+//     &:hover {
+//         opacity: 1;
+//         color: $tb-theme-primary;
+//     }
+// }
+
+

@@ -1,0 +1,48 @@
+code{
+  padding: 1rem 3rem;
+  margin: 1rem;
+  position: relative;
+  counter-reset: step;
+  counter-increment: step 0;
+  outline: none;
+   transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    
+
+
+    p {
+        position: relative;
+        margin: 0.2rem;
+        font-family: monospace;
+        display: block;
+        white-space: pre;
+    
+        .function{
+            color:#d93175;
+        }
+        
+        &:before{
+            position: absolute;
+            top: 0;
+            left: -1.75rem;
+            color: $np-color-primary-50;
+            user-select: none;
+            content: counter(step);
+            counter-increment: step;
+        }
+
+        
+    }
+
+    &:focus{
+        background: $np-color-grey-default;
+        color: white;
+        p{
+            .function{
+                color:#dc4e41;
+            }
+            &:before{
+                color: #b18e6b;
+            }
+        }
+    }
+}

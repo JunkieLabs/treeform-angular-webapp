@@ -1,0 +1,52 @@
+.tb-cursor--pointer {
+  cursor: pointer !important;
+}
+
+.tb-cursor--default {
+  cursor: default;
+}
+
+.tb-display--none {
+  display: none !important;
+}
+.tb-display--inline-block {
+  display: inline-block;
+}
+.tb-display--block {
+  display: block;
+}
+.tb-opacity--0 {
+  opacity: 0;
+}
+
+.tb-opacity--light {
+  opacity: 0.3;
+}
+
+.tb-top {
+  top: 0px;
+}
+
+.tb-line {
+  height: 1px;
+  width: 100%;
+  background-color: rgba($color: #000000, $alpha: 0.1);
+}
+.tb-line-light {
+  height: 1px;
+  width: 100%;
+  background-color: rgba($color: #FFFFFF, $alpha: 0.1);
+}
+
+.tb-line--verticle{
+  width: 1px;
+  height: 100%;
+
+}
+
+.tb-underline {
+  text-decoration: underline;
+}
+.tb-outline--none{
+  outline: none;
+}

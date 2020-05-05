@@ -1,0 +1,139 @@
+// @-webkit-keyframes spin {
+//   0% {
+//     transform: rotate(0deg); /* Firefox 16+, IE 10+, Opera */
+//   }
+//   100% {
+//     transform: rotate(360deg); /* Firefox 16+, IE 10+, Opera */
+//   }
+// }
+
+// @-moz-keyframes spin {
+//   0% {
+//     -moz-transform: rotate(0deg); /* Firefox 16+*/
+//   }
+//   100% {
+//     -moz-transform: rotate(360deg); /* Firefox 16+*/
+//   }
+// }
+
+// @keyframes spin {
+//   0% {
+//     transform: rotate(0deg); /* Firefox 16+, IE 10+, Opera */
+//   }
+//   100% {
+//     transform: rotate(360deg); /* Firefox 16+, IE 10+, Opera */
+//   }
+// }
+
+// #welcome {
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   height: 100%;
+//   z-index: 1003;
+//   background:white;
+ 
+//     /* Chrome, Firefox 16+, IE 10+, Opera */
+//     /*&:before {
+//       content: "";
+//       position: absolute;
+//       top: 5px;
+//       left: 5px;
+//       right: 5px;
+//       bottom: 5px;
+//       border-radius: 50%;
+//       border: 2px solid transparent;
+//       border-top-color: $np-color-primary;
+//       -webkit-animation: spin 3s linear infinite; 
+//       animation: spin 3s linear infinite; 
+//     }
+//     &:after {
+//       content: "";
+//       position: absolute;
+//       top: 15px;
+//       left: 15px;
+//       right: 15px;
+//       bottom: 15px;
+//       border-radius: 50%;
+//       border: 2px solid transparent;
+//       border-top-color: $np-color-accent;
+//       animation: spin 1.5s linear infinite; 
+//     }*/
+
+   
+  
+// }
+
+//  #welcome-circle {
+//     display: flex;
+//     position: relative;
+//     left: 50%;
+//     top: 50%;
+//     width: 288px;
+//     height: 288px;
+//     margin: -144px 0 0 -144px;
+//     border-radius: 50%;
+//  }
+
+//  #welcome-logo{
+//     vertical-align: middle;
+//     width: 128px;
+//     height: 128px;
+//     margin: auto;
+// }
+
+
+// #welcome-logo >.st0 {
+// 	stroke-dashoffset:1000;
+// 	stroke-dasharray:1000;
+//     stroke-width: 2;
+// 	animation: draw-dash 4s linear forwards;
+//     stroke: #1a4c72;
+// 	fill-opacity: 0;
+// }
+
+// #welcome-logo > .st1{
+//     opacity: 0;
+//     fill: #1a4c72;
+// 	animation: change-opacity 5s linear forwards;
+// }
+
+// @keyframes draw-dash {
+//     /*from{
+//         stroke-dashoffset: 1000;
+//     }
+//   to {
+//     stroke-dashoffset: 0;
+//   }*/
+//   0%{
+//       stroke-dashoffset: 1000;
+//   }
+
+//   30%{
+//       stroke-dashoffset: 1000;
+//   }
+
+
+//   100%{
+//       stroke-dashoffset: 0;
+//   }
+// }
+
+// @keyframes change-opacity{
+//   0%{
+      
+//       opacity: 0;
+//   }
+
+//   80%{
+      
+//       opacity: 0;
+//   }
+
+
+//   100%{
+      
+//       opacity: 1;
+//   } 
+// }

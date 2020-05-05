@@ -1,0 +1,147 @@
+@import "./variables";
+
+.tb-container-gt-md {
+  max-width: $tb-resXXL;
+  width: 100%;
+  margin: 0 auto;
+  flex-shrink: 0;
+  box-sizing: border-box;
+}
+// @media screen and (min-width: $tb-resM) {
+//   .tb-container--gt-md {
+//     padding: 20px;
+//   }
+// }
+.tb-container--min {
+  max-width: $tb-resXXL;
+  width: 100%;
+  margin: 0 auto;
+  flex-shrink: 0;
+}
+
+.tb-container {
+  max-width: $tb-resM;
+  width: 100%;
+  margin: 0 auto;
+  flex-shrink: 0;
+}
+
+.tb-container--large {
+  max-width: $tb-resL;
+  width: 100%;
+  margin: 0 auto;
+  flex-shrink: 0;
+}
+
+.tb-container--large-double-extra {
+  max-width: $tb-resXXL;
+  width: 100%;
+  margin: 0 auto;
+  flex-shrink: 0;
+}
+
+.tb-container--large-extra {
+  max-width: $tb-resXL;
+  width: 100%;
+  margin: 0 auto;
+  flex-shrink: 0;
+  padding: 24px;
+}
+
+.tb-layout-content {
+  padding: 48px 32px 8px 40px;
+}
+
+@media screen and (max-width: $tb-resXS) {
+  .tb-layout-content {
+    padding: 48px 20px 8px 20px;
+  }
+}
+
+.tb-layout-content-v-8 {
+  padding: 8px 32px 8px 40px;
+}
+
+@media screen and (max-width: $tb-resXS) {
+  .tb-layout-content-v-8 {
+    padding: 8px 0px 8px 0px;
+  }
+}
+
+.tb-layout-content-thin-padding-h {
+  padding: 0px 8px 0px 8px;
+}
+
+@media screen and (max-width: $tb-resXS) {
+  .tb-layout-content-thin-padding-h {
+    padding: 0px 0px 0px 0px;
+  }
+}
+
+.tb-container--stretched {
+  // padding: 0px 32px 8px 40px;
+}
+
+@media screen and (max-width: $tb-resXS) {
+  .tb-container--stretched {
+    padding: 20px;
+  }
+}
+
+.tb-container--stretched {
+  // max-width: $tb-resXXL;
+  width: 100%;
+  margin: 0 auto;
+  flex-shrink: 0;
+  box-sizing: border-box;
+}
+
+/***************************************************8
+                ul
+*/
+
+.tb-layout--align-top {
+  vertical-align: top;
+}
+
+.tb-layout--align-middle {
+  vertical-align: middle;
+}
+
+/******
+
+display-table
+*/
+
+.tb-display--table {
+  display: table;
+}
+
+.tb-display--table-cell {
+  display: table-cell;
+}
+
+.tb-position--relative {
+  position: relative;
+}
+
+.tb-position--static {
+  position: static;
+}
+
+.tb-position--absolute {
+  position: absolute;
+}
+
+.tb-position--fixed {
+  position: fixed;
+}
+
+.tb-layout--align-center {
+  display: flex;
+  align-content: center;
+}
+
+/**
+
+*/

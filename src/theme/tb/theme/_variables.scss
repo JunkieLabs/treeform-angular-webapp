@@ -1,0 +1,32 @@
+// $tb-theme-primary: $mat-theme-primary !default;
+// $tb-theme-primary-dark: $mat-theme-primary-dark !default;
+// $tb-theme-secondary: $mat-theme-secondary !default;
+// $tb-theme-secondary-dark: $mat-theme-secondary-dark !default;
+
+$tb-theme-primary: #004CFF !default;
+$tb-theme-primary-dark: #262727 !default;
+$tb-theme-primary-light:#262727 !default;
+$tb-theme-secondary: #FE5757 !default;
+$tb-theme-secondary-dark: #f71d1d !default;
+$tb-theme-background: #ffffff !default;
+
+
+
+$tb-theme-submit: #00ff00 !default;
+$tb-theme-error: #FE5858 !default;
+// $tb-theme-fail : #ED9874 !default;
+$tb-theme-disable: #979797 !default;
+
+// $tb-theme-warning: yellow !default;
+$tb-theme-success: #00ff00 !default;
+// $tb-theme-danger: red !default;
+
+$tb-theme-map: (
+  primary-light: $tb-theme-primary-light,
+  primary: $tb-theme-primary,
+  primary-dark:$tb-theme-primary-dark,
+  secondary: $tb-theme-secondary,
+  error: $tb-theme-error,
+  success: $tb-theme-success,
+  submit: $tb-theme-submit
+);

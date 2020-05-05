@@ -9,11 +9,13 @@
 // Be sure that you only ever include this mixin once!
 @include mat-core();
 
+@import "theme/init";
+
 // Define the palettes for your theme using the Material Design palettes available in palette.scss
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
 // hue. Available color palettes: https://material.io/design/color/
-$treeform-angular-webapp-primary: mat-palette($mat-indigo);
-$treeform-angular-webapp-accent: mat-palette($mat-pink, A200, A100, A400);
+$treeform-angular-webapp-primary: mat-palette($treeform-primary);
+$treeform-angular-webapp-accent: mat-palette($treeform-accent, A200, A100, A400);
 
 // The warn palette is optional (defaults to red).
 $treeform-angular-webapp-warn: mat-palette($mat-red);
@@ -28,5 +30,63 @@ $treeform-angular-webapp-theme: mat-light-theme($treeform-angular-webapp-primary
 
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
+html{ height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+  html::-webkit-scrollbar {
+    background:  map-get($map: $app-accent, $key: 50);
+    width: 4px;
+  }
+  
+  html::-webkit-scrollbar-thumb {
+    background: $tb-theme-secondary;
+    width: 6px;
+  
+  }
+  
+  *::-webkit-scrollbar {
+    background: map-get($map: $app-accent, $key: 50);
+    width: 4px;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background: $tb-theme-secondary;
+    width: 6px;
+  }
+  
+  body {
+    height: 100%;
+    margin: 0;
+    background: #ffffff;
+    * {
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    } // margin-left: 0 !important;
+    // margin-right: 0 !important;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    margin: 0;
+  }
+  
+  .app-background {
+    background-color: #FFFFFF;
+    //#F8FaFc;
+  }
+
+
+  @media screen and (max-width: 1910px) {
+    :root {
+      font-size: 86%;
+    }
+  }
+  @media screen and (max-width: 1380px) {
+    :root {
+      font-size: 70%;
+    }
+  }

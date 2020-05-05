@@ -1,0 +1,76 @@
+.tb-card--decent {
+  box-shadow: 2px 4px 20px 0px rgba(0, 0, 00, 0.1);
+
+  &.primary{
+    box-shadow: 2px 4px 20px 0px rgba($color: $tb-theme-primary, $alpha: 0.1);
+  
+  }
+}
+
+.tb-card--normal {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+}
+
+.tb-card--thin {
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 1px 1px -2px rgba(0, 0, 0, 0.2);
+}
+.tb-card--thin-i {
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 1px 1px -2px rgba(0, 0, 0, 0.2) !important;
+}
+
+.tb-card--up {
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1), 0 -2px 4px rgba(0, 0, 0, 0.12);
+}
+
+.tb-card--thin-up {
+  box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.2), 0 -1px 3px rgba(0, 0, 0, 0.12);
+}
+
+
+
+.tb-card--elevated {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15), 0 4px 4px rgba(0, 0, 0, 0.12);
+}
+
+.tb-card--elevated-extra {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.tb-card--shadow {
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+// .tb-card--light-shadow{
+//     box-shadow: 0 0px 1px 0px rgba(0, 0, 0, 0.4);
+// }
+.tb-card--lighter-shadow {
+  box-shadow: 1px 4px 16px 3px rgba(0, 0, 0, 0.08);
+}
+
+.tb-card--outline-shadow {
+  box-shadow: 0px 2px 15px 2px rgba(0, 0, 0, 0.1);
+}
+
+.tb-card--dark-shadow {
+  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+}
+
+.tb-card--normal-shadow {
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+}
+
+.tb-card--pepstudy-shadow {
+  border-radius: 8px;
+  box-shadow: 0 14px 28px rgba(159, 159, 159, 0.22), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.tb-card--form-shadow {
+  border-radius: 8px;
+  box-shadow: 0 10px 24px rgba(0, 0, 100, 0.16);
+}
+.tb-card--footer-shadow {
+  box-shadow: 0 1px 17px rgba(0, 0, 0, 0.04), 0 0px 49px rgba(0, 0, 0, 0.06);
+}
+
