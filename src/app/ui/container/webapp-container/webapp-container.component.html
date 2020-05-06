@@ -1,0 +1,133 @@
+<div class="main tb-height--full">
+    <mat-toolbar tbWaterfall [waterfallReferenceTarget]="contetnScroller" waterfallReferenceLink="dashboard-content"
+        waterfallActiveClass="active"
+        class="treeform-top-nav tb-position--absolute tb-width--full tb-z-index--3 tb-padding--v-4">
+        <mat-toolbar-row>
+
+            <a class="tb-a--unset" matRipple routerLink="/">
+                <div ngClass.gt-xs="logo_area tb-padding--8-24" ngClass.xs="logo_area tb-padding--0" fxLayout="row" fxLayoutAlign="start center">
+                    <div class="tb-rect--48">
+                        <img class="tb-image" src="assets/logo/ic_logo.svg">
+                    </div>
+                    <span class="tb-typo--h3 tb-font-weight--medium tb-padding--left-16">
+                        Thedroid
+                    </span>
+
+                </div>
+            </a>
+        </mat-toolbar-row>
+        <!-- <div fxFlex></div> -->
+        <mat-toolbar-row fxHide.lt-md>
+        </mat-toolbar-row>
+        <mat-toolbar-row fxFlex fxHide.lt-md fxLayoutAlign="end center">
+            <a matRipple routerLink="/" routerLinkActive="treeform-top-nav-link-active" [routerLinkActiveOptions]="{exact:true}"
+                tbWaterfall waterfallActiveClass="nav-text" [waterfallReferenceTarget]="contetnScroller"
+                waterfallReferenceLink="dashboard-content"
+                class="tb-a--unset treeform-top-nav-link tb-border--r10 tb-flex--justify-center tb-typo--h5 tb-font-weight--medium tb-color--grey--900 tb-padding--8-36 tb-cursor--pointer"
+                ngClass.xs="tb-padding--h-16-i">
+                Home
+            </a>
+
+            <a matRipple routerLink="/gallery" routerLinkActive="treeform-top-nav-link-active"
+            [routerLinkActiveOptions]="{exact:false}" tbWaterfall waterfallActiveClass="nav-text"
+            [waterfallReferenceTarget]="contetnScroller" waterfallReferenceLink="dashboard-content"
+            class="tb-a--unset treeform-top-nav-link tb-border--r10 tb-flex--justify-center tb-typo--h5 tb-font-weight--medium tb-color--grey--900 tb-padding--8-36 tb-cursor--pointer"
+            ngClass.xs="tb-padding--h-16-i">
+            Gallery 
+        </a>
+            <a matRipple routerLink="/top-pick" routerLinkActive="treeform-top-nav-link-active"
+                [routerLinkActiveOptions]="{exact:false}" tbWaterfall waterfallActiveClass="nav-text"
+                [waterfallReferenceTarget]="contetnScroller" waterfallReferenceLink="dashboard-content"
+                class="tb-a--unset treeform-top-nav-link tb-border--r10 tb-flex--justify-center tb-typo--h5 tb-font-weight--medium tb-color--grey--900 tb-padding--8-36 tb-cursor--pointer"
+                ngClass.xs="tb-padding--h-16-i">
+                Top Pick
+            </a>
+            <a matRipple routerLink="/about-us" routerLinkActive="treeform-top-nav-link-active"
+                [routerLinkActiveOptions]="{exact:true}" tbWaterfall waterfallActiveClass="nav-text"
+                [waterfallReferenceTarget]="contetnScroller" waterfallReferenceLink="dashboard-content"
+                class="tb-a--unset treeform-top-nav-link tb-border--r10 tb-flex--justify-center tb-typo--h5 tb-font-weight--medium tb-color--grey--900 tb-padding--8-36 tb-cursor--pointer"
+                ngClass.xs="tb-padding--h-16-i">
+                About us
+            </a>
+        </mat-toolbar-row>
+
+        <mat-toolbar-row fxLayoutAlign="end center">
+
+            <div class="tb-display--inline-block tb-padding--right-24" fxHide.lt-md="true">
+                <a matRipple
+                    class="tb-hover--primary-thin tb-padding--12-24 tb-border--r24 tb-gradient-bg--primary tb-button tb-typo--button"
+                    routerLink="/contact-us">
+                    <span class="tb-color--white">Contact Us</span>
+                </a>
+            </div>
+            <div class="action-menu-toggle tb-padding--right-8 tb-cursor--pointer tb-display--inline--block tb-border--r4"
+                fxHide fxShow.lt-md (click)="sidenav.toggle()">
+                <button mat-button class="tb-hover--primary-thin tb-padding--12 tb-border--r12 tb-gradient-bg--primary tb-button tb-typo--button">
+                    <mat-icon svgIcon="menu" class="tb-icon--24 tb-color--white"></mat-icon>
+                </button>
+            </div>
+        </mat-toolbar-row>
+
+    </mat-toolbar>
+
+    <!-- conatiner div -->
+    <mat-sidenav-container class="tb-height--full">
+        <mat-sidenav class="main-sidenav tb-position--relative" role="navigation" #sidenav [mode]="_slideMode"
+            [opened]="_drawerOpened" fxLayout="column">
+            <div class="tb-position--relative tb-height--full" fxLayout="column">
+                <div class="tb-padding--24">
+                    <div class="tb-padding--56"></div>
+
+
+                    <div class="tb-padding--4"></div>
+                    <a (click)="sidenav.toggle()" matRipple routerLink="/" routerLinkActive="treeform-top-nav-link-active"
+                        [routerLinkActiveOptions]="{exact:true}"
+                        class="tb-a--unset treeform-top-nav-link tb-border--r4 tb-flex--justify-center tb-typo--h5 tb-font-weight--medium tb-color--grey--800 tb-padding--8-36 tb-hover--opacity tb-cursor--pointer"
+                        ngClass.xs="tb-padding--h-16-i">
+                        Home
+                    </a>
+                    <div class="tb-padding--4"></div>
+                    <a (click)="sidenav.toggle()" matRipple routerLink="/gallery"
+                        routerLinkActive="treeform-top-nav-link-active" [routerLinkActiveOptions]="{exact:false}"
+                        class="tb-a--unset treeform-top-nav-link tb-border--r4 tb-flex--justify-center tb-typo--h5 tb-font-weight--medium tb-color--grey--800 tb-padding--8-36 tb-hover--opacity tb-cursor--pointer"
+                        ngClass.xs="tb-padding--h-16-i">
+                        Gallery
+                    </a>
+                    <div class="tb-padding--4"></div>
+                    <a (click)="sidenav.toggle()" matRipple routerLink="/top-pick"
+                        routerLinkActive="treeform-top-nav-link-active" [routerLinkActiveOptions]="{exact:false}"
+                        class="tb-a--unset treeform-top-nav-link tb-border--r4 tb-flex--justify-center tb-typo--h5 tb-font-weight--medium tb-color--grey--800 tb-padding--8-36 tb-hover--opacity tb-cursor--pointer"
+                        ngClass.xs="tb-padding--h-16-i">
+                        Top Pick
+                    </a>
+
+                    <div class="tb-padding--4"></div>
+                    <a (click)="sidenav.toggle()" matRipple routerLink="/about-us"
+                        routerLinkActive="treeform-top-nav-link-active" [routerLinkActiveOptions]="{exact:true}"
+                        class="tb-a--unset treeform-top-nav-link tb-border--r4 tb-flex--justify-center tb-typo--h5 tb-font-weight--medium tb-color--grey--800 tb-padding--8-36 tb-hover--opacity tb-cursor--pointer"
+                        ngClass.xs="tb-padding--h-16-i">
+                        About Us
+                    </a>
+                </div>
+                <div fxFlex></div>
+                <div class="tb-display--inline-block tb-padding--h-24" (click)="sidenav.toggle()">
+                    <a matRipple class="tb-hover--primary-thin tb-padding--12-24 tb-border--r24 tb-gradient-bg--primary tb-typo--button tb-button"
+                        routerLink="/contact-us">
+                        <span class="tb-color--white">Contact Us</span>
+                        
+                    </a>
+                </div>
+                <div class="tb-padding--16"></div>
+            </div>
+        </mat-sidenav>
+
+        <mat-sidenav-content fxLayout="column">
+            <div class="tb-height--full" fxLayout="column">
+                <div fxFlex class="tb-overflow--auto" id="dashboard-container" #contetnScroller>
+                    <router-outlet (activate)="onActivate($event, outlet)" #outlet></router-outlet>
+                </div>
+            </div>
+        </mat-sidenav-content>
+
+    </mat-sidenav-container>
+</div>

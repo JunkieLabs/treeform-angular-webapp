@@ -1,0 +1,4 @@
+.tb-gradient-bg--primary{
+    // background: linear-gradient(90deg, c);
+    background: linear-gradient(90deg, $tb-theme-primary-accent 0%,  $tb-theme-primary 100%);
+}

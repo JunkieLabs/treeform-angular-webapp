@@ -1,0 +1,21 @@
+
+  html::-webkit-scrollbar {
+    background: $tb-theme-primary-background;
+    width: 4px;
+  }
+  
+  html::-webkit-scrollbar-thumb {
+    background: $tb-theme-primary-light;
+    width: 6px;
+  
+  }
+  
+  *::-webkit-scrollbar {
+    background: $tb-theme-primary-background;
+    width: 4px;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background: $tb-theme-primary-light;
+    width: 6px;
+  }

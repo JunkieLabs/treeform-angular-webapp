@@ -1,0 +1,83 @@
+// .mat-toolbar{
+//   z-index: 4 !important;
+//   position: relative;
+// }
+// .logo_area {
+//     position: relative;
+//     z-index: 2;
+
+//     .logo {
+//         max-width: 72px;
+//         min-width: 72px;
+
+//     }
+// }
+
+.action-menu {
+    // position: fixed;
+    right: 36px;
+    top: 36px;
+    z-index: 6;
+    background-color: #404040;
+}
+
+.home-menu {
+    // position: fixed;
+    left: 36px;
+    top: 36px;
+    z-index: 6;
+    background-color: #404040;
+}
+
+// .mat-button {
+//     min-width: 48px !important;
+//     background-image: linear-gradient(to right, #36a5ff, #0f7dec);
+//     box-shadow: 0px 3px 12px -2px rgba(95, 95, 95, 0.2), 0px 2px 12px 0px rgba(117, 117, 117, 0.14),
+//         0px 1px 15px 0px rgba(121, 121, 121, 0.12) !important;
+// }
+
+.main-sidenav {
+    // background-color: #082a27;
+
+    .router-link {
+        outline: unset;
+        text-decoration: unset;
+        // padding: 8px 22px !important;
+        margin: 0;
+        display: flex;
+
+        &-header {
+            display: flex;
+            padding: 12px 22px !important;
+        }
+
+        &-body {
+            margin: 0px;
+            padding: 0px;
+        }
+    }
+}
+
+.drawer-close {
+    position: absolute;
+    top: 24px;
+    z-index: 3;
+    box-sizing: border-box;
+    right: 12px;
+    user-select: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+
+
+.mat-sidenav {
+    min-width: 240px;
+    box-shadow: 0px 1px 16px rgba(95, 95, 95, 0.2), 0px 2px 16px rgba(117, 117, 117, 0.14) !important;
+}

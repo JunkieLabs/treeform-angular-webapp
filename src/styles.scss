@@ -13,7 +13,9 @@
 
 $tb-theme-primary: map-get($map: $treeform-primary, $key: 500);//#2680EB;
 $tb-theme-primary-dark: map-get($map: $treeform-primary, $key: 700);//#333d84;
-$tb-theme-primary-light:  map-get($map: $treeform-primary, $key: 50);
+$tb-theme-primary-light:  map-get($map: $treeform-primary, $key: 200);
+$tb-theme-primary-background: map-get($map: $treeform-primary, $key: 50);
+$tb-theme-primary-accent: map-get($map: $treeform-primary, $key: A400);//#333d84;
 $tb-theme-secondary: map-get($map: $treeform-accent, $key: 500); //#8FD2FF;
 $tb-theme-secondary-dark: map-get($map: $treeform-accent, $key: 700); 
 // Define the palettes for your theme using the Material Design palettes available in palette.scss
@@ -38,26 +40,6 @@ $treeform-angular-webapp-theme: mat-light-theme($treeform-angular-webapp-primary
 html{ height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
-  html::-webkit-scrollbar {
-    background:  map-get($map: $treeform-accent, $key: 50);
-    width: 4px;
-  }
-  
-  html::-webkit-scrollbar-thumb {
-    background: $tb-theme-secondary;
-    width: 6px;
-  
-  }
-  
-  *::-webkit-scrollbar {
-    background: map-get($map: $treeform-accent, $key: 50);
-    width: 4px;
-  }
-  
-  *::-webkit-scrollbar-thumb {
-    background: $tb-theme-secondary;
-    width: 6px;
-  }
   
   body {
     height: 100%;

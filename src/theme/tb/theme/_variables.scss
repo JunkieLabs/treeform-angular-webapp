@@ -6,8 +6,12 @@
 $tb-theme-primary: #004CFF !default;
 $tb-theme-primary-dark: #262727 !default;
 $tb-theme-primary-light:#262727 !default;
+$tb-theme-primary-accent:#262727 !default;
+$tb-theme-primary-background:#f3fbfb !default;
 $tb-theme-secondary: #FE5757 !default;
 $tb-theme-secondary-dark: #f71d1d !default;
+// $tb-theme-secondary-light: #f71d1d !default;
+// $tb-theme-secondary-background: #ffeaea !default;
 $tb-theme-background: #ffffff !default;
 
 
@@ -25,6 +29,8 @@ $tb-theme-map: (
   primary-light: $tb-theme-primary-light,
   primary: $tb-theme-primary,
   primary-dark:$tb-theme-primary-dark,
+  primary-accent:$tb-theme-primary-accent,
+  primary-background:$tb-theme-primary-background,
   secondary: $tb-theme-secondary,
   error: $tb-theme-error,
   success: $tb-theme-success,

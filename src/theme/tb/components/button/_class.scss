@@ -1,6 +1,19 @@
 @import './../../properties/color/variables';
 
 .tb-button {
+
+  position: relative;
+  display: block;
+  cursor: pointer;
+  // margin: 30px auto;
+  overflow: hidden;
+  border-width: 0;
+  // font-size: 12px;
+  text-align: center;
+  // padding: 20px 28px;
+  outline: none;
+  text-decoration: none;
+
   &--white {
     box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
     // font-size: 12px;

@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
 import { Subscription } from 'rxjs';
+import { MatIconRegistry } from '@angular/material/icon';
+import { DomSanitizer } from '@angular/platform-browser';
+import { RoutingStateService } from './components/states/routingState.service';
 
 @Component({
   selector: 'app-root',
@@ -9,12 +12,24 @@ import { Subscription } from 'rxjs';
 export class AppComponent {
   title = 'treeform-angular-webapp';
   mSubscriptions: Subscription[] = [];
+  constructor(iconRegistry: MatIconRegistry, sanitizer: DomSanitizer, private routingState: RoutingStateService) {
+
+    this.routingState.loadRouting();
+    this.addSvgIcons(iconRegistry, sanitizer)
+
+  }
 
   ngOnDestroy() {
     this.mSubscriptions.forEach(s => s.unsubscribe());
   }
 
-  // addSvgIcons(iconRegistry: MatIconRegistry, sanitizer: DomSanitizer) {
+  addSvgIcons(iconRegistry: MatIconRegistry, sanitizer: DomSanitizer) {
+    iconRegistry
+        .addSvgIcon(
+          "menu",
+          sanitizer.bypassSecurityTrustResourceUrl("assets/icons/menu.svg")
+        )
+  }
   //   iconRegistry
   //     .addSvgIcon(
   //       "home",
