@@ -7,16 +7,20 @@ const routes: Routes = [
 
   {
     path: "",
-    redirectTo:"angular",
+    redirectTo:"contact-us",
     pathMatch:"full"
   },
   {
-    path: "angular",
+    path: "",
     component: BlankContainerComponent,
     children: [
       {
-        path: "",
+        path: "angular",
         loadChildren: ()=>import('./ui/components/angular-default/angular-default.module').then(m=>m.AngularDefaultModule)
+      },
+      {
+        path: "contact-us",
+        loadChildren: ()=>import('./ui/components/contact-us/contact-us.module').then(m=>m.ContactUsModule)
       }
     ]
   }

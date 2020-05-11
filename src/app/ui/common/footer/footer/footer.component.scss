@@ -1,0 +1,24 @@
+.title-caps {
+  position: absolute;
+  top: -32px;
+  left: 44px;
+  z-index: 0;
+  font-size: 152px;
+}
+
+.heading {
+  &.xs {
+    .title-caps {
+      position: absolute;
+      top: 14px;
+      z-index: 0;
+      font-size: 38px;
+    }
+  }
+}
+
+
+.footer-plant{
+  width: 300px;
+  right: 0px;
+}

@@ -1,0 +1,39 @@
+.box {
+  background: rgba(0, 0, 0, 1);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  opacity: 0.8;
+  color: #fff;
+  padding: 16px 24px;
+  position: relative;
+  border-radius: 12px;
+  box-shadow: 5px 5px 5px #222;
+}
+
+@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+ .box .box.arrow-bottom:after {
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+}
+
+.box.arrow-bottom:after {
+  content: " ";
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  bottom: -15px;
+  border-top: 15px solid rgba(0, 0, 0, 0.9);
+  backdrop-filter: blur(2px);
+  border-right: 15px solid transparent;
+  border-left: 15px solid transparent;
+  border-bottom: none;
+}
+
+.box-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
