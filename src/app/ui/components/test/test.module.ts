@@ -1,27 +1,24 @@
 import { NgModule, ModuleWithProviders } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ContactUsComponent } from './contact-us/contact-us.component';
+import { TestComponent } from './test/test.component';
 import { RouterModule } from '@angular/router';
 import { FlexLayoutModule } from '@angular/flex-layout';
-import { FooterModule } from '../../common/footer/footer.module';
-import {MatDividerModule} from '@angular/material/divider';
+
 
 
 export const routes: ModuleWithProviders = RouterModule.forChild([
   {
     path: "",
-    component: ContactUsComponent
+    component: TestComponent
   }
 ]);
 
 @NgModule({
-  declarations: [ContactUsComponent],
+  declarations: [TestComponent],
   imports: [
     CommonModule,
     FlexLayoutModule,
-    FooterModule,
-    MatDividerModule,
     routes
   ]
 })
-export class ContactUsModule { }
+export class TestModule { }

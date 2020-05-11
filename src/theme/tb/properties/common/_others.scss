@@ -50,3 +50,11 @@
 .tb-outline--none{
   outline: none;
 }
+
+
+.tb-a--unset{
+  color: inherit; /* blue colors for links too */
+  // text-decoration: inherit;
+  outline: none;
+  text-decoration: none;
+}

@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FooterComponent } from './footer/footer.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { MatDividerModule } from '@angular/material/divider';
 
 
 
@@ -9,7 +10,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
   declarations: [FooterComponent],
   imports: [
     CommonModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    MatDividerModule,
   ],
   exports: [FooterComponent]
 })

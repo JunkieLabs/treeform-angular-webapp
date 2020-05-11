@@ -1,3 +1,24 @@
+$tb-color-black-alpha-map: (
+  6: rgba(black, 0.06),
+  12: rgba(black, 0.12),
+  20: rgba(black, 0.2),
+  38: rgba(black, 0.38),
+  54: rgba(black, 0.54),
+  75: rgba(black, 0.75),
+  87: rgba(black, 0.87)
+);
+
+$tb-color-white-alpha-map: (
+  6: rgba(white, 0.06),
+  12: rgba(white, 0.12),
+  20: rgba(white, 0.2),
+  38: rgba(white, 0.38),
+  54: rgba(white, 0.54),
+  75: rgba(white, 0.75),
+  87: rgba(white, 0.87)
+);
+
+
 $tb-grey: (
   50: #fafafa,
   100: #f5f5f5,
@@ -81,3 +102,4 @@ $tb-orange: (
   A400 : #ffd1c9,
   A700 : #ffbcb0,
   );
+
