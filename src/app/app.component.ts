@@ -7,28 +7,34 @@ import { RoutingStateService } from './components/states/routingState.service';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
   title = 'treeform-angular-webapp';
   mSubscriptions: Subscription[] = [];
-  constructor(iconRegistry: MatIconRegistry, sanitizer: DomSanitizer, private routingState: RoutingStateService) {
-
+  constructor(
+    iconRegistry: MatIconRegistry,
+    sanitizer: DomSanitizer,
+    private routingState: RoutingStateService
+  ) {
     this.routingState.loadRouting();
-    this.addSvgIcons(iconRegistry, sanitizer)
-
+    this.addSvgIcons(iconRegistry, sanitizer);
   }
 
   ngOnDestroy() {
-    this.mSubscriptions.forEach(s => s.unsubscribe());
+    this.mSubscriptions.forEach((s) => s.unsubscribe());
   }
 
   addSvgIcons(iconRegistry: MatIconRegistry, sanitizer: DomSanitizer) {
     iconRegistry
-        .addSvgIcon(
-          "menu",
-          sanitizer.bypassSecurityTrustResourceUrl("assets/icons/menu.svg")
-        )
+      .addSvgIcon(
+        'menu',
+        sanitizer.bypassSecurityTrustResourceUrl('assets/icons/menu.svg')
+      )
+      .addSvgIcon(
+        'grass',
+        sanitizer.bypassSecurityTrustResourceUrl('assets/icons/grass.svg')
+      );
   }
   //   iconRegistry
   //     .addSvgIcon(
@@ -47,7 +53,7 @@ export class AppComponent {
   //       "price",
   //       sanitizer.bypassSecurityTrustResourceUrl("assets/svg/ic_price.svg")
   //     )
-      
+
   //     .addSvgIcon(
   //       "qr-code",
   //       sanitizer.bypassSecurityTrustResourceUrl("assets/svg/ic_qr_code.svg")

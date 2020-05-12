@@ -32,6 +32,13 @@ const routes: Routes = [
             (m) => m.ContactUsModule
           ),
       },
+      {
+        path: 'about-us',
+        loadChildren: () =>
+          import('./ui/components/about-us/about-us.module').then(
+            (m) => m.AboutUsModule
+          ),
+      }
     ],
   },
 ];
