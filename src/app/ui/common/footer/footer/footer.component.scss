@@ -10,15 +10,15 @@
   &.xs {
     .title-caps {
       position: absolute;
-      top: 14px;
+      top: -10px;
+      left:64px;
       z-index: 0;
-      font-size: 38px;
+      font-size: 56px;
     }
   }
 }
 
-
-.footer-plant{
+.footer-plant {
   width: 300px;
   right: 0px;
 }

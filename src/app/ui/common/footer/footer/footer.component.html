@@ -1,30 +1,30 @@
 <div class="tb-border--bottom-line"></div>
-<div fxLayout="column" class="tb-container--large-double-extra">
+<div fxLayout="column" ngClass.gt-sm="tb-container--large-double-extra" ngClass.lt-md="tb-padding--h-16">
   <div class="tb-padding--36"></div>
   <div fxLayout="row" fxLayoutAlign="start center" class="tb-position--relative">
     <div>
       <div class="heading tb-position--relative" ngClass.xs="xs">
         <div fxLayout="row" fxLayoutAlign="start center">
-          <div class="tb-rect--84">
+          <div ngClass.gt-sm="tb-rect--84" ngClass.lt-md="tb-rect--64">
             <img class="tb-image" src="assets/logo/ic_logo.svg">
           </div>
           <div class="tb-position--relative">
-            <p class="tb-typo--h2 tb-font-weight-medium tb-color--grey-900">Treeform</p>
+            <p class="tb-font-weight-medium tb-color--grey-900" ngClass.gt-sm="tb-typo--h2" ngClass.lt-md="tb-typo--h3">Treeform</p>
           </div>
         </div>
         <p class="title-caps tb-typo--h1 tb-font-weight--ultra-bold tb-color--black-6">TREEFORM</p>
       </div>
       <div class="tb-padding--24"></div>
-      <div fxLayout="row">
+      <div fxLayout="row"  ngClass.lt-lg="tb-padding--h-12">
         <a href="" class="tb-typo--button tb-color--grey-900">Contact Us</a>
-        <div class="tb-padding--h-36"></div>
+        <div ngClass.gt-sm="tb-padding--h-36" ngClass.lt-md="tb-padding--h-12"></div>
         <a href="" class="tb-typo--button tb-color--grey-900">About Us</a>
-        <div class="tb-padding--h-36"></div>
+        <div ngClass.gt-sm="tb-padding--h-36" ngClass.lt-md="tb-padding--h-12"></div>
         <a href="" class="tb-typo--button tb-color--grey-900">Gallery</a>
       </div>
       <div class="tb-padding--8"></div>
     </div>
-    <div class="tb-position--absolute footer-plant">
+    <div class="footer-plant" ngClass.gt-sm="tb-position--absolute" ngClass.lt-md="tb-position--relative">
       <img src="assets/img/footer_plant.png" class="tb-image tb-image--cover" alt="">
     </div>
   </div>
