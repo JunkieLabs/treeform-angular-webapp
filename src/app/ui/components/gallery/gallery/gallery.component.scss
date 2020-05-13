@@ -1,0 +1,18 @@
+.title-caps {
+  position: absolute;
+  top: 60px;
+  left: 0px;
+  z-index: 0;
+  font-size: 152px;
+}
+
+.heading {
+  &.xs {
+    .title-caps {
+      position: absolute;
+      top: 14px;
+      z-index: 0;
+      font-size: 38px;
+    }
+  }
+}

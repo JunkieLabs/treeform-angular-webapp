@@ -38,6 +38,13 @@ const routes: Routes = [
           import('./ui/components/about-us/about-us.module').then(
             (m) => m.AboutUsModule
           ),
+      },
+      {
+        path: 'gallery',
+        loadChildren: () =>
+          import('./ui/components/gallery/gallery.module').then(
+            (m) => m.GalleryModule
+          ),
       }
     ],
   },
