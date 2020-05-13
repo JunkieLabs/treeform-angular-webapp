@@ -1,6 +1,6 @@
 .title-caps {
   position: absolute;
-  top: 60px;
+  top: 50%;
   left: 0px;
   z-index: 0;
   font-size: 152px;
@@ -10,9 +10,9 @@
   &.xs {
     .title-caps {
       position: absolute;
-      top: 14px;
+      top: 60%;
       z-index: 0;
-      font-size: 38px;
+      font-size: 80px;
     }
   }
 }

@@ -5,6 +5,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { FooterModule } from '../../common/footer/footer.module';
 import { RouterModule } from '@angular/router';
 import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
 
 export const routes: ModuleWithProviders = RouterModule.forChild([
   {
@@ -19,6 +20,7 @@ export const routes: ModuleWithProviders = RouterModule.forChild([
     CommonModule,
     FlexLayoutModule,
     MatIconModule,
+    MatButtonModule,
     FooterModule,
     routes
   ]

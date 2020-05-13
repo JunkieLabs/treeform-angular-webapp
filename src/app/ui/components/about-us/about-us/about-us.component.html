@@ -1,6 +1,6 @@
-<div ngClass.lt-md="tb-padding--36" ngClass.gt-sm="tb-padding--16"></div>
-<div fxLayout="column" class="tb-container--large-extra">
-  <div fxLayout="row" fxLayout.lt-md="column" fxLayoutAlign="start center">
+<div id="dashboard-content" fxLayout="column" class="tb-container--large-extra">
+  <div ngClass.lt-md="tb-padding--40"></div>
+  <div fxLayout="row" fxLayout.lt-md="column" fxLayoutAlign="start center" ngClass.gt-sm="tb-height--100h">
     <div fxFlex>
       <h3 class="tb-typo--h2 tb-color--grey-900">Organic experiences with natural</h3>
       <h3 class="tb-typo--h2 tb-theme--primary">Ecosystem</h3>
@@ -22,13 +22,13 @@
     <div fxFlex="50">
       <img src="assets/img/aboutus_timelime_1.png" class="tb-image" alt="">
     </div>
-    <div fxFlex>
+    <div fxFlex ngClass.gt-sm="tb-padding--72">
       <p class="tb-typo--body1 tb-color--grey-700 tb-font-weight--light">To bring the natural system into balance, a new
         economy that is sustainable and respects the limits of natural resources</p>
     </div>
   </div>
   <div fxLayout="row" fxLayout.lt-md="column" fxLayoutAlign="start center">
-    <div fxFlex="50" class="tb-padding--56">
+    <div fxFlex="50" ngClass.gt-sm="tb-padding--72">
       <p class="tb-typo--body1 tb-color--grey-700 tb-font-weight--light">To bring the natural system into balance, a
         new economy that is
         sustainable and respects the limits of natural resources</p>
@@ -41,26 +41,26 @@
     <div fxFlex="50">
       <img src="assets/img/aboutus_timelime_3.png" class="tb-image" alt="">
     </div>
-    <div fxFlex>
+    <div fxFlex ngClass.gt-sm="tb-padding--72">
       <p class="tb-typo--body1 tb-color--grey-700 tb-font-weight--light">To bring the natural system into balance, a
         new economy that is
         sustainable and respects the limits of natural resources</p>
     </div>
   </div>
   <div fxLayout="row" fxLayout.lt-md="column" fxLayoutAlign="start center">
-    <div fxFlex="50" class="tb-padding--h-56">
+    <div fxFlex ngClass.gt-sm="tb-padding--h-56">
       <div class="tb-padding--36"></div>
       <p class="tb-typo--body1 tb-color--grey-700 tb-font-weight--light">To bring the natural system into balance, a
         new economy that is
         sustainable and respects the limits of natural resources</p>
     </div>
-    <div fxFlex></div>
+    <div fxFlex="50"></div>
   </div>
   <div>
     <img src="assets/img/aboutus_timelime_4.png" class="tb-image" alt="">
   </div>
 
-  <div fxLayout="row" fxLayoutAlign="center start" class="tb-padding--v-36">
+  <div fxLayout="row" fxLayoutAlign="center start" class="tb-padding--v-56">
     <h3 class="tb-typo--h3 tb-color--grey-900 tb-font-weight--medium"><span class="tb-theme--primary">Why</span> Choose
       Us ?</h3>
   </div>
@@ -68,7 +68,8 @@
     <div fxFlex="50">
       <img src="assets/img/aboutus_chooseus_1.png" class="tb-image" alt="">
     </div>
-    <div fxFlex class="tb-padding--h-56">
+    <div ngClass.lt-md="tb-padding--8"></div>
+    <div fxFlex ngClass.gt-sm="tb-padding--h-56">
       <ng-container *ngFor="let option of _mOptions">
         <div fxLayout="row" fxLayoutAlign="start center">
           <mat-icon svgIcon="grass" class="tb-icon--40 tb-flex--shrink-0"></mat-icon>
@@ -80,17 +81,22 @@
       </ng-container>
     </div>
   </div>
+
   <div fxLayout="row" fxLayout.lt-md="column" fxLayoutAlign="start center">
-    <div fxFlex class="tb-padding--h-56">
+    <div ngClass.lt-md="tb-padding--12"></div>
+    <div fxFlex ngClass.gt-sm="tb-padding--h-56">
       <h3 class="tb-typo--h3 tb-color--grey-900">Choose Us</h3>
       <h3 class="tb-typo--h3 tb-theme--primary">To Love the Nature</h3>
       <div class="tb-padding--6"></div>
-      <button mat-button color="primary">Connect us</button>
-      <div class="tb-padding--6"></div>
+      <button mat-raised-button color="primary" class="tb-border--r8">
+        <span class="tb-padding--12-16">Connect us</span>
+      </button>
+      <div class="tb-padding--12"></div>
       <p class="tb-typo--body1 tb-color--grey-700 tb-font-weight--light">To bring the natural system into balance, a
         new economy that is
         sustainable and respects the limits of natural resources</p>
     </div>
+    <div ngClass.lt-md="tb-padding--12"></div>
     <div fxFlex="50">
       <img src="assets/img/aboutus_chooseus_2.png" class="tb-image" alt="">
     </div>

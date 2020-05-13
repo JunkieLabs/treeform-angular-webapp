@@ -4,7 +4,7 @@ import { GalleryComponent } from './gallery/gallery.component';
 import { RouterModule } from '@angular/router';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { FooterModule } from '../../common/footer/footer.module';
-
+import {MatButtonModule} from "@angular/material/button"
 
 export const routes: ModuleWithProviders = RouterModule.forChild([
   {
@@ -19,6 +19,7 @@ export const routes: ModuleWithProviders = RouterModule.forChild([
     CommonModule,
     FlexLayoutModule,
     FooterModule,
+    MatButtonModule,
     routes
   ]
 })
