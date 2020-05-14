@@ -34,6 +34,10 @@ export class AppComponent {
       .addSvgIcon(
         'grass',
         sanitizer.bypassSecurityTrustResourceUrl('assets/icons/grass.svg')
+      )
+      .addSvgIcon(
+        'pin',
+        sanitizer.bypassSecurityTrustResourceUrl('assets/icons/pin.svg')
       );
   }
   //   iconRegistry

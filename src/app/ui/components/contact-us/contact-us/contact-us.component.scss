@@ -10,7 +10,7 @@
 }
 
 @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
- .box .box.arrow-bottom:after {
+  .box .box.arrow-bottom:after {
     -webkit-backdrop-filter: blur(2px);
     backdrop-filter: blur(2px);
     background-color: rgba(0, 0, 0, 0.8);
@@ -37,3 +37,8 @@
   transform: translate(-50%, -50%);
 }
 
+.pin {
+  top: 50%;
+  left: 50%;
+  transform: translate(-20px, 54px);
+}
