@@ -4,11 +4,11 @@ import { BlankContainerComponent } from './ui/container/blank-container/blank-co
 import { WebappContainerComponent } from './ui/container/webapp-container/webapp-container.component';
 
 const routes: Routes = [
-  {
-    path: "",
-    redirectTo:"contact-us",
-    pathMatch:"full"
-  },
+  // {
+  //   path: "",
+  //   redirectTo:"home",
+  //   pathMatch:"full"
+  // },
   {
     path: '',
     component: WebappContainerComponent,
@@ -19,7 +19,7 @@ const routes: Routes = [
           import('./ui/components/test/test.module').then((m) => m.TestModule),
       },
       {
-        path: '',
+        path: 'angular',
         loadChildren: () =>
           import('./ui/components/angular-default/angular-default.module').then(
             (m) => m.AngularDefaultModule
@@ -45,7 +45,12 @@ const routes: Routes = [
           import('./ui/components/gallery/gallery.module').then(
             (m) => m.GalleryModule
           ),
-      }
+      },
+      {
+        path: '',
+        loadChildren: () =>
+          import('./ui/components/home/home.module').then((m) => m.HomeModule),
+      },
     ],
   },
 ];
