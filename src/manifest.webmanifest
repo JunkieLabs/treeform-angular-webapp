@@ -1,6 +1,6 @@
 {
-  "name": "treeform-angular-webapp",
-  "short_name": "treeform-angular-webapp",
+  "name": "treeform",
+  "short_name": "treeform",
   "theme_color": "#1976d2",
   "background_color": "#fafafa",
   "display": "standalone",

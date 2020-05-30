@@ -18,7 +18,7 @@ export class AppComponent implements OnDestroy {
   constructor(
     iconRegistry: MatIconRegistry,
     sanitizer: DomSanitizer,
-    private routingState: RoutingStateService
+    private routingState: RoutingStateService,
   ) {
     this.routingState.loadRouting();
     this.addSvgIcons(iconRegistry, sanitizer);
