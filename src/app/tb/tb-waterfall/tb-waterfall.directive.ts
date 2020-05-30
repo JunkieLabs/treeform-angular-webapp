@@ -1,4 +1,18 @@
-import { Directive, OnChanges, AfterContentInit, OnDestroy, ElementRef, Input, Renderer2, ChangeDetectorRef, Inject, HostListener, SimpleChanges, NgZone, AfterViewChecked } from '@angular/core';
+import {
+  Directive,
+  OnChanges,
+  AfterContentInit,
+  OnDestroy,
+  ElementRef,
+  Input,
+  Renderer2,
+  ChangeDetectorRef,
+  Inject,
+  HostListener,
+  SimpleChanges,
+  NgZone,
+  AfterViewChecked,
+} from '@angular/core';
 import { DOCUMENT } from '@angular/common';
 import { Location } from '@angular/common';
 import { Subscription, fromEvent } from 'rxjs';
@@ -7,11 +21,10 @@ import { Router, ActivatedRoute, NavigationEnd } from '@angular/router';
 import { filter } from 'rxjs/operators';
 
 @Directive({
-  selector: '[tbWaterfall]'
+  selector: '[tbWaterfall]',
 })
-export class TbWaterfallDirective implements OnChanges, OnDestroy, AfterContentInit, AfterViewChecked {
-
-
+export class TbWaterfallDirective
+  implements OnChanges, OnDestroy, AfterContentInit, AfterViewChecked {
   //private classes: string[] = [];
   private mClassActive: string;
   //private referenceLink: string;
@@ -22,7 +35,6 @@ export class TbWaterfallDirective implements OnChanges, OnDestroy, AfterContentI
 
   //private mRefView: ElementRef;
   private mRefTarget: any;
-
 
   private _mIsActive: boolean = false;
   private _mIsActivePrev: boolean = false;
@@ -35,11 +47,7 @@ export class TbWaterfallDirective implements OnChanges, OnDestroy, AfterContentI
     //const classes = Array.isArray(data) ? data : data.split(' ');
     //this.classes = classes.filter(c => !!c);
     this.mClassActive = data;
-
   }
-
-
- 
 
   @Input()
   set waterfallReferenceTarget(target: HTMLElement) {
@@ -47,32 +55,32 @@ export class TbWaterfallDirective implements OnChanges, OnDestroy, AfterContentI
     //this.referenceLink = link;
 
     if (target !== this.mRefTarget) {
-      this.mRefTarget = target ? target : this._platform.isBrowser ? window : undefined;
+      this.mRefTarget = target
+        ? target
+        : this._platform.isBrowser
+        ? window
+        : undefined;
       this._initScrollHandler();
     }
     // console.log("target: ", this.mRefTarget);
-
   }
 
   @Input()
   set waterfallReferenceLink(data: string) {
-    const link = Array.isArray(data) ? data[0] : data.split(" ")[0];
+    const link = Array.isArray(data) ? data[0] : data.split(' ')[0];
     this.mLink = link;
 
-    console.log("waterfallReferenceLink: ", link);
-    setTimeout(()=> this._updateRefLink())
+    console.log('waterfallReferenceLink: ', link);
+    setTimeout(() => this._updateRefLink());
 
-   
     // if (this.mLink) {
     //   this._mLinkedElement = this.document.getElementById(this.mLink);
     //   this._initScrollHandler();
     // }
-
   }
 
   @Input()
   set waterfallOffsetRef(ref: ElementRef) {
-
     if (ref.nativeElement.offsetHeight && ref.nativeElement.offsetHeight > 0) {
       this._mOffsetY = ref.nativeElement.offsetHeight;
     } else {
@@ -80,15 +88,13 @@ export class TbWaterfallDirective implements OnChanges, OnDestroy, AfterContentI
     }
 
     ///console.log(this._mOffsetY);
-
   }
-
 
   private _scrollTargetSubscription: Subscription | null = null;
 
   subscriptions: Subscription[] = [];
 
-  _mCurrentState = "0we9wewew";
+  _mCurrentState = '0we9wewew';
   constructor(
     private renderer: Renderer2,
     private location: Location,
@@ -98,33 +104,36 @@ export class TbWaterfallDirective implements OnChanges, OnDestroy, AfterContentI
     private el: ElementRef,
     private _platform: Platform,
     private cdr: ChangeDetectorRef,
-    @Inject(DOCUMENT) document: any) {
+    @Inject(DOCUMENT) document: any
+  ) {
     this.document = <Document>document;
-
 
     // console.log(el);
     // console.log('inpage: ');
   }
-  
+
   ngAfterContentInit() {
-    this.subscriptions.push(this.router.events.pipe(filter(event => event instanceof NavigationEnd)).subscribe((val) => {
-      // if (this.location.path() != '') {
-      let routePath = this.location.path();
-      // console.log("TbWaterfallDirective route: 1 here ",val, routePath, this._mCurrentState);
-       
-      if (this._mCurrentState != routePath) {
-        this._mCurrentState = routePath
+    this.subscriptions.push(
+      this.router.events
+        .pipe(filter((event) => event instanceof NavigationEnd))
+        .subscribe((val) => {
+          // if (this.location.path() != '') {
+          let routePath = this.location.path();
+          // console.log("TbWaterfallDirective route: 1 here ",val, routePath, this._mCurrentState);
 
-        // console.log("TbWaterfallDirective route: 2 here", routePath, this._mCurrentState);
+          if (this._mCurrentState != routePath) {
+            this._mCurrentState = routePath;
 
-        setTimeout(()=> this._updateRefLink())
+            // console.log("TbWaterfallDirective route: 2 here", routePath, this._mCurrentState);
 
-      }
-      // return;
-      // }
-    }))
+            setTimeout(() => this._updateRefLink());
+          }
+          // return;
+          // }
+        })
+    );
     // console.log('inpage: ' + this.link);
-    
+
     //     this._mLinkedElement = this.document.getElementById(this.referenceLink);
     //    if (!this._mLinkedElement) {
     //         return;
@@ -142,16 +151,17 @@ export class TbWaterfallDirective implements OnChanges, OnDestroy, AfterContentI
   }
 
   ngAfterViewChecked() {
-
     // console.log("tb-waterfall viewChecked");
-    
   }
-
 
   ngOnDestroy(): void {
     //throw new Error("Method not implemented.");
-    this._scrollTargetSubscription.unsubscribe();
-    this.subscriptions.forEach(s => s.unsubscribe());
+    if (this._scrollTargetSubscription) {
+      this._scrollTargetSubscription.unsubscribe();
+    }
+    if (this.subscriptions) {
+      this.subscriptions.forEach((s) => s.unsubscribe());
+    }
   }
   ngOnChanges(changes: SimpleChanges): void {
     //throw new Error("Method not implemented.");
@@ -159,14 +169,13 @@ export class TbWaterfallDirective implements OnChanges, OnDestroy, AfterContentI
 
   private _updateRefLink() {
     if (this.mLink) {
-      if(this._scrollTargetSubscription!=null)this._scrollTargetSubscription.unsubscribe()
+      if (this._scrollTargetSubscription != null)
+        this._scrollTargetSubscription.unsubscribe();
       this._mLinkedElement = this.document.getElementById(this.mLink);
-      
+
       this._initScrollHandler();
     }
   }
-
-
 
   private _initScrollHandler(): void {
     if (this._scrollTargetSubscription) {
@@ -178,12 +187,13 @@ export class TbWaterfallDirective implements OnChanges, OnDestroy, AfterContentI
 
     // console.log("_initScrollHandler suscribed: ", this._mLinkedElement);
 
-
     this._scrollTargetSubscription = this._ngZone.runOutsideAngular(() =>
-      fromEvent<Event>(this.mRefTarget || window, 'scroll')
-        .subscribe((event) => this._ngZone.run(() => {
-          this.doSomethingTarget(event)
-        })));
+      fromEvent<Event>(this.mRefTarget || window, 'scroll').subscribe((event) =>
+        this._ngZone.run(() => {
+          this.doSomethingTarget(event);
+        })
+      )
+    );
   }
 
   doSomethingTarget(event) {
@@ -191,8 +201,6 @@ export class TbWaterfallDirective implements OnChanges, OnDestroy, AfterContentI
     // see András Szepesházi's comment below
     this.checkForChangesTarget(this.mRefTarget.scrollTop);
     this.updateForTarget();
-
-
   }
 
   private checkForChangesTarget(pageYOffset: any) {
@@ -205,30 +213,27 @@ export class TbWaterfallDirective implements OnChanges, OnDestroy, AfterContentI
       if (offsetTop + this._mOffsetY < positionY && offsetBottom > positionY) {
         this._mIsActive = true;
         // console.log("active");
-
       } else {
         this._mIsActive = false;
         // console.log("inactive");
       }
-    } else
-      if (this.mRefTarget) {
-        //console.log(this.mRefTarget);
-        //console.log(this.mRefTarget.nativeElement);
+    } else if (this.mRefTarget) {
+      //console.log(this.mRefTarget);
+      //console.log(this.mRefTarget.nativeElement);
 
-        let offsetTop = this.mRefTarget.offsetTop;
-        let offsetBottom = this.mRefTarget.offsetHeight + offsetTop;
-        // console.log(offsetTop, offsetBottom);
-        // console.log("checkForChangesTarget 2 link", offsetTop, offsetBottom, positionY, this._mLinkedElement);
+      let offsetTop = this.mRefTarget.offsetTop;
+      let offsetBottom = this.mRefTarget.offsetHeight + offsetTop;
+      // console.log(offsetTop, offsetBottom);
+      // console.log("checkForChangesTarget 2 link", offsetTop, offsetBottom, positionY, this._mLinkedElement);
 
-        if (offsetTop + this._mOffsetY < positionY && offsetBottom > positionY) {
-          this._mIsActive = true;
-          // console.log("active");
-
-        } else {
-          this._mIsActive = false;
-          // console.log("inactive");
-        }
+      if (offsetTop + this._mOffsetY < positionY && offsetBottom > positionY) {
+        this._mIsActive = true;
+        // console.log("active");
+      } else {
+        this._mIsActive = false;
+        // console.log("inactive");
       }
+    }
 
     // if (this._mLinkedElement) {
     //     let offsetTop = this._mLinkedElement.offsetTop;
@@ -245,18 +250,17 @@ export class TbWaterfallDirective implements OnChanges, OnDestroy, AfterContentI
     // }
   }
 
- 
   private updateForTarget(): void {
     if (!this.mRefTarget) return;
 
     if (this._mIsActivePrev !== this._mIsActive) {
       this._mIsActivePrev = this._mIsActive;
       if (this._mIsActive) {
-        this.addClass(this.mClassActive)
+        this.addClass(this.mClassActive);
         // this.classes.forEach(
         //     c => this.renderer.addClass(this.el.nativeElement, c));
       } else {
-        this.removeClass(this.mClassActive)
+        this.removeClass(this.mClassActive);
         // this.classes.forEach(
         //     c => this.renderer.removeClass(this.el.nativeElement, c));
       }
@@ -267,17 +271,13 @@ export class TbWaterfallDirective implements OnChanges, OnDestroy, AfterContentI
   private addClass(classNames: string) {
     // console.log(this.el.nativeElement)
     let classes = classNames.split(' ');
-    classes.forEach(
-      c => this.renderer.addClass(this.el.nativeElement, c));
+    classes.forEach((c) => this.renderer.addClass(this.el.nativeElement, c));
     //this.renderer.addClass(this.el.nativeElement,);
   }
 
   private removeClass(classNames: string) {
     let classes = classNames.split(' ');
 
-    classes.forEach(
-      c => this.renderer.removeClass(this.el.nativeElement, c));
-
+    classes.forEach((c) => this.renderer.removeClass(this.el.nativeElement, c));
   }
-
 }

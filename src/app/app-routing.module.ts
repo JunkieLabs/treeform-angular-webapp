@@ -55,16 +55,13 @@ const routes: Routes = [
   },
 ];
 
-const ROOT_ROUTING: ModuleWithProviders = RouterModule.forRoot(
-  routes,
-
-  {
+const ROOT_ROUTING: ModuleWithProviders = RouterModule.forRoot(routes, {
     preloadingStrategy: PreloadAllModules,
     useHash: false,
     enableTracing: false,
     scrollPositionRestoration: 'top',
-  }
-);
+    initialNavigation: 'enabled'
+});
 
 @NgModule({
   imports: [ROOT_ROUTING],
