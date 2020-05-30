@@ -16,11 +16,7 @@
       }
     }, {
       "name": "assets",
-<<<<<<< HEAD
       "installMode": "lazy",
-=======
-      "installMode": "prefetch",
->>>>>>> c3c3ddb637ab8ae3f9ee437971bc7001e776bfe8
       "updateMode": "prefetch",
       "resources": {
         "files": [
