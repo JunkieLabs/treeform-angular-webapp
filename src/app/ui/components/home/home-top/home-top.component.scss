@@ -1,0 +1,41 @@
+.main {
+    position: relative;
+    height: 100vh;
+    max-height: 1080px;
+
+    .background {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 0;
+
+        img {
+            max-height: calc(100vh - 100px);
+            max-width: 80vw;
+        }
+
+    }
+
+    .background-text {
+        font-size: 15rem;
+        top: 20%;
+        left: 20%;
+        z-index: 0;
+        transform: translate(0, -50%);
+        color: rgba($color: #000000, $alpha: 0.06);
+
+    }
+
+    &.xs {
+        .background {
+            img {
+                max-height: 100%;
+                max-width: 100vw;
+            }
+        }
+
+        .background-text {
+            display: none;
+        }
+    }
+}

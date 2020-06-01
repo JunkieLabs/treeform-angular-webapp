@@ -11,6 +11,7 @@ import { OurStoreComponent } from './our-store/our-store.component';
 import { AdvantagesComponent } from './advantages/advantages.component';
 import { OurServicesComponent } from './our-services/our-services.component';
 import { VideoComponent } from './video/video.component';
+import { HomeTopComponent } from './home-top/home-top.component';
 
 export const routes: ModuleWithProviders = RouterModule.forChild([
   {
@@ -20,7 +21,7 @@ export const routes: ModuleWithProviders = RouterModule.forChild([
 ]);
 
 @NgModule({
-  declarations: [HomeComponent, ConnectUsComponent, OurStoreComponent, AdvantagesComponent, OurServicesComponent, VideoComponent],
+  declarations: [HomeComponent, ConnectUsComponent, OurStoreComponent, AdvantagesComponent, OurServicesComponent, VideoComponent, HomeTopComponent],
   imports: [
     CommonModule,
     FlexLayoutModule,

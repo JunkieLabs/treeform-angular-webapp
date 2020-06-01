@@ -38,6 +38,9 @@ export class AppComponent {
       .addSvgIcon(
         'pin',
         sanitizer.bypassSecurityTrustResourceUrl('assets/icons/pin.svg')
+      ).addSvgIcon(
+        'play',
+        sanitizer.bypassSecurityTrustResourceUrl('assets/icons/play.svg')
       );
   }
   //   iconRegistry

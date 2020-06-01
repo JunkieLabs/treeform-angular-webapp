@@ -1,0 +1,29 @@
+@import 'function';
+
+
+.fused-primary {
+    $fused-priamry-theme: fused-mat-theme($treeform-angular-webapp-primary, $treeform-angular-webapp-accent, $treeform-angular-webapp-warn, fused-mat-theme-foreground($tb-theme-primary));
+    @include mat-button-theme($fused-priamry-theme);
+
+}
+
+.fused-secondary {
+
+    $fused-secondary-theme: fused-mat-theme($treeform-angular-webapp-accent, $treeform-angular-webapp-accent, $treeform-angular-webapp-warn, fused-mat-theme-foreground($tb-theme-secondary));
+    @include mat-button-theme($fused-secondary-theme);
+
+}
+
+.fused-warn {
+
+    $fused-warn-theme: fused-mat-theme($treeform-angular-webapp-warn, $treeform-angular-webapp-warn, $treeform-angular-webapp-warn, fused-mat-theme-foreground($tb-theme-error));
+    @include mat-button-theme($fused-warn-theme);
+
+}
+.fused{
+    .fused-raised-button{
+        border-radius: 12px;
+        padding: 4px 20px;
+    }
+}
+
