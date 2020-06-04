@@ -1,21 +1,29 @@
-<div class="tb-container--large-extra" fxLayout="column">
-  <div class="tb-theme-bg--primary-light tb-border--r10 tb-position--relative">
-    <div class="tb-padding--16"></div>
-    <div fxLayout="row" fxLayoutAlign="start center" fxLayout.lt-md="column">
+<div class="tb-container" fxLayout="column">
+  <div class="tb-position--relative">
+    <div class="tb-theme-bg--primary-light background tb-border--r10 tb-position--absolute">
+<!-- <div class="tb-theme-bg--primary-light tb-border--r10 tb-position--relative">
+  </div> -->
+    </div>
+    <div class="tb-position--relative" fxLayout="row" fxLayoutAlign="start center" fxLayout.lt-md="column">
       <div fxFlex.gt-sm="30" class="tb-padding--16">
         <img src="assets/img/person.png" class="tb-image" alt="">
       </div>
       <div fxFlex.gt-sm="10"></div>
       <div fxFlex.gt-sm="45" class="tb-padding--h-16">
         <h3 class="tb-typo--h3 tb-color--white">Feeling down with your surroundings?</h3>
-        <p class="tb-typo--body1 tb-color--white">Looking for plants of choise. Visit our store for some of the rarest</p>
+        <p class="tb-typo--body1 tb-color--white">Looking for plants of choise. Visit our store for some of the rarest
+        </p>
         <div class="tb-padding--8"></div>
-        <button mat-raised-button  class="tb-border--r12 tb-color-bg--grey-900 tb-color--white"> <span class="tb-padding--12-16">Connect us</span> </button>
+        <button mat-raised-button class="tb-border--r12 tb-color-bg--grey-900 tb-color--white"> <span
+            class="tb-padding--12-16">Connect us</span> </button>
       </div>
-      <div fxFlex.gt-sm="15" ngClass.lt-md="tb-padding--16"></div>
+      <div fxFlexAlign="stretch" class="tb-position--relative" fxFlex.gt-sm="15" ngClass.lt-md="tb-padding--16">
+        <div class="tb-position--absolute flower" ngClass.lt-md="tb-display--none">
+          <img src="assets/img/flower.png" class="tb-image tb-image--cover" alt="">
+        </div>
+      </div>
     </div>
-    <div class="tb-position--absolute flower tb-width--264" ngClass.lt-md="tb-display--none">
-      <img src="assets/img/flower.png" class="tb-image" alt="">
-    </div>
+    
+
   </div>
 </div>
