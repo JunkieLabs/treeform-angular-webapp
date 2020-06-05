@@ -1,0 +1,41 @@
+<div id="dashboard-content" fxLayout="column">
+  <div fxLayout="column" class="tb-container">
+    <div ngClass.lt-md="tb-padding--36" ngClass.gt-sm="tb-padding--24"></div>
+    <div class="tb-padding--16"></div>
+    <h3 class="tb-typo--h2 tb-color--grey-900 tb-font-weight--normal"> </h3>
+
+    <div class="" fxLayout="row" fxLayoutAlign="start center">
+      <div class="tb-padding--bottom-12">
+        <button mat-icon-button (click)="_onNavigateBack()" >
+          <mat-icon class="tb-icon--30">navigate_before</mat-icon>
+        </button>
+      </div>
+      <div class="tb-padding--h-16"></div>
+      <h2 class="tb-typo--h3 tb-color--grey-900">GALLERY</h2>
+    </div>
+    <div class="tb-padding--6"></div>
+    <div fxLayout="row" fxLayoutAlign="start center">
+      <div class="tb-padding--h-36"></div>
+      <h5 class="tb-typo--body1 tb-color--grey-700">Category:</h5>
+      <div class="tb-padding--h-24"></div>
+      <div class="btn-group">
+        <ng-container *ngFor="let item of _mCategories;let i =index">
+          <button [class.active]="_mActiveCategory == i" mat-stroked-button (click)="_mToggleCategory(i)">
+            <span class="tb-padding--h-12 tb-text--capitalize">
+              {{item}}
+            </span>
+          </button>
+        </ng-container>
+      </div>
+    </div>
+    <div class="tb-padding--12"></div>
+    <div class="">
+      <div fxLayout="column" fxLayout.lt-md="column" fxLayoutAlign="space-between stretch">
+        <div fxFlex>
+          <gallery galleryScrollReferenceLink="dashboard-content" [flexBorderSize]="flexBorderSize" [galleryName]="galleryName" [maxRowsPerPage]="1"  (viewerChange)="onViewerVisibilityChanged($event)">
+        </gallery>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>

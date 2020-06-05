@@ -47,6 +47,13 @@ const routes: Routes = [
           ),
       },
       {
+        path: 'gallery/:category',
+        loadChildren: () =>
+          import('./ui/components/inner-gallery/inner-gallery.module').then(
+            (m) => m.InnerGalleryModule
+          ),
+      },
+      {
         path: '',
         loadChildren: () =>
           import('./ui/components/home/home.module').then((m) => m.HomeModule),

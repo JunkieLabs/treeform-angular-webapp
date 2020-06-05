@@ -7,7 +7,8 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "convert": "node node_modules/angular2-image-gallery/convert.js --gName=treeform ./src/assets/img/raw"
   },
   "private": true,
   "dependencies": {
@@ -22,6 +23,12 @@
     "@angular/platform-browser": "~9.1.0",
     "@angular/platform-browser-dynamic": "~9.1.0",
     "@angular/router": "~9.1.0",
+    "angular2-image-gallery": "^8.0.0",
+    "gm": "^1.23.1",
+    "grade-js": "^1.0.10",
+    "hammerjs": "^2.0.8",
+    "ngx-swiper-wrapper": "^9.0.1",
+    "onecolor": "^3.1.0",
     "rxjs": "~6.5.4",
     "tslib": "^1.10.0",
     "zone.js": "~0.10.2"
