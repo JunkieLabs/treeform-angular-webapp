@@ -18,15 +18,16 @@ export class InnerGalleryComponent implements OnInit {
   // tslint:disable-next-line: variable-name
   _mCategories = ['gardening', 'pots', 'office'];
 
-  currentRoute: string = '';
+  currentRoute = '';
 
   constructor(
     private el: ElementRef,
     private location: Location,
     private activeRoute: ActivatedRoute
   ) {
+    const paramName = 'category';
     this._mRefSelf = this.el.nativeElement;
-    this.currentRoute = this.activeRoute.snapshot.params['category'] || '';
+    this.currentRoute = this.activeRoute.snapshot.params[paramName] || '';
   }
 
   ngOnInit(): void {
