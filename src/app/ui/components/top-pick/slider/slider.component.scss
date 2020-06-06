@@ -1,0 +1,32 @@
+.content-container {
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: visible;
+  height: 264px;
+  min-height: 0;
+  background-color: #fff;
+  padding: 42px;
+}
+
+.main{
+  .swiper-container {
+    height: 100%;
+    width: 100%;
+    margin-left: 16px !important;
+    overflow: visible !important;
+  }
+
+  &.xs{
+    .swiper-container {
+      margin-left: -24px !important;
+    }
+  }
+}
+
+
+.swiper-slide-active {
+  overflow: unset !important;
+  margin-left: 20px !important;
+  margin-right: 30px !important;
+  transform: scale(1.2) !important;
+}

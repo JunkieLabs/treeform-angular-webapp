@@ -1,0 +1,12 @@
+<div fxLayout="column" fxLayoutAlign="stretch" class="main" ngClass.xs="xs">
+  <div class="content-container" fxLayout="column" fxLayoutAlign="stretch" fxFlex="auto">
+    <swiper class="swiper-container" fxFlex="auto" [config]="config" (indexChange)="onIndexChange($event)"
+      (swiperTransitionStart)="onSwiperEvent('transitionStart')" (swiperTransitionEnd)="onSwiperEvent('transitionEnd')">
+      <div *ngFor="let slide of slides" class="swiper-slide tb-border--r10 tb-padding--16-12"
+        fxLayout="column" fxLayoutAlign="center center" ngClass.gt-sm="tb-cursor--pointer" [ngStyle]="setGradient(slide.color)">
+        <img src={{slide.img}} alt="" class="tb-image">
+      </div>
+    </swiper>
+  </div>
+  <app-slider-item [model]="slides[_mCurrentItem]"></app-slider-item>
+</div>

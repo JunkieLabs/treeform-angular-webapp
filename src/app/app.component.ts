@@ -41,6 +41,21 @@ export class AppComponent {
       ).addSvgIcon(
         'play',
         sanitizer.bypassSecurityTrustResourceUrl('assets/icons/play.svg')
+      )  .addSvgIcon(
+        'arrow',
+        sanitizer.bypassSecurityTrustResourceUrl('assets/icons/arrow.svg')
+      )
+      .addSvgIcon(
+        'humidity',
+        sanitizer.bypassSecurityTrustResourceUrl('assets/icons/humidity.svg')
+      )
+      .addSvgIcon(
+        'sun',
+        sanitizer.bypassSecurityTrustResourceUrl('assets/icons/sun.svg')
+      )
+      .addSvgIcon(
+        'weather',
+        sanitizer.bypassSecurityTrustResourceUrl('assets/icons/weather.svg')
       );
   }
   //   iconRegistry

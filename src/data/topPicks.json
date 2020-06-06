@@ -1,0 +1,167 @@
+[
+  {
+    "title": "ti plants",
+    "size": "small",
+    "humidity": "50",
+    "light": "Diffused",
+    "temperature": "22 -27",
+    "textColor":"#B70964",
+    "color": [
+      "#FFEBF3 0%",
+      "#FBE0E6 54%",
+      "#FBF2F4 66%",
+      "#FCE2E7 100%"
+    ],
+    "img": "assets/img/plants/cordyline_fruticosa_redsister_ti_plants.png"
+  },
+  {
+    "title": "aleo vera",
+    "size": "medium",
+    "humidity": "40",
+    "light": "Diffused",
+    "temperature": "23 -25",
+    "textColor":"#3E09B7",
+    "color": [
+      "#D5FF8B 0%",
+      "#E9FF8D 100%"
+    ],
+    "img": "assets/img/plants/aloe_vera_succulent_plant.png"
+  },
+  {
+    "title": "paradise ",
+    "size": "small",
+    "humidity": "50",
+    "light": "Diffused",
+    "temperature": "22 -27",
+    "textColor":"#1FB709",
+    "color": [
+       "#919292", "#7e8180", "#6c6f6e", "#5b5f5b", "#dae3d7"
+    ],
+    "img": "assets/img/plants/bird_of_paradise.png"
+  },
+  {
+    "title": "bonsai",
+    "size": "small",
+    "humidity": "56",
+    "light": "Diffused",
+    "temperature": "20 -24",
+    "textColor":"#1FB709",
+    "color": [
+      "#051937",
+      "#004d7a",
+      "#008793",
+      "#00bf72",
+      "#a8eb12"
+    ],
+    "img": "assets/img/plants/bonsai_2.png"
+  },
+  {
+    "title": "bonsai",
+    "size": "medium",
+    "humidity": "50",
+    "light": "Diffused",
+    "temperature": "22 -27",
+    "textColor":"#B73609",
+    "color": [
+      "#DBFFD9 0%",
+      "#ECFFE2 100%"
+    ],
+    "img": "assets/img/plants/bonsai.png"
+  },
+  {
+    "title": "cactus",
+    "size": "medium",
+    "humidity": "70",
+    "light": "Direct",
+    "temperature": "25 - 30",
+    "textColor":"#1FB709",
+    "color": [
+      "#CFFFCC 0%",
+      "#F6FF9C 100%"
+    ],
+    "img": "assets/img/plants/cactus.png"
+  },
+  {
+    "title": "cactus",
+    "size": "big",
+    "humidity": "30",
+    "light": "Diffused",
+    "temperature": "25 -27",
+    "textColor":"#1FB709",
+    "color": [
+      "#E8CBC0",
+      "#E8CBC0"
+    ],
+    "img": "assets/img/plants/cute_cactus_flower.png"
+  },
+  {
+    "title": "dragon tree",
+    "size": "medium",
+    "humidity": "50",
+    "light": "Diffused",
+    "temperature": "22 -27",
+    "textColor":"#E7DD09",
+    "color": [
+      "#DCE35B",
+      "#45B649"
+    ],
+    "img": "assets/img/plants/dragon_tree_Dracaena fragrans Light.png"
+  },
+  {
+    "title": "house plant",
+    "size": "big",
+    "humidity": "40",
+    "light": "Direct",
+    "temperature": "20 -22",
+    "textColor":"#1FB709",
+    "color": [
+      "#FF3968 0%",
+      "#D81D5D 47%",
+      "#E2205B 74%",
+      "#F15273 100%"
+    ],
+    "img": "assets/img/plants/house_plant_flower.png"
+  },
+  {
+    "title": "plants",
+    "size": "small",
+    "humidity": "50",
+    "light": "Diffused",
+    "temperature": "22 -27",
+    "textColor":"#1FB709",
+    "color": [
+      "#F3904F",
+      "#3B4371"
+    ],
+    "img": "assets/img/plants/houseplant.png"
+  },
+  {
+    "title": "plants",
+    "size": "medium",
+    "humidity": "50",
+    "light": "Diffused",
+    "temperature": "22 -27",
+    "textColor":"#1FB709",
+    "color": [
+      "#59cf9c",
+      " #69d68d",
+      "#7fdc7a",
+      "#98e065",
+      "#b5e34e"
+    ],
+    "img": "assets/img/plants/ikea.png"
+  },
+  {
+    "title": "peace lilly",
+    "size": "small",
+    "humidity": "60",
+    "light": "Direct",
+    "temperature": "22 - 24",
+    "textColor":"#B70964",
+    "color": [
+      "#DBE6F6",
+      "#C5796D"
+    ],
+    "img": "assets/img/plants/japanese_peace_lily.png"
+  }
+]

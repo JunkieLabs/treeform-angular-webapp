@@ -54,6 +54,13 @@ const routes: Routes = [
           ),
       },
       {
+        path: 'top-pick',
+        loadChildren: () =>
+          import('./ui/components/top-pick/top-pick.module').then(
+            (m) => m.TopPickModule
+          ),
+      },
+      {
         path: '',
         loadChildren: () =>
           import('./ui/components/home/home.module').then((m) => m.HomeModule),

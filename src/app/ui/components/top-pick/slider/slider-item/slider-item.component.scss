@@ -1,0 +1,39 @@
+.title-caps {
+  position: absolute;
+  top: -20px;
+  left: 0px;
+  z-index: 0;
+  font-size: 196px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  width: 100%;
+  overflow: hidden;
+}
+
+.heading {
+  &.xs {
+    .title-caps {
+      position: absolute;
+      top: 60%;
+      z-index: 0;
+      font-size: 85px;
+    }
+  }
+}
+
+.main {
+  .plant-container {
+    height: 564px;
+    width: 100%;
+  }
+  &.gt-md{
+    .plant-container {
+      height: 600px;
+      width: 100%;
+    }
+  }
+}
+
+.capitalize {
+  text-transform: capitalize;
+}

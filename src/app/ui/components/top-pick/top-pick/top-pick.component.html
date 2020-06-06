@@ -1,0 +1,11 @@
+<div id="dashboard-content" fxLayout="column">
+  <div ngClass.lt-md="tb-padding--48" ngClass.gt-sm="tb-padding--36"></div>
+  <div class="tb-padding--h-36">
+    <h2 class="tb-typo--h2 tb-color--grey-900 tb-font-weight--normal">
+      Top Picks
+    </h2>
+  </div>
+  <app-slider *ngIf="_mTopPicks.length > 0"  [slides]="_mTopPicks"></app-slider>
+</div>
+<div class="tb-padding--24"></div>
+<app-footer></app-footer>
