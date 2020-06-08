@@ -32,7 +32,7 @@
     <div class="">
       <div fxLayout="column" fxLayout.lt-md="column" fxLayoutAlign="space-between stretch">
         <div fxFlex>
-          <gallery galleryScrollReferenceLink="dashboard-content" [flexBorderSize]="flexBorderSize" [galleryName]="galleryName" [maxRowsPerPage]="1"  (viewerChange)="onViewerVisibilityChanged($event)">
+          <gallery galleryScrollReferenceLink="dashboard-content" [flexBorderSize]="_mFlexBorderSize" [galleryName]="_mGalleryName" [maxRowsPerPage]="1"  (viewerChange)="onViewerVisibilityChanged($event)">
         </gallery>
       </div>
       </div>

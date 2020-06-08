@@ -8,7 +8,6 @@ import { SwiperConfigInterface } from 'ngx-swiper-wrapper';
 })
 export class SliderComponent implements OnInit {
   @Input() slides: any[];
-  // tslint:disable-next-line: variable-name
   _mCurrentItem = 0;
 
   public type = 'component';
@@ -26,9 +25,11 @@ export class SliderComponent implements OnInit {
     navigation: false,
     pagination: false,
     loop: true,
+    loopedSlides: 20,
     effect: 'slide',
     freeMode: false,
     slideToClickedSlide: true,
+    observer: true,
     centeredSlides: false,
     speed: 1000,
     breakpoints: {

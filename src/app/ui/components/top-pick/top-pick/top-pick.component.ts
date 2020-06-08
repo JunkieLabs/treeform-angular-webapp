@@ -9,7 +9,6 @@ import { TopPickService } from 'src/app/components/api/components/api-topPick.se
 })
 export class TopPickComponent implements OnInit {
 
-  // tslint:disable-next-line: variable-name
   public _mTopPicks: ParamTopPick[] = [];
 
   constructor(private topPickService: TopPickService) {}

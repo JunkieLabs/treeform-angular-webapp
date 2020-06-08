@@ -124,9 +124,7 @@ import {
   ],
 })
 export class SliderItemComponent implements OnInit, AfterViewInit {
-  // tslint:disable-next-line: variable-name
   _mIsTriggred = 'true';
-  // tslint:disable-next-line: variable-name
   _mModel: any;
 
   @Input('model') set slide(data: any) {

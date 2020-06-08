@@ -14,7 +14,7 @@
   &.xs {
     .title-caps {
       position: absolute;
-      top: 60%;
+      top: 12%;
       z-index: 0;
       font-size: 85px;
     }
@@ -29,6 +29,12 @@
   &.gt-md{
     .plant-container {
       height: 600px;
+      width: 100%;
+    }
+  }
+  &.lt-md{
+    .plant-container {
+      height: 264px;
       width: 100%;
     }
   }

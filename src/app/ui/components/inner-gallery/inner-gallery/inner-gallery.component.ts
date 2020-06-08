@@ -8,14 +8,11 @@ import { Location } from '@angular/common';
   styleUrls: ['./inner-gallery.component.scss'],
 })
 export class InnerGalleryComponent implements OnInit {
-  flexBorderSize = 6;
-  flexImageSize = 11;
-  galleryName = 'treeform';
-  // tslint:disable-next-line: variable-name
+  _mFlexBorderSize = 6;
+  _mFlexImageSize = 11;
+  _mGalleryName = 'treeform';
   _mRefSelf: any;
-  // tslint:disable-next-line: variable-name
   _mActiveCategory = 0;
-  // tslint:disable-next-line: variable-name
   _mCategories = ['gardening', 'pots', 'office'];
 
   currentRoute = '';

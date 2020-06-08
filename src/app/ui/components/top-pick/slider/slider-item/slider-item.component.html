@@ -1,4 +1,4 @@
-<div fxLayout="column" class="tb-container main"  ngClass.gt-md="gt-md"  ngClass.lt-lg="lt-lg">
+<div fxLayout="column" class="tb-container main"  ngClass.gt-md="gt-md"  ngClass.lt-md="lt-md">
   <div class="tb-padding--24"></div>
 
 
@@ -16,8 +16,9 @@
       {{_mModel.title}} </p>
   </div>
 
-  <div fxLayout="row" fxLayoutAlign="start center">
-    <div fxFlex.gt-sm>
+  <div fxLayout="row" fxLayoutAlign="start center" fxLayout.lt-md="column">
+
+    <div fxFlex.gt-sm fxFlexOrder.lt-md="2">
       <div class="tb-padding--36"></div>
       <div [@toggle]="_mIsTriggred">
         <div fxLayout="row" fxLayoutAlign="start center">
@@ -73,11 +74,13 @@
         </div>
       </div>
     </div>
-    <div fxFlex.gt-sm="60" class="tb-flex--align-items tb-flex--justify-center">
+
+    <div fxFlex.gt-sm="60" class="tb-flex--align-items tb-flex--justify-center" fxFlexOrder.lt-md="1">
       <div class="plant-container">
         <img src={{_mModel?.img}} class="tb-image" alt="" [@graphAnimation]="_mIsTriggred">
       </div>
     </div>
+
   </div>
 
   <div class="tb-padding--16"></div>
