@@ -1,0 +1,66 @@
+<div [@moveDownEffect]="_mIsTriggred" (@moveDownEffect.done)="onAnimationDone($event)">
+  <p class="tb-font-weight--medium tb-color--grey-900 tb-text--capitalize" ngClass.gt-sm="tb-typo--h1"
+    ngClass.lt-md="tb-typo--h3 tb-font-weight--normal"><span
+      [ngStyle]="{'color': _mModel?.textColor}">{{_mModel?.title.split(' ')[0]}}</span>{{_mModel?.title.split(' ')[1]}}
+  </p>
+  <div ngClass.gt-sm="tb-padding--18" ngClass.lt-md="tb-padding--8"></div>
+
+  <ng-container *ngIf="_mModel">
+    <div fxLayout="row" fxLayoutAlign="start center">
+      <div ngClass.gt-sm="tb-rect--56" ngClass.lt-md="tb-rect--40"
+        class="tb-border tb-circle tb-flex--justify-center tb-flex--align-vertical">
+        <mat-icon svgIcon="arrow" ngClass.lt-md="tb-icon--20"></mat-icon>
+      </div>
+      <div class="tb-padding--h-24"></div>
+      <div>
+        <p class="tb-typo--h5 tb-color--grey-700">Size</p>
+        <p class="tb-typo--h5 tb-color--grey-900 tb-font-weight--medium">{{_mModel?.size}}</p>
+      </div>
+    </div>
+    <div class="tb-padding--12"></div>
+    <div fxLayout="row" fxLayoutAlign="start center">
+      <div ngClass.gt-sm="tb-rect--56" ngClass.lt-md="tb-rect--40"
+        class="tb-border tb-circle tb-flex--justify-center tb-flex--align-vertical">
+        <mat-icon svgIcon="humidity"></mat-icon>
+      </div>
+      <div class="tb-padding--h-24"></div>
+      <div>
+        <p class="tb-typo--h5 tb-color--grey-700">Humidity</p>
+        <p class="tb-typo--h5 tb-color--grey-900 tb-font-weight--medium">{{_mModel?.humidity}}%</p>
+      </div>
+    </div>
+    <div class="tb-padding--12"></div>
+    <div fxLayout="row" fxLayoutAlign="start center">
+      <div ngClass.gt-sm="tb-rect--56" ngClass.lt-md="tb-rect--40"
+        class="tb-border tb-circle tb-flex--justify-center tb-flex--align-vertical">
+        <mat-icon svgIcon="sun"></mat-icon>
+      </div>
+      <div class="tb-padding--h-24"></div>
+      <div>
+        <p class="tb-typo--h5 tb-color--grey-700">Light</p>
+        <p class="tb-typo--h5 tb-color--grey-900 tb-font-weight--medium">{{_mModel?.light}} </p>
+      </div>
+    </div>
+    <div class="tb-padding--12"></div>
+    <div fxLayout="row" fxLayoutAlign="start center">
+      <div ngClass.gt-sm="tb-rect--56" ngClass.lt-md="tb-rect--40"
+        class="tb-border tb-circle tb-flex--justify-center tb-flex--align-vertical">
+        <mat-icon svgIcon="weather"></mat-icon>
+      </div>
+      <div class="tb-padding--h-24"></div>
+      <div>
+        <p class="tb-typo--h5 tb-color--grey-700">Temperature</p>
+        <p class="tb-typo--h5 tb-color--grey-900 tb-font-weight--medium">{{_mModel?.temperature}} </p>
+      </div>
+    </div>
+    <div class="tb-padding--16"></div>
+    <div>
+      <p class="tb-typo--body1 tb-color--grey-700">To bring the natural system into
+        balance, a new economy that is
+        sustainable and respects the limits of natural resources, a new economy that is sustainable and respects the
+        limits of natural resources, a new economy that is sustainable and respects the limits of natural resourcesl
+        a new economy that is sustainable and respects the limits of natural resources</p>
+    </div>
+  </ng-container>
+  <div ngClass.lt-md="tb-padding--36"></div>
+</div>

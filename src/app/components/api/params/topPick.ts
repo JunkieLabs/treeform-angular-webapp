@@ -4,6 +4,8 @@ export class ParamTopPick {
   humidity: string;
   light: string;
   temperature: string;
+  textColor: string;
   color: string[];
+  thumbnail: string;
   img: string;
 }

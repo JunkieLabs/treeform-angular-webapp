@@ -12,6 +12,7 @@
       "#FBF2F4 66%",
       "#FCE2E7 100%"
     ],
+    "thumbnail":"assets/img/plants-small/cordyline_fruticosa_redsister_ti_plants.png",
     "img": "assets/img/plants/cordyline_fruticosa_redsister_ti_plants.png"
   },
   {
@@ -25,6 +26,7 @@
       "#D5FF8B 0%",
       "#E9FF8D 100%"
     ],
+    "thumbnail":"assets/img/plants-small/aloe_vera_succulent_plant.png",
     "img": "assets/img/plants/aloe_vera_succulent_plant.png"
   },
   {
@@ -37,6 +39,7 @@
     "color": [
        "#919292", "#7e8180", "#6c6f6e", "#5b5f5b", "#dae3d7"
     ],
+    "thumbnail":"assets/img/plants-small/bird_of_paradise.png",
     "img": "assets/img/plants/bird_of_paradise.png"
   },
   {
@@ -53,6 +56,7 @@
       "#00bf72",
       "#a8eb12"
     ],
+    "thumbnail":"assets/img/plants-small/bonsai_2.png",
     "img": "assets/img/plants/bonsai_2.png"
   },
   {
@@ -66,6 +70,7 @@
       "#DBFFD9 0%",
       "#ECFFE2 100%"
     ],
+    "thumbnail":"assets/img/plants-small/bonsai.png",
     "img": "assets/img/plants/bonsai.png"
   },
   {
@@ -79,6 +84,7 @@
       "#CFFFCC 0%",
       "#F6FF9C 100%"
     ],
+    "thumbnail":"assets/img/plants-small/cactus.png",
     "img": "assets/img/plants/cactus.png"
   },
   {
@@ -92,6 +98,7 @@
       "#E8CBC0",
       "#E8CBC0"
     ],
+    "thumbnail":"assets/img/plants-small/cute_cactus_flower.png",
     "img": "assets/img/plants/cute_cactus_flower.png"
   },
   {
@@ -105,6 +112,7 @@
       "#DCE35B",
       "#45B649"
     ],
+    "thumbnail":"assets/img/plants-small/dragon_tree_Dracaena fragrans Light.png",
     "img": "assets/img/plants/dragon_tree_Dracaena fragrans Light.png"
   },
   {
@@ -120,6 +128,7 @@
       "#E2205B 74%",
       "#F15273 100%"
     ],
+    "thumbnail":"assets/img/plants-small/house_plant_flower.png",
     "img": "assets/img/plants/house_plant_flower.png"
   },
   {
@@ -133,6 +142,7 @@
       "#F3904F",
       "#3B4371"
     ],
+    "thumbnail":"assets/img/plants-small/houseplant.png",
     "img": "assets/img/plants/houseplant.png"
   },
   {
@@ -149,6 +159,7 @@
       "#98e065",
       "#b5e34e"
     ],
+    "thumbnail":"assets/img/plants-small/ikea.png",
     "img": "assets/img/plants/ikea.png"
   },
   {
@@ -162,6 +173,7 @@
       "#DBE6F6",
       "#C5796D"
     ],
+    "thumbnail":"assets/img/plants-small/japanese_peace_lily.png",
     "img": "assets/img/plants/japanese_peace_lily.png"
   }
 ]

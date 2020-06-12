@@ -8,8 +8,15 @@
 
 
 .swiper-container {
-  margin-left: 73px !important;
+  margin-left: 68px !important;
   overflow: visible !important;
+  @media screen and (max-width: 959px) {
+    .swiper-wrapper{
+      margin-top: 48px !important;
+    }
+    margin-left: 0px !important;
+    overflow: hidden !important;
+  }
 }
 
 .swiper-button-prev,

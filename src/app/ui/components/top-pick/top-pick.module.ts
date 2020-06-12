@@ -10,7 +10,8 @@ import { SwiperModule } from 'ngx-swiper-wrapper';
 import { SWIPER_CONFIG } from 'ngx-swiper-wrapper';
 import { SwiperConfigInterface } from 'ngx-swiper-wrapper';
 import { SliderComponent } from './slider/slider.component';
-import { SliderItemComponent } from './slider/slider-item/slider-item.component';
+import { DetailContentComponent } from './detail-content/detail-content.component';
+import { ImageViewerComponent } from './image-viewer/image-viewer.component';
 
 const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
   direction: 'horizontal',
@@ -25,7 +26,7 @@ export const routes: ModuleWithProviders = RouterModule.forChild([
 ]);
 
 @NgModule({
-  declarations: [TopPickComponent, SliderComponent, SliderItemComponent],
+  declarations: [TopPickComponent, SliderComponent, DetailContentComponent, ImageViewerComponent],
   imports: [
     CommonModule,
     FlexLayoutModule,

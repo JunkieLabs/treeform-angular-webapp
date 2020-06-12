@@ -1,12 +1,14 @@
-<div fxLayout="column" fxLayoutAlign="stretch" class="main" ngClass.xs="xs">
+<div fxLayout="column" fxLayoutAlign="stretch" class="main" ngClass.lt-md="lt-md tb-height--full" ngClass.gt-sm="gt-sm">
   <div class="content-container" fxLayout="column" fxLayoutAlign="stretch" fxFlex="auto">
     <swiper class="swiper-container" fxFlex="auto" [config]="config" (indexChange)="onIndexChange($event)"
       (swiperTransitionStart)="onSwiperEvent('transitionStart')" (swiperTransitionEnd)="onSwiperEvent('transitionEnd')">
-      <div *ngFor="let slide of slides" class="swiper-slide tb-border--r10 tb-padding--16-12"
-        fxLayout="column" fxLayoutAlign="center center" ngClass.gt-sm="tb-cursor--pointer" [ngStyle]="setGradient(slide.color)">
-        <img src={{slide.img}} alt="" class="tb-image">
+      <ng-container *ngFor="let slide of _mSlides">
+        <div class="swiper-slide tb-border--r10" fxLayout="column" fxLayoutAlign="center center" ngClass.gt-sm="tb-padding--8">
+        <div [ngStyle.gt-sm]="setGradient(slide.color)" fxFlex.gt-sm class="tb-border--r10"  ngClass.lt-md="tb-padding--4 tb-height--56"  ngClass.gt-sm="tb-cursor--pointer tb-padding--16 tb-width--full tb-height--full">
+          <img src={{slide?.thumbnail}} alt="" class="tb-image">
+        </div>
       </div>
+    </ng-container>
     </swiper>
   </div>
-  <app-slider-item [model]="slides[_mCurrentItem]"></app-slider-item>
 </div>
