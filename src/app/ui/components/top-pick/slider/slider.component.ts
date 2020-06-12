@@ -50,9 +50,9 @@ export class SliderComponent implements OnInit, AfterViewInit {
     // centeredSlides: false,
     speed: 1000,
     breakpoints: {
-      318: { slidesPerView: 8,direction: 'vertical' },
-      959: { slidesPerView: 5 },
-      1024: { slidesPerView: 7 },
+      318: { slidesPerView: 8, direction: 'vertical' },
+      959: { slidesPerView: 5, direction: 'horizontal' },
+      1024: { slidesPerView: 7, direction: 'horizontal' },
     },
   };
 
