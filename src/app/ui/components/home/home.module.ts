@@ -12,6 +12,7 @@ import { AdvantagesComponent } from './advantages/advantages.component';
 import { OurServicesComponent } from './our-services/our-services.component';
 import { VideoComponent } from './video/video.component';
 import { HomeTopComponent } from './home-top/home-top.component';
+import { MatVideoModule } from 'mat-video';
 
 export const routes: ModuleWithProviders = RouterModule.forChild([
   {
@@ -28,6 +29,7 @@ export const routes: ModuleWithProviders = RouterModule.forChild([
     MatIconModule,
     MatButtonModule,
     FooterModule,
+    MatVideoModule,
     routes
   ]
 })

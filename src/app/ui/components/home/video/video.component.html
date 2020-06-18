@@ -6,9 +6,12 @@
   <div class="tb-padding--18"></div>
   <div class="tb-position--relative video">
     <div class=" tb-padding--24 tb-theme-bg--primary-alpha tb-border--r24 tb-height--full">
-      <img src="assets/img/video.png" class="tb-image tb-image--cover tb-border--r24 " alt="">
+      <mat-video #video  [ngClass]="ngclass" class="mat-video" title="Treeform" [autoplay]="false" [preload]="true" [fullscreen]="true"
+            [download]="false" [overlay]="false" color="primary" spinner="spin" [src]="_mVideoSrc" [poster]="_mPosterSrc">
+        </mat-video>
+
     </div>
-    <div class="circle tb-position--absolute  tb-circle tb-rect--142 tb-rect--flex">
+    <div *ngIf="!mIsRunning" class="circle tb-position--absolute tb-cursor--pointer  tb-circle tb-rect--142 tb-rect--flex" (click)="_onPlayClick()">
       <div class="tb-rect--64 tb-circle tb-theme-bg--primary tb-rect--flex">
         <div class="tb-rect--24">
           <img src="assets/img/play.png" class="tb-image" alt="">
@@ -16,5 +19,6 @@
       </div>
     </div>
   </div>
+
   <div class="tb-padding--24"></div>
 </div>
