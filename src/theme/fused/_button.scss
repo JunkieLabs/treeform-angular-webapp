@@ -20,6 +20,21 @@
     @include mat-button-theme($fused-warn-theme);
 
 }
+
+
+.fused-orange {
+  $fused-orange-theme: fused-mat-theme($treeform-angular-webapp-orange, $treeform-angular-webapp-orange, $treeform-angular-webapp-orange, fused-mat-theme-foreground($tb-theme-orange));
+  @include mat-button-theme($fused-orange-theme);
+
+}
+
+
+.fused-blue {
+  $fused-blue-theme: fused-mat-theme($treeform-angular-webapp-blue, $treeform-angular-webapp-blue, $treeform-angular-webapp-blue, fused-mat-theme-foreground($tb-theme-blue));
+  @include mat-button-theme($fused-blue-theme);
+
+}
+
 .fused{
     .fused-raised-button{
         border-radius: 12px;

@@ -8,3 +8,47 @@
 .video {
   height: 472px;
 }
+
+
+.circle::after {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: '';
+  display: block;
+  background:  rgba(240, 240, 240, 0.1);
+  border-radius: 100%;
+  animation: breathing 2s ease infinite alternate running;
+  // -webkit-animation: breathing 4s ease infinite runnning;
+  // animation: breathing 4s ease infinite runnning;
+}
+
+
+@-webkit-keyframes breathing {
+0% {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+100% {
+  -webkit-transform: scale(0.5);
+  transform: scale(0.5);
+}
+}
+
+@keyframes breathing {
+0% {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+100% {
+  -webkit-transform: scale(0.5);
+  -ms-transform: scale(0.5);
+  transform: scale(0.5);
+}
+}
