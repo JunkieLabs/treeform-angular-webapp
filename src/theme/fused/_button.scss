@@ -39,6 +39,9 @@
     .fused-raised-button{
         border-radius: 12px;
         padding: 4px 20px;
+        .tb-typo--button{
+            vertical-align: -webkit-baseline-middle;
+        }
     }
 }
 
