@@ -12,15 +12,17 @@
 <div align="center">
 <a  href="https://blissful-lalande-6f6f74.netlify.app/">https://blissful-lalande-6f6f74.netlify.app/</a> 
 </div>
+<br>
+<br>
 
-
----
 
 <div align="center">
 <img  src="https://firebasestorage.googleapis.com/v0/b/thedroid-835ee.appspot.com/o/developments%2Ftreeform_banner.png?alt=media&token=a4951a8d-3653-4f59-88d0-2c230cbf1578" alt="Treeform demo"
-     height="1080"/>
+     width="100%"/>
 
 </div>
+<br>
+
 ---
 
 
