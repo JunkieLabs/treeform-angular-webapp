@@ -6,7 +6,7 @@
     </h2>
   </div>
   <div fxLayout.gt-sm="column" fxLayout.lt-md="row" class="tb-height--full">
-    <div fxFlex.lt-md="18" class="shadow-right-light" ngclass.lt-md="">
+    <div fxFlex.lt-md="18" ngClass.lt-md="shadow-right-light" ngclass.lt-md="">
       <app-slider *ngIf="_mTopPicks.length > 0" [model]="_mTopPicks" (slideChange)="OnSlideChange($event)"
         (direction)="_mDirection = $event"></app-slider>
     </div>

@@ -33,7 +33,7 @@ export class SliderComponent implements OnInit, AfterViewInit {
 
   public config: SwiperConfigInterface = {
     a11y: true,
-    direction: 'horizontal',
+    // direction: 'horizontal',
     slidesPerView: 7,
     spaceBetween: 10,
     keyboard: true,
@@ -43,11 +43,8 @@ export class SliderComponent implements OnInit, AfterViewInit {
     pagination: false,
     loop: true,
     loopedSlides: 26,
-    // freeMode: false,
     slideToClickedSlide: true,
-    // autoplay: true,
     observer: true,
-    // centeredSlides: false,
     speed: 1000,
     breakpoints: {
       318: { slidesPerView: 8, direction: 'vertical' },
