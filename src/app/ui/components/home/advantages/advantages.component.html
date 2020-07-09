@@ -1,6 +1,6 @@
 <div class="tb-container" fxLayout="column">
-  <h2 class="tb-typo--h2 tb-color--grey-900 tb-text-align--center">Advantages</h2>
-  <div class="tb-padding--18"></div>
+  <h2 class="tb-typo--h2 tb-color--grey-900 tb-font-weight--medium  tb-text-align--center">Advantages</h2>
+  <div class="tb-padding--48"></div>
   <div fxLayout="row" fxLayoutAlign="start center" fxLayout.lt-sm="column">
     <ng-container *ngFor="let item of _mAdvantages; let index= index;let count= count">
       <div fxFlex.gt-sm="33.33">
@@ -10,7 +10,7 @@
             <img src={{item.icon}} class="tb-image" alt="">
           </div>
           <div class="tb-padding--8"></div>
-          <h4 class="tb-typo--h4 tb-color--grey-900 tb-text-align--center">{{item.title}}</h4>
+          <h4 class="tb-typo--h4 tb-font-weight--medium tb-color--grey-900 tb-text-align--center">{{item.title}}</h4>
           <div class="tb-padding--6"></div>
           <p class="tb-typo--body1 tb-color-grey-900">{{item.body}} </p>
         </div>
@@ -19,4 +19,5 @@
     </ng-container>
     <div ngClass.lt-md="tb-padding--12"></div>
   </div>
+  <div class="tb-padding--24"></div>
 </div>

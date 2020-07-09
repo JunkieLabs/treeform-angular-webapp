@@ -35,6 +35,12 @@
 
 }
 
+.fused-black {
+  $fused-black-theme: fused-mat-theme($treeform-angular-webapp-black, $treeform-angular-webapp-black, $treeform-angular-webapp-black, fused-mat-theme-foreground($tb-theme-black));
+  @include mat-button-theme($fused-black-theme);
+
+}
+
 .fused{
     .fused-raised-button{
         border-radius: 12px;

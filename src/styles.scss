@@ -29,10 +29,12 @@ $treeform-angular-webapp-accent: mat-palette($treeform-accent, A200, A100, A400)
 $treeform-angular-webapp-warn: mat-palette($mat-red);
 
 //custom color
-$tb-theme-orange: map-get($map: $treeform-orange, $key: 500);//#2680EB;
-$tb-theme-blue: map-get($map: $treeform-denim-blue, $key: 500);//#2680EB;
+$tb-theme-orange: map-get($map: $treeform-orange, $key: 500);
+$tb-theme-blue: map-get($map: $treeform-denim-blue, $key: 500);
+$tb-theme-black: map-get($map: $treeform-black, $key: 300);
 $treeform-angular-webapp-orange: mat-palette($treeform-orange);
 $treeform-angular-webapp-blue: mat-palette($treeform-denim-blue);
+$treeform-angular-webapp-black: mat-palette($treeform-black);
 
 // Create the theme object (a Sass map containing all of the palettes).
 $treeform-angular-webapp-theme: mat-light-theme($treeform-angular-webapp-primary, $treeform-angular-webapp-accent, $treeform-angular-webapp-warn);

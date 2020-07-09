@@ -1,7 +1,7 @@
 $treeform-primary: (
   50 : #EFFEEF,
     100 : #beffcb,
-    200 : #7cff96,
+    200 : #52DF70,
     300 : #38f85f,
     400 : #0fe039,
     500 : #00C527,
@@ -146,6 +146,39 @@ $treeform-denim-blue: (
   A200 : #92b7ff,
   A400 : #5f96ff,
   A700 : #4685ff,
+  contrast: (
+    50: $dark-primary-text,
+    100: $dark-primary-text,
+    200: $dark-primary-text,
+    300: $light-primary-text,
+    400: $light-primary-text,
+    500: $light-primary-text,
+    600: $light-primary-text,
+    700: $light-primary-text,
+    800: $light-primary-text,
+    900: $light-primary-text,
+    A100: $dark-primary-text,
+    A200: $light-primary-text,
+    A400: $light-primary-text,
+    A700: $light-primary-text
+  )
+);
+
+$treeform-black: (
+    50 : #e0e0e0,
+    100 : #b3b3b3,
+    200 : #808080,
+    300 : #4d4d4d,
+    400 : #262626,
+    500 : #000000,
+    600 : #000000,
+    700 : #000000,
+    800 : #000000,
+    900 : #000000,
+    A100 : #a6a6a6,
+    A200 : #8c8c8c,
+    A400 : #737373,
+    A700 : #666666,
   contrast: (
     50: $dark-primary-text,
     100: $dark-primary-text,
