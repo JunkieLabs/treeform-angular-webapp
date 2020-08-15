@@ -1,17 +1,18 @@
 <div id="dashboard-content" fxLayout="column" class="main" ngClass.lt-md="lt-md">
   <div ngClass.lt-md="tb-padding--28" ngClass.gt-sm="tb-padding--32"></div>
-  <div class="tb-padding--h-36" ngClass.lt-md="tb-display--none">
+  <!-- <div class="tb-padding--h-36" ngClass.lt-md="tb-display--none">
     <h2 class="tb-typo--h2 tb-color--grey-900 tb-font-weight--normal">
       Top Picks
     </h2>
-  </div>
+  </div> -->
+  <div class="tb-padding--12"></div>
   <div fxLayout.gt-sm="column" fxLayout.lt-md="row" class="tb-height--full">
-    <div fxFlex.lt-md="18" ngClass.lt-md="shadow-right-light" ngclass.lt-md="">
+    <div fxFlex.lt-md="none" ngClass.lt-md="shadow-right-light" ngclass.lt-md="">
       <app-slider *ngIf="_mTopPicks.length > 0" [model]="_mTopPicks" (slideChange)="OnSlideChange($event)"
         (direction)="_mDirection = $event"></app-slider>
     </div>
     <div ngClass.gt-sm="tb-padding--36"></div>
-    <div fxFlex.lt-md ngClass.lt-md="tb-height--full tb-overflow--auto">
+    <div fxFlex.lt-md ngClass.lt-md="tb-height--full tb-overflow--auto tb-container">
       <div fxLayout="column" class="tb-container tb-position--relative" ngClass.gt-sm="tb-overflow--hidden">
         <div class="tb-padding--h-8" ngClass.gt-sm="tb-display--none">
           <h3 class="tb-typo--h3 tb-color--grey-900 tb-font-weight--normal">

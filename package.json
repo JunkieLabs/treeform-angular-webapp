@@ -8,7 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "convert": "node node_modules/angular2-image-gallery/convert.js --gName=treeform ./src/assets/img/raw"
+    "convert:treeform": "node ./image-convert.js --gName=treeform ./src/assets/img/raw"
   },
   "private": true,
   "dependencies": {

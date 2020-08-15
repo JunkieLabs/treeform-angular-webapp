@@ -21,6 +21,10 @@ export class SliderComponent implements OnInit, AfterViewInit {
   @Input('model') set slides(data: ParamTopPick[]) {
     if (data) {
       this._mSlides = data;
+      console.log("loopedSlides: ", this._mSlides.length);
+      
+      this.config.loopedSlides = this._mSlides.length
+
     }
   }
 
@@ -34,7 +38,7 @@ export class SliderComponent implements OnInit, AfterViewInit {
   public config: SwiperConfigInterface = {
     a11y: true,
     // direction: 'horizontal',
-    slidesPerView: 7,
+    slidesPerView: 8,
     spaceBetween: 10,
     keyboard: true,
     mousewheel: false,
@@ -46,10 +50,11 @@ export class SliderComponent implements OnInit, AfterViewInit {
     slideToClickedSlide: true,
     observer: true,
     speed: 1000,
+    direction:'vertical',
     breakpoints: {
-      318: { slidesPerView: 8, direction: 'vertical' },
-      959: { slidesPerView: 5, direction: 'horizontal' },
-      1024: { slidesPerView: 7, direction: 'horizontal' },
+      // 600: { slidesPerView: 5, direction: 'horizontal' },
+      959: { slidesPerView: 8, direction: 'horizontal' },
+      1279: { slidesPerView: 10, direction: 'horizontal' },
     },
   };
 

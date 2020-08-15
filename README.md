@@ -64,6 +64,13 @@ npm start
 
 ```
 
+
+### **Graphics Magick setup**
+ This part of setup is needed, if you want to convert images for gallery 
+ - Install image magick from [here](https://imagemagick.org/) for your system's OS.
+ - For more details [read here](#image-gallery)
+
+
 ### **For PWA**
 - Clone the project you haven't done that.
 - then checkout into branch: `treeform-pwa`
@@ -125,6 +132,10 @@ npm start
   
 - **SEO: Programmable Tags**
   - For more details, [read here](#seo:-programmable tags) 
+
+
+
+## Image Gallery
 
 
 

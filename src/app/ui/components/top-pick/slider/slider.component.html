@@ -1,14 +1,35 @@
-<div fxLayout="column" fxLayoutAlign="stretch" class="main" ngClass.lt-md="lt-md tb-height--full" ngClass.gt-sm="gt-sm">
-  <div class="content-container" fxLayout="column" fxLayoutAlign="stretch" fxFlex="auto">
-    <swiper class="swiper-container" fxFlex="auto" [config]="config" (indexChange)="onIndexChange($event)"
-      (swiperTransitionStart)="onSwiperEvent('transitionStart')" (swiperTransitionEnd)="onSwiperEvent('transitionEnd')">
-      <ng-container *ngFor="let slide of _mSlides">
-        <div class="swiper-slide tb-border--r10" fxLayout="column" fxLayoutAlign="center center" ngClass.gt-sm="tb-padding--8">
-        <div [ngStyle.gt-sm]="setGradient(slide.color)" fxFlex.gt-sm class="tb-border--r10"  ngClass.lt-md="tb-padding--4 tb-height--56"  ngClass.gt-sm="tb-cursor--pointer tb-padding--16 tb-width--full tb-height--full">
+<div fxLayout="column" fxLayout.lt-md="row" fxLayoutAlign="stretch" class="main" ngClass.lt-md="lt-md"
+  ngClass.gt-sm="gt-sm">
+  <swiper class="swiper-container" [config]="config" (indexChange)="onIndexChange($event)"
+    (swiperTransitionStart)="onSwiperEvent('transitionStart')" (swiperTransitionEnd)="onSwiperEvent('transitionEnd')">
+    <ng-container *ngFor="let slide of _mSlides">
+      <div class="swiper-slide tb-cursor--pointer tb-border--r10" fxLayout="column" fxLayoutAlign="center center"
+        ngClass.gt-sm="tb-padding--8">
+        <div class="swiper-slide-card" [ngStyle.gt-sm]="setGradient(slide.color)" fxFlex.gt-sm class="tb-border--r10"
+          ngClass.lt-md="tb-padding--4 tb-height--56"
+          ngClass.gt-sm="tb-cursor--pointer tb-padding--16 tb-width--full tb-height--full">
           <img src={{slide?.thumbnail}} alt="" class="tb-image">
         </div>
       </div>
     </ng-container>
+  </swiper>
+</div>
+
+<!-- 
+<div fxLayout="column" fxLayoutAlign="stretch" class="main" ngClass.lt-md="lt-md" ngClass.gt-sm="gt-sm">
+  <div class="content-container"  fxLayout="column" fxLayoutAlign="stretch" fxLayout.fxLayout.lt-md="row" >
+    <swiper class="swiper-container" [config]="config" (indexChange)="onIndexChange($event)"
+      (swiperTransitionStart)="onSwiperEvent('transitionStart')" (swiperTransitionEnd)="onSwiperEvent('transitionEnd')">
+      <ng-container *ngFor="let slide of _mSlides">
+        <div class="swiper-slide tb-border--r10" fxLayout="column" fxLayoutAlign="center center"
+          ngClass.gt-sm="tb-padding--8">
+          <div [ngStyle.gt-sm]="setGradient(slide.color)" fxFlex.gt-sm class="tb-border--r10"
+            ngClass.lt-md="tb-padding--4 tb-height--56"
+            ngClass.gt-sm="tb-cursor--pointer tb-padding--16 tb-width--full tb-height--full">
+            <img src={{slide?.thumbnail}} alt="" class="tb-image">
+          </div>
+        </div>
+      </ng-container>
     </swiper>
   </div>
-</div>
+</div> -->
