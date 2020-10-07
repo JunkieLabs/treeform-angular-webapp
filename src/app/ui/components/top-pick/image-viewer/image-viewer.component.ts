@@ -98,20 +98,20 @@ export class ImageViewerComponent implements OnInit {
   ngOnInit(): void {}
 
   StartAnimation(nextImage: string) {
-    if(this._mDirection == 'right'){
-      this._mTriggerRight = this._mTriggerRight === 'true' ? 'false' : 'true';
-    }else{
-      this._mTriggerLeft = this._mTriggerLeft === 'true' ? 'false' : 'true';
-    }
-    this._mNextImage = nextImage;
+      if (this._mDirection == 'right') {
+        this._mTriggerRight = this._mTriggerRight === 'true' ? 'false' : 'true';
+      } else {
+        this._mTriggerLeft = this._mTriggerLeft === 'true' ? 'false' : 'true';
+      }
+      this._mNextImage = nextImage;
   }
 
   onAnimationDone(e) {
-    if(this._mDirection == 'right'){
-      this._mTriggerRight = 'false';
-    }else{
-      this._mTriggerLeft = 'false';
-    }
-    this._mCurrentImage = this._mNextImage;
+      if (this._mDirection == 'right') {
+        this._mTriggerRight = 'false';
+      } else {
+        this._mTriggerLeft = 'false';
+      }
+      this._mCurrentImage = this._mNextImage;
   }
 }

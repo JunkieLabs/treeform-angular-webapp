@@ -10,7 +10,8 @@ import { Location } from '@angular/common';
 export class InnerGalleryComponent implements OnInit {
   _mFlexBorderSize = 6;
   _mFlexImageSize = 11;
-  _mGalleryName = 'treeform';
+  _mGalleryName = 'garden';
+  // _mGalleryName = '';
   _mRefSelf: any;
   _mActiveCategory = 0;
   _mCategories = ['gardening', 'pots', 'office'];
@@ -28,6 +29,7 @@ export class InnerGalleryComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    // this._mGalleryName = 'treeform/' + this.currentRoute;
     this.getActiveRoute();
   }
 

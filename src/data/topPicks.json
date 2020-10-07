@@ -77,7 +77,7 @@
     "detail":"Mint is a perennial with very fragrant, toothed leaves and tiny purple, pink, or white flowers. It has a fruity, aromatic taste.  They’re as beautiful as they are functional, and they’re foolproof to grow, thriving in sun and shade all over North America."
   },
   {
-    "title": "Cactus",
+    "title": "Hedgehog Aloe",
     "size": "medium",
     "humidity": "70",
     "light": "Direct",
@@ -89,10 +89,10 @@
     ],
     "thumbnail":"assets/img/plants-small/cactus.png",
     "img": "assets/img/plants/cactus.png",
-    "detail":"A cactus is a great addition to the home thanks to its striking shape, size and flowers. Seeing as no cactus plant is the same, it's a unique, decorative way to add interest to your living space, whether it's on your windowsill or grouped together on a shelf."
+    "detail":"A Hedgehog aloe a great indoor plant that can also help to purify the air. Because they are succulents, they require very little water and maintenance. Hedgehog aloe is happiest on a sunny window ledge."
   },
   {
-    "title": "Cute Cactus",
+    "title": "Coral Cactus",
     "size": "medium",
     "humidity": "30",
     "light": "Diffused",
@@ -105,7 +105,7 @@
     ],
     "thumbnail":"assets/img/plants-small/cute_cactus_flower.png",
     "img": "assets/img/plants/cute_cactus_flower.png",
-    "detail":"A cactus is a great addition to the home thanks to its striking shape, size and flowers. Seeing as no cactus plant is the same, it's a unique, decorative way to add interest to your living space, whether it's on your windowsill or grouped together on a shelf."
+    "detail":"A Coral Cactus is a great addition to the home thanks to its striking shape, size and flowers. Seeing as no cactus plant is the same, it's a unique, decorative way to add interest to your living space, whether it's on your windowsill or grouped together on a shelf."
   
   },
   {
@@ -156,7 +156,7 @@
     "detail":"Basil is a warm-weather, fragrant herb that tastes great in many dishes—including the beloved homemade pesto! Plant seeds or transplants after all danger of frost has passed and soil is warm, and it will yield an abundant harvest within weeks."
   },
   {
-    "title": "House plant",
+    "title": "Ponytail Palm",
     "size": "small",
     "humidity": "50",
     "light": "Diffused",

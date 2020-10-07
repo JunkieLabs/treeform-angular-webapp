@@ -17,10 +17,10 @@ import {
   animations: [
     trigger('fadeEffect', [
       transition('true => false', [
-        animate('500ms 100ms ease-in', keyframes([style({ opacity: 0 })])),
+        animate('600ms ease-in', keyframes([style({ opacity: 0, transform: 'none' })])),
       ]),
       transition('false => true', [
-        animate('500ms ease-in', keyframes([style({ opacity: 0 })])),
+        animate('600ms ease-out', keyframes([style({ opacity: 0, transform: 'none' })])),
       ]),
     ]),
   ],

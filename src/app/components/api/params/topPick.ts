@@ -7,5 +7,6 @@ export class ParamTopPick {
   textColor: string;
   color: string[];
   thumbnail: string;
+  detail: string;
   img: string;
 }
