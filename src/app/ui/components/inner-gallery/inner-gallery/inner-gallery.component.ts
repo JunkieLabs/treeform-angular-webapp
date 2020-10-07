@@ -33,11 +33,11 @@ export class InnerGalleryComponent implements OnInit {
     this.getActiveRoute();
   }
 
-  _mToggleCategory(e) {
+  _toggleCategory(e) {
     this._mActiveCategory = e;
   }
 
-  onViewerVisibilityChanged(isVisible: boolean): void {
+  _onViewerVisibilityChanged(isVisible: boolean): void {
     // console.log(`viewer visible: ${isVisible}`)
   }
 

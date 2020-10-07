@@ -1,7 +1,7 @@
 <div class="main tb-width--full" ngClass.lt-md="lt-md" ngClass.gt-md="gt-md" fxLayout="column">
   <div class="plant-container tb-position--relative"  fxFlex.gt-sm>
-      <div class="tb-position--absolute erase" [@slideInOutRight]="_mTriggerRight" (@slideInOutRight.done)="onAnimationDone($event)" 
-       [@slideInOutLeft]="_mTriggerLeft" (@slideInOutLeft.done)="onAnimationDone($event)"></div>
+      <div class="tb-position--absolute erase" [@slideInOutRight]="_mTriggerRight" (@slideInOutRight.done)="_onAnimationDone($event)" 
+       [@slideInOutLeft]="_mTriggerLeft" (@slideInOutLeft.done)="_onAnimationDone($event)"></div>
          <img loading="lazy"  src="{{_mCurrentImage}}" class="tb-image" alt="">
   </div>
 </div>

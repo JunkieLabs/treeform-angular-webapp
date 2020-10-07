@@ -63,17 +63,17 @@ export class SliderComponent implements OnInit, AfterViewInit {
   ngOnInit(): void {}
 
   ngAfterViewInit(): void {
-    this.onIndexChange(this.activeIndex);
+    this._onIndexChange(this.activeIndex);
   }
 
-  public onIndexChange(index: number): void {
+  public _onIndexChange(index: number): void {
     console.log('Swiper index: ', index);
     this.slideChange.emit(this._mSlides[index]);
     this.direction.emit(this.findDirection(index));
     this.previousIndex = index;
   }
 
-  public onSwiperEvent(event: string): void {
+  public _onSwiperEvent(event: string): void {
     // console.log('Swiper event: ', event);
   }
 

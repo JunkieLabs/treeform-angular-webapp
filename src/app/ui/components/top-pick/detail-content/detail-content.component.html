@@ -1,4 +1,4 @@
-<div [@moveDownEffect]="_mIsTriggred" (@moveDownEffect.done)="onAnimationDone($event)">
+<div [@moveDownEffect]="_mIsTriggred" (@moveDownEffect.done)="_onAnimationDone($event)">
   <p class="tb-font-weight--medium tb-color--grey-900 tb-text--capitalize" ngClass.gt-sm="tb-typo--h2"
     ngClass.lt-md="tb-typo--h2 tb-font-weight--normal"><span
       [ngStyle]="{'color': _mModel?.textColor}">{{_mModel?.title.split(' ')[0]}}</span><span *ngIf="_mModel?.title.split(' ').length>1">&nbsp;&nbsp;</span>{{_mModel?.title.split(' ')[1]}}
