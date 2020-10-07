@@ -22,14 +22,13 @@
 }
 
 .main {
-  &.lt-md{
+  &.lt-md {
     position: relative;
     overflow: hidden;
     // height: calc(100vh - 56px);
     height: 100%;
   }
-  .shadow-right-light{
+  .shadow-right-light {
     box-shadow: 5px 0 5px -2px rgba(216, 215, 215);
   }
 }
-
