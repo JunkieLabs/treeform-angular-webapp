@@ -1,0 +1,34 @@
+.title-caps {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 0;
+  font-size: 15rem;
+  text-transform: uppercase;
+  white-space: nowrap;
+  width: 100%;
+  overflow: hidden;
+}
+
+.heading {
+  &.lt-md {
+    .title-caps {
+      position: absolute;
+      top: 33%;
+      z-index: 0;
+      font-size: 68px;
+    }
+  }
+}
+
+.main {
+  &.lt-md {
+    position: relative;
+    overflow: hidden;
+    // height: calc(100vh - 56px);
+    height: 100%;
+  }
+  .shadow-right-light {
+    box-shadow: 5px 0 5px -2px rgba(216, 215, 215);
+  }
+}

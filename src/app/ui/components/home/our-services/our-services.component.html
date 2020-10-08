@@ -1,7 +1,8 @@
-<div class="tb-container--large-extra" fxLayout="column">
-  <h2 class="tb-typo--h2 tb-color--grey-900 tb-text-align--center">Our Services</h2>
-  <h3 class="tb-typo--h3 tb-color--grey-500 tb-font-weight--normal  tb-text-align--center">we care for your ecosystem</h3>
-  <div class="tb-padding--18"></div>
+<div class="tb-container" fxLayout="column">
+  <h2 class="tb-typo--h2 tb-color--grey-900 tb-font-weight--medium tb-text-align--center">Our Services</h2>
+  <h3 class="tb-typo--h3 tb-color--grey-500 tb-font-weight--normal  tb-text-align--center">we care for your ecosystem
+  </h3>
+  <div class="tb-padding--12"></div>
   <div fxLayout="row" fxLayoutAlign="start center" fxLayout.lt-sm="column">
     <ng-container *ngFor="let service of _mServices; let index= index;let count= count">
       <div fxFlex.gt-sm="33.33">
@@ -11,22 +12,21 @@
           </div>
           <div class="tb-padding--8"></div>
           <div class="tb-padding--left-24">
-          <h4 class="tb-typo--h4 tb-color--grey-500">{{service.title}} </h4>
-          <h4 class="tb-typo--h4 tb-color--grey-900 tb-font-weight--medium">{{service.subtitle}} </h4>
-          <div class="tb-padding--8"></div>
-          <ng-container *ngFor="let option of service?.options">
+            <h4 class="tb-typo--h4 tb-color--grey-500">{{service.title}} </h4>
+            <h4 class="tb-typo--h4 tb-color--grey-900 tb-font-weight--medium">{{service.subtitle}} </h4>
+            <div class="tb-padding--8"></div>
+            <ng-container *ngFor="let option of service?.options">
               <h5 class="tb-typo--h5 tb-color--grey-900  tb-font-weight--medium">{{option.type}}
                 &thinsp;: &thinsp;
-                <span class="tb-color--grey-700">{{option.value}} </span>
+                <span class="tb-color--grey-700 tb-font-weight--normal">{{option.value}} </span>
               </h5>
               <div class="tb-padding--2"></div>
-          </ng-container>
-        </div>
+            </ng-container>
+          </div>
         </div>
       </div>
-      <div *ngIf="count-1 !== index"  class="tb-padding--16"></div>
+      <div *ngIf="count-1 !== index" class="tb-padding--16"></div>
     </ng-container>
     <div ngClass.lt-md="tb-padding--12"></div>
-
   </div>
 </div>

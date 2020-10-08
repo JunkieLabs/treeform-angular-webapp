@@ -33,14 +33,14 @@ $tb-font-weight: (
   lightest: 200,
   light: 300,
   normal: 400,
-  medium: 600,
+  medium: 500,
   bold: 700,
   bolder: 800,
   ultra-bold: 900
 );
 $tb-typo-line-height: (
   h1: 1,
-  h2: 1.4,
+  h2: 1.3,
   h3: 1.6,
   h4: 1.2,
   h5: 1.2,
@@ -50,7 +50,7 @@ $tb-typo-line-height: (
   body1: 1.3,
   body2: 1.1,
   body3: 0.85,
-  button: 1.1,
+  button: 1.0,
   caption: 1,
   overline: 1
 );
@@ -75,9 +75,9 @@ $tb-typo-line-height: (
 $tb-typo-sizes: (
 
   h1: 7,
-  h2: 4.5,
-  h3: 3.5,
-  h4: 2.0,
+  h2: 5.2,
+  h3: 3.9,
+  h4: 3.0,
   h5: 1.3,
   h6: 0.95,
   subtitle1: 1.37,
@@ -104,7 +104,7 @@ $tb-typo-weights: (
   body1: 400,
   body2: 400,
   body3: 400,
-  button: 600,
+  button: 500,
   caption: 600,
   overline: 400
 );

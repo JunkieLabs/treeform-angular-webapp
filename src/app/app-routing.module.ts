@@ -19,7 +19,7 @@ const routes: Routes = [
           import('./ui/components/test/test.module').then((m) => m.TestModule),
       },
       {
-        path: 'angular',
+        path: 'default',
         loadChildren: () =>
           import('./ui/components/angular-default/angular-default.module').then(
             (m) => m.AngularDefaultModule
@@ -44,6 +44,20 @@ const routes: Routes = [
         loadChildren: () =>
           import('./ui/components/gallery/gallery.module').then(
             (m) => m.GalleryModule
+          ),
+      },
+      {
+        path: 'gallery/:category',
+        loadChildren: () =>
+          import('./ui/components/inner-gallery/inner-gallery.module').then(
+            (m) => m.InnerGalleryModule
+          ),
+      },
+      {
+        path: 'top-pick',
+        loadChildren: () =>
+          import('./ui/components/top-pick/top-pick.module').then(
+            (m) => m.TopPickModule
           ),
       },
       {

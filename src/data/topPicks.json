@@ -1,0 +1,206 @@
+[
+  {
+    "title": "Ti plants",
+    "size": "medium",
+    "humidity": "30",
+    "light": "Diffused",
+    "temperature": "10-50",
+    "textColor":"#B70964",
+    "color": [
+      "#FFEBF3 0%",
+      "#FBE0E6 54%",
+      "#FBF2F4 66%",
+      "#FCE2E7 100%"
+    ],
+    "thumbnail":"assets/img/plants-small/cordyline_fruticosa_redsister_ti_plants.png",
+    "img": "assets/img/plants/cordyline_fruticosa_redsister_ti_plants.png",
+    "detail":"Ti plants (Cordyline minalis) come in a wide variety of colors, including green, red, chocolate, pink, orange, variegated and combinations of all of these. They grow in a tiered rosette and do not often flower."
+  },
+  {
+    "title": "Succulent",
+    "size": "small",
+    "humidity": "10",
+    "light": "Diffused",
+    "temperature": "20 -70",
+    "textColor":"#3EB909",
+    "color": [
+      "#D5FF8B 0%",
+      "#E9FF8D 100%"
+    ],
+    "thumbnail":"assets/img/plants-small/aloe_vera_succulent_plant.png",
+    "img": "assets/img/plants/aloe_vera_succulent_plant.png",
+    "detail":"Succulents have become super popular over the last few  years, and for good reason. Their special water-storing tissues allow them to survive in environments that are too dry for most other plants."
+  },
+  {
+    "title": "Paradise",
+    "size": "small",
+    "humidity": "70",
+    "light": "Direct",
+    "temperature": "18 -30",
+    "textColor":"#1FB709",
+    "color": [
+       "#F1F2F2 0%", "#F4F1FF 100%"
+    ],
+    "thumbnail":"assets/img/plants-small/bird_of_paradise.png",
+    "img": "assets/img/plants/bird_of_paradise.png",
+    "detail":"Unusual, gorgeous, tropical. If you’ve ever mistaken a plant for a bird, or vice versa, you may have encountered a Bird of Paradise plant. "
+  },
+  {
+    "title": "Bonsai",
+    "size": "medium",
+    "humidity": "50",
+    "light": "Diffused",
+    "temperature": "20 -40",
+    "textColor":"#1FB709",
+    "color": [
+      "#008793 0%",
+      "#00bf72 50%",
+      "#a8eb12 100%"
+    ],
+    "thumbnail":"assets/img/plants-small/bonsai_2.png",
+    "img": "assets/img/plants/bonsai_2.png",
+    "detail":"Bonsai are elegant, charming and beautiful natural home accents that we adore. We love bonsai trees in your home and this pinboard is full of bonsai inspiration. "
+  },
+  {
+    "title": "Mint",
+    "size": "medium",
+    "humidity": "50",
+    "light": "Diffused",
+    "temperature": "10 -27",
+    "textColor":"#09B736",
+    "color": [
+      "#DBFFD9 0%",
+      "#ECFFE2 100%"
+    ],
+    "thumbnail":"assets/img/plants-small/mint.png",
+    "img": "assets/img/plants/mint.png",
+    "detail":"Mint is a perennial with very fragrant, toothed leaves and tiny purple, pink, or white flowers. It has a fruity, aromatic taste.  They’re as beautiful as they are functional, and they’re foolproof to grow, thriving in sun and shade all over North America."
+  },
+  {
+    "title": "Hedgehog Aloe",
+    "size": "medium",
+    "humidity": "70",
+    "light": "Direct",
+    "temperature": "25 - 30",
+    "textColor":"#1FB709",
+    "color": [
+      "#CFFFCC 0%",
+      "#F6FF9C 100%"
+    ],
+    "thumbnail":"assets/img/plants-small/cactus.png",
+    "img": "assets/img/plants/cactus.png",
+    "detail":"A Hedgehog aloe a great indoor plant that can also help to purify the air. Because they are succulents, they require very little water and maintenance. Hedgehog aloe is happiest on a sunny window ledge."
+  },
+  {
+    "title": "Coral Cactus",
+    "size": "medium",
+    "humidity": "30",
+    "light": "Diffused",
+    "temperature": "25 -27",
+    "textColor":"#1FB709",
+    "color": [
+      "#585B50 0%",
+      "#a8aBa0 50%",
+      "#F8FBF0 100%"
+    ],
+    "thumbnail":"assets/img/plants-small/cute_cactus_flower.png",
+    "img": "assets/img/plants/cute_cactus_flower.png",
+    "detail":"A Coral Cactus is a great addition to the home thanks to its striking shape, size and flowers. Seeing as no cactus plant is the same, it's a unique, decorative way to add interest to your living space, whether it's on your windowsill or grouped together on a shelf."
+  
+  },
+  {
+    "title": "Dragon tree",
+    "size": "big",
+    "humidity": "50",
+    "light": "Diffused",
+    "temperature": "20 - 40",
+    "textColor":"#E7DD09",
+    "color": [
+      "#DCE35B",
+      "#45B649"
+    ],
+    "thumbnail":"assets/img/plants-small/dragon_tree_Dracaena fragrans Light.png",
+    "img": "assets/img/plants/dragon_tree_Dracaena fragrans Light.png",
+    "detail":"Dracaena (Dracaena marginata), also known as dragon tree, is an attractive, stiff-leaved plant with green sword-like leaves edged with red. These plants are perfect for a beginner gardener because they're very easy to grow indoors."
+  },
+  {
+    "title": "Coleus plant",
+    "size": "big",
+    "humidity": "40",
+    "light": "Direct",
+    "temperature": "20 -22",
+    "textColor":"#B71F69",
+    "color": [
+      "#FF3968 0%",
+      "#D81D5D 47%",
+      "#E2205B 74%",
+      "#F15273 100%"
+    ],
+    "thumbnail":"assets/img/plants-small/house_plant_flower.png",
+    "img": "assets/img/plants/house_plant_flower.png",
+    "detail":"Coleus is probably one of the easiest plants to grow and propagate. In fact, the plants root so easily that you can even start cuttings in a glass of water. They can also be propagated by seed indoors about 8-10 weeks prior to your last expected spring frost"
+  },
+  {
+    "title": "Basil",
+    "size": "big",
+    "humidity": "40",
+    "light": "Direct",
+    "temperature": "10 - 22",
+    "textColor":"#b9b84B",
+    "color": [
+      "#E5E49B 0%",
+      "#E9E49D 100%"
+    ],
+    "thumbnail":"assets/img/plants-small/basil.png",
+    "img": "assets/img/plants/basil.png",
+    "detail":"Basil is a warm-weather, fragrant herb that tastes great in many dishes—including the beloved homemade pesto! Plant seeds or transplants after all danger of frost has passed and soil is warm, and it will yield an abundant harvest within weeks."
+  },
+  {
+    "title": "Ponytail Palm",
+    "size": "small",
+    "humidity": "50",
+    "light": "Diffused",
+    "temperature": "22 -27",
+    "textColor":"#1FB709",
+    "color": [
+      "#D3FAE6",
+      "#DBFAE1"
+    ],
+    "thumbnail":"assets/img/plants-small/houseplant.png",
+    "img": "assets/img/plants/houseplant.png",
+    "detail":"these indoor plants are tough enough to withstand (almost) any neglect from their owners. If your home ends up with one of these nearly indestructible greens, just try to remember to tend to its low-maintenance needs and you should be good to go."
+  },
+  {
+    "title": "Grass",
+    "size": "medium",
+    "humidity": "50",
+    "light": "Diffused",
+    "temperature": "22 -27",
+    "textColor":"#1FB709",
+    "color": [
+      "#59cf9c",
+      " #69d68d",
+      "#7fdc7a",
+      "#98e065",
+      "#b5e34e"
+    ],
+    "thumbnail":"assets/img/plants-small/ikea.png",
+    "img": "assets/img/plants/ikea.png",
+    "detail":"As ornamental grasses become garden staples, they are finding their way into more and more container gardens. Growing ornamental grasses in containers is a great way to feature grasses without the worry of them spreading or taking over the garden."
+  },
+  {
+    "title": "Peace lilly",
+    "size": "big",
+    "humidity": "70",
+    "light": "Direct",
+    "temperature": "22 - 24",
+    "textColor":"#47d944",
+    "color": [
+      "#DBE6F6",
+      "#C5796D"
+    ],
+    "thumbnail":"assets/img/plants-small/japanese_peace_lily.png",
+    "img": "assets/img/plants/japanese_peace_lily.png",
+    "detail":"There are a wide variety of sizes and types of peace lilies. Most serve as floor plants since they can reach three feet tall and grow wide with big, bold leaves. It grows up to four feet tall and features bronze-green foliage with an abundance of large, cupped spathes."
+  }
+]

@@ -26,7 +26,8 @@
             "assets": [
               "src/favicon.ico",
               "src/assets",
-              "src/manifest.webmanifest"
+              "src/manifest.webmanifest",
+              "src/data"
             ],
             "styles": [
               "src/styles.scss"
@@ -127,6 +128,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "treeform-angular-webapp"
+    }
+  },
+  "defaultProject": "treeform-angular-webapp",
+  "cli": {
+    "analytics": "388eb87e-f9e0-4233-9867-0f9bb29ae9c1"
+  }
 }

@@ -1,7 +1,7 @@
 @import "./variables";
 
 .tb-container-gt-md {
-  max-width: $tb-resXXL;
+  max-width: tb-resL;
   width: 100%;
   margin: 0 auto;
   flex-shrink: 0;
@@ -12,19 +12,55 @@
 //     padding: 20px;
 //   }
 // }
-.tb-container--min {
-  max-width: $tb-resXXL;
-  width: 100%;
-  margin: 0 auto;
-  flex-shrink: 0;
-}
+// .tb-container--min {
+//   // max-width: $tb-resXXL;
+//   width: 100%;
+//   margin: 0 auto;
+//   flex-shrink: 0;
+// }
 
 .tb-container {
-  max-width: $tb-resM;
+  max-width: $tb-resXL;
   width: 100%;
   margin: 0 auto;
   flex-shrink: 0;
+  
 }
+@media screen and (max-width: $tb-fxS) {
+  .tb-container {
+    padding: 16px
+  }
+}
+// @media screen and (min-width: $tb-fxXS) and (max-width: $tb-fxS) {
+//   .tb-container {
+//     max-width: $tb-resS;
+//   }
+// }
+
+@media screen and (min-width: $tb-fxM) and (max-width: $tb-fxS) {
+  .tb-container {
+    max-width: $tb-resM;
+  }
+}
+@media screen and (min-width: $tb-fxM) and (max-width: $tb-fxL){
+  .tb-container {
+    max-width: $tb-resL;
+  }
+}
+
+@media screen and (min-width: $tb-fxL) and (max-width: $tb-fxXSL){
+  .tb-container {
+    max-width: $tb-resXSL;
+  }
+}
+
+@media screen and (min-width: $tb-fxXSL ) and (max-width: $tb-fxXL) {
+  .tb-container {
+    max-width: $tb-resXL;
+  }
+}
+
+
 
 .tb-container--large {
   max-width: $tb-resL;
@@ -33,12 +69,12 @@
   flex-shrink: 0;
 }
 
-.tb-container--large-double-extra {
-  max-width: $tb-resXXL;
-  width: 100%;
-  margin: 0 auto;
-  flex-shrink: 0;
-}
+// .tb-container--large-double-extra {
+//   max-width: $tb-resXXL;
+//   width: 100%;
+//   margin: 0 auto;
+//   flex-shrink: 0;
+// }
 
 .tb-container--large-extra {
   max-width: $tb-resXL;

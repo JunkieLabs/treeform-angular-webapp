@@ -41,6 +41,24 @@ export class AppComponent implements OnDestroy {
       .addSvgIcon(
         'pin',
         sanitizer.bypassSecurityTrustResourceUrl('assets/icons/pin.svg')
+      ).addSvgIcon(
+        'play',
+        sanitizer.bypassSecurityTrustResourceUrl('assets/icons/play.svg')
+      )  .addSvgIcon(
+        'arrow',
+        sanitizer.bypassSecurityTrustResourceUrl('assets/icons/arrow.svg')
+      )
+      .addSvgIcon(
+        'humidity',
+        sanitizer.bypassSecurityTrustResourceUrl('assets/icons/humidity.svg')
+      )
+      .addSvgIcon(
+        'sun',
+        sanitizer.bypassSecurityTrustResourceUrl('assets/icons/sun.svg')
+      )
+      .addSvgIcon(
+        'weather',
+        sanitizer.bypassSecurityTrustResourceUrl('assets/icons/weather.svg')
       );
   }
   //   iconRegistry

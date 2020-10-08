@@ -1,0 +1,53 @@
+@import 'function';
+
+
+.fused-primary {
+    $fused-priamry-theme: fused-mat-theme($treeform-angular-webapp-primary, $treeform-angular-webapp-accent, $treeform-angular-webapp-warn, fused-mat-theme-foreground($tb-theme-primary));
+    @include mat-button-theme($fused-priamry-theme);
+
+}
+
+.fused-secondary {
+
+    $fused-secondary-theme: fused-mat-theme($treeform-angular-webapp-accent, $treeform-angular-webapp-accent, $treeform-angular-webapp-warn, fused-mat-theme-foreground($tb-theme-secondary));
+    @include mat-button-theme($fused-secondary-theme);
+
+}
+
+.fused-warn {
+
+    $fused-warn-theme: fused-mat-theme($treeform-angular-webapp-warn, $treeform-angular-webapp-warn, $treeform-angular-webapp-warn, fused-mat-theme-foreground($tb-theme-error));
+    @include mat-button-theme($fused-warn-theme);
+
+}
+
+
+.fused-orange {
+  $fused-orange-theme: fused-mat-theme($treeform-angular-webapp-orange, $treeform-angular-webapp-orange, $treeform-angular-webapp-orange, fused-mat-theme-foreground($tb-theme-orange));
+  @include mat-button-theme($fused-orange-theme);
+
+}
+
+
+.fused-blue {
+  $fused-blue-theme: fused-mat-theme($treeform-angular-webapp-blue, $treeform-angular-webapp-blue, $treeform-angular-webapp-blue, fused-mat-theme-foreground($tb-theme-blue));
+  @include mat-button-theme($fused-blue-theme);
+
+}
+
+.fused-black {
+  $fused-black-theme: fused-mat-theme($treeform-angular-webapp-black, $treeform-angular-webapp-black, $treeform-angular-webapp-black, fused-mat-theme-foreground($tb-theme-black));
+  @include mat-button-theme($fused-black-theme);
+
+}
+
+.fused{
+    .fused-raised-button{
+        border-radius: 12px;
+        padding: 4px 20px;
+        .tb-typo--button{
+            vertical-align: -webkit-baseline-middle;
+        }
+    }
+}
+

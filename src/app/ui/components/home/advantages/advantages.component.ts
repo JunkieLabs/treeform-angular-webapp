@@ -13,17 +13,17 @@ export class AdvantagesComponent implements OnInit {
   _mAdvantages = [
     {
       title: 'Trusted',
-      body: 'To bring the natural system into balance, a new balance',
+      body: 'Amazing response by our clients to our acute attention to detail.',
       icon: 'assets/img/trusted.png',
     },
     {
       title: 'Cure',
-      body: 'To bring the natural system into balance, a new balance',
+      body: 'Our experienced team can execute any difficult undertaking.',
       icon: 'assets/img/cure.png',
     },
     {
       title: 'Refreshing',
-      body: 'To bring the natural system into balance, a new balance',
+      body: 'Your space will bloom as palnts do.',
       icon: 'assets/img/refreshing.png',
     },
   ];

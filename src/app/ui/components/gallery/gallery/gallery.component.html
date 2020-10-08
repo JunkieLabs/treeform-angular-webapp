@@ -1,56 +1,58 @@
-<div id="dashboard-content" fxLayout="column" class="tb-container--large-extra">
+<div id="dashboard-content" fxLayout="column" class="tb-container">
   <div ngClass.lt-md="tb-padding--36" ngClass.gt-sm="tb-padding--24"></div>
-  <div class="tb-padding--16"></div>
-  <h3 class="tb-typo--h2 tb-color--grey-900 tb-font-weight--normal"> </h3>
-
   <div class="heading tb-position--relative" ngClass.xs="xs">
+    <div class="tb-padding--36"></div>
     <div fxLayout="row" fxLayoutAlign="start center">
-      <div class="tb-position--relative">
-        <p class="tb-font-weight-medium tb-color--grey-900" ngClass.gt-sm="tb-typo--h1"  ngClass.lt-md="tb-typo--h2 tb-font-weight--normal">Our <br>Collections</p>
+      <div ngClass.gt-sm="tb-padding--h-36"></div>
+      <div class="">
+        <h2 class="tb-font-weight--normal tb-color--grey-900" ngClass.gt-sm="tb-typo--h1"
+          ngClass.lt-md="tb-typo--h2">Our <br>Collections</h2>
       </div>
     </div>
-    <p class="title-caps tb-typo--h1 tb-font-weight--ultra-bold tb-color--black-6">GALLERY</p>
+    <!-- <p class="title-caps tb-typo--h1 tb-font-weight--ultra-bold tb-color--black-6">GALLERY</p> -->
   </div>
-
   <div class="tb-padding--16"></div>
-
   <div fxLayout="row" fxLayout.lt-md="column" fxLayoutAlign="start center">
     <div fxFlex="50">
       <img src="assets/img/gallery_gradening.png" class="tb-image" alt="">
     </div>
     <div fxFlex="10"></div>
     <div fxFlex>
-      <h3 class="tb-typo--h3 tb-color--grey-900">Gardening</h3>
-      <h3 class="tb-typo--h4 tb-font-weight--medium tb-color--grey-900">For Open Spaces</h3>
+      <h3 class="tb-typo--h3 tb-color--grey-900 tb-font-weight--medium">Gardening</h3>
+      <h4 class="tb-typo--h4 tb-font-weight--bold tb-color--grey-900">For Open Spaces</h4>
       <div class="tb-padding--12"></div>
       <p class="tb-typo--body1 tb-color--grey-700 tb-font-weight--light">To bring the natural system into balance, a
         new economy that is
         sustainable and respects the limits of natural resources</p>
-      <div class="tb-padding--6"></div>
-      <button mat-raised-button color="warn" class="tb-border--r8"><span class="tb-padding--h-16">Explore</span>
-      </button>
+      <div class="tb-padding--8"></div>
+      <div class="fused fused-orange"><button mat-raised-button routerLink="/gallery/gardening" color="primary"
+          class="tb-color--white-i tb-typo--button fused-raised-button">
+          <span class="tb-typo--button tb-padding--8-16">Explore</span>
+        </button></div>
     </div>
   </div>
-  <div ngClass.lt-md="tb-padding--24"  ngClass.gt-sm="tb-padding--16"></div>
+  <div ngClass.lt-md="tb-padding--24" ngClass.gt-sm="tb-padding--16"></div>
 
   <div fxLayout="row" fxLayout.lt-md="column" fxLayoutAlign="start center">
     <div fxFlex fxFlexOrder.lt-md="3">
-      <h3 class="tb-typo--h3 tb-color--grey-900">Pots</h3>
-      <h4 class="tb-typo--h4 tb-font-weight--medium tb-color--grey-900">House decoration</h4>
+      <h3 class="tb-typo--h3 tb-color--grey-900 tb-font-weight--medium">Pots</h3>
+      <h4 class="tb-typo--h4 tb-font-weight--bold tb-color--grey-900">House decoration</h4>
       <div class="tb-padding--12"></div>
       <p class="tb-typo--body1 tb-color--grey-700 tb-font-weight--light">To bring the natural system into balance, a
         new economy that is
         sustainable and respects the limits of natural resources</p>
-      <div class="tb-padding--6"></div>
-      <button mat-raised-button color="primary" class="tb-border--r8"><span class="tb-padding--h-16">Explore</span>
-      </button>
+      <div class="tb-padding--8"></div>
+      <div class="fused fused-primary"><button mat-raised-button routerLink="/gallery/pots" color="primary"
+          class="tb-color--white-i tb-typo--button fused-raised-button">
+          <span class="tb-typo--button tb-padding--8-16">Explore</span>
+        </button></div>
     </div>
     <div fxFlex="10" fxFlexOrder.lt-md="2"></div>
     <div fxFlex="50" fxFlexOrder.lt-md="1">
       <img src="assets/img/gallery_pots.png" class="tb-image" alt="">
     </div>
   </div>
-  <div ngClass.lt-md="tb-padding--24"  ngClass.gt-sm="tb-padding--16"></div>
+  <div ngClass.lt-md="tb-padding--24" ngClass.gt-sm="tb-padding--16"></div>
 
   <div fxLayout="row" fxLayout.lt-md="column" fxLayoutAlign="start center">
     <div fxFlex="50">
@@ -58,15 +60,17 @@
     </div>
     <div fxFlex="10"></div>
     <div fxFlex>
-      <h3 class="tb-typo--h3 tb-color--grey-900">Office</h3>
-      <h4 class="tb-typo--h4 tb-font-weight--medium tb-color--grey-900">workspace decoration</h4>
+      <h3 class="tb-typo--h3 tb-color--grey-900 tb-font-weight--medium">Office</h3>
+      <h4 class="tb-typo--h4 tb-font-weight--bold tb-color--grey-900">workspace decoration</h4>
       <div class="tb-padding--12"></div>
       <p class="tb-typo--body1 tb-color--grey-700 tb-font-weight--light">To bring the natural system into balance, a
         new economy that is
         sustainable and respects the limits of natural resources</p>
-      <div class="tb-padding--6"></div>
-      <button mat-raised-button color="accent" class="tb-border--r8"><span class="tb-padding--h-16">Explore</span>
-      </button>
+      <div class="tb-padding--8"></div>
+      <div class="fused fused-blue"><button mat-raised-button routerLink="/gallery/office" color="primary"
+          class="tb-color--white-i tb-typo--button fused-raised-button"><span
+            class="tb-typo--button tb-padding--8-16">Explore</span></button>
+      </div>
     </div>
   </div>
   <div class="tb-padding--24"></div>

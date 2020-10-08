@@ -2,16 +2,16 @@
   position: absolute;
   top: -32px;
   left: 50%;
-  z-index: 0;
-  font-size: 152px;
+  z-index: -2;
+  font-size: 164px;
 }
 
 .heading {
   &.xs {
     .title-caps {
       position: absolute;
-      top: -10px;
-      left:64px;
+      top: 0px;
+      left: 50%;
       z-index: 0;
       font-size: 56px;
     }
@@ -19,6 +19,11 @@
 }
 
 .footer-plant {
-  width: 300px;
+  width: 324px;
   right: 0px;
+  bottom: -58px;
+}
+
+.app-line-height--1 {
+  line-height: 1 !important;
 }
