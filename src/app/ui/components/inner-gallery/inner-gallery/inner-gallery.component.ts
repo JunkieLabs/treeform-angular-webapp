@@ -1,5 +1,5 @@
-import { Component, OnInit, ElementRef } from '@angular/core';
-import { ActivatedRoute, ActivatedRouteSnapshot } from '@angular/router';
+import { Component, OnInit, ElementRef, OnDestroy } from '@angular/core';
+import { ActivatedRoute, ActivatedRouteSnapshot, Router } from '@angular/router';
 import { Location } from '@angular/common';
 
 @Component({
@@ -21,6 +21,7 @@ export class InnerGalleryComponent implements OnInit {
   constructor(
     private el: ElementRef,
     private location: Location,
+    private router: Router,
     private activeRoute: ActivatedRoute
   ) {
     const paramName = 'category';
@@ -29,16 +30,18 @@ export class InnerGalleryComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    // this._mGalleryName = 'treeform/' + this.currentRoute;
+    this._mGalleryName = this.currentRoute;
     this.getActiveRoute();
   }
 
   _toggleCategory(e) {
+    this.router.navigate([`/gallery/${this._mCategories[e]}`]);
+    this._mGalleryName = this._mCategories[e];
     this._mActiveCategory = e;
   }
 
   _onViewerVisibilityChanged(isVisible: boolean): void {
-    // console.log(`viewer visible: ${isVisible}`)
+    console.log(`viewer visible: ${isVisible}`)
   }
 
   _onNavigateBack() {

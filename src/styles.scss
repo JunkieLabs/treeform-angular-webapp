@@ -1,7 +1,6 @@
-
 // Custom Theming for Angular Material
 // For more information: https://material.angular.io/guide/theming
-@import '~@angular/material/theming';
+@import "~@angular/material/theming";
 // Plus imports for other components in your app.
 
 // Include the common styles for Angular Material. We include this here so that you only
@@ -11,83 +10,120 @@
 
 @import "theme/init";
 
-$tb-theme-primary: map-get($map: $treeform-primary, $key: 500);//#2680EB;
-$tb-theme-primary-dark: map-get($map: $treeform-primary, $key: 700);//#333d84;
-$tb-theme-primary-light:  map-get($map: $treeform-primary, $key: 200);
-$tb-theme-primary-background: map-get($map: $treeform-primary, $key: 50);
-$tb-theme-primary-accent: map-get($map: $treeform-primary, $key: A400);//#333d84;
-$tb-theme-secondary: map-get($map: $treeform-accent, $key: 500); //#8FD2FF;
-$tb-theme-secondary-dark: map-get($map: $treeform-accent, $key: 700);
+$tb-theme-primary: map-get(
+  $map: $treeform-primary,
+  $key: 500,
+); //#2680EB;
+$tb-theme-primary-dark: map-get(
+  $map: $treeform-primary,
+  $key: 700,
+); //#333d84;
+$tb-theme-primary-light: map-get(
+  $map: $treeform-primary,
+  $key: 200,
+);
+$tb-theme-primary-background: map-get(
+  $map: $treeform-primary,
+  $key: 50,
+);
+$tb-theme-primary-accent: map-get(
+  $map: $treeform-primary,
+  $key: A400,
+); //#333d84;
+$tb-theme-secondary: map-get(
+  $map: $treeform-accent,
+  $key: 500,
+); //#8FD2FF;
+$tb-theme-secondary-dark: map-get(
+  $map: $treeform-accent,
+  $key: 700,
+);
 // Define the palettes for your theme using the Material Design palettes available in palette.scss
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
 // hue. Available color palettes: https://material.io/design/color/
 $treeform-angular-webapp-primary: mat-palette($treeform-primary);
 $treeform-angular-webapp-accent: mat-palette($treeform-accent, A200, A100, A400);
 
-
 // The warn palette is optional (defaults to red).
 $treeform-angular-webapp-warn: mat-palette($mat-red);
 
 //custom color
-$tb-theme-orange: map-get($map: $treeform-orange, $key: 500);
-$tb-theme-blue: map-get($map: $treeform-denim-blue, $key: 500);
-$tb-theme-black: map-get($map: $treeform-black, $key: 300);
+$tb-theme-orange: map-get(
+  $map: $treeform-orange,
+  $key: 500,
+);
+$tb-theme-blue: map-get(
+  $map: $treeform-denim-blue,
+  $key: 500,
+);
+$tb-theme-black: map-get(
+  $map: $treeform-black,
+  $key: 300,
+);
 $treeform-angular-webapp-orange: mat-palette($treeform-orange);
 $treeform-angular-webapp-blue: mat-palette($treeform-denim-blue);
 $treeform-angular-webapp-black: mat-palette($treeform-black);
 
 // Create the theme object (a Sass map containing all of the palettes).
-$treeform-angular-webapp-theme: mat-light-theme($treeform-angular-webapp-primary, $treeform-angular-webapp-accent, $treeform-angular-webapp-warn);
+$treeform-angular-webapp-theme: mat-light-theme(
+  $treeform-angular-webapp-primary,
+  $treeform-angular-webapp-accent,
+  $treeform-angular-webapp-warn
+);
 
 // Include theme styles for core and each component used in your app.
 // Alternatively, you can import and @include the theme mixins for each component
 // that you are using.
 @include angular-material-theme($treeform-angular-webapp-theme);
 
-
 @import "theme/fused/class";
 /* You can add global styles to this file, and also import other style files */
 
-html{ height: 100%; }
-body { margin: 0; font-family: 'Baloo Bhaina 2', "Helvetica Neue", sans-serif; }
+html {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: "Baloo Bhaina 2", "Helvetica Neue", sans-serif;
+}
 
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+body {
+  height: 100%;
+  margin: 0;
+  background: #ffffff;
+  * {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  } // margin-left: 0 !important;
+  // margin-right: 0 !important;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
 
-  body {
-    height: 100%;
-    margin: 0;
-    background: #ffffff;
-    * {
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-    } // margin-left: 0 !important;
-    // margin-right: 0 !important;
+.app-background {
+  background-color: #ffffff;
+  //#F8FaFc;
+}
+
+@media screen and (max-width: 1910px) {
+  :root {
+    font-size: 86%;
   }
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  p {
-    margin: 0;
+}
+@media screen and (max-width: 1380px) {
+  :root {
+    font-size: 70%;
   }
-
-  .app-background {
-    background-color: #FFFFFF;
-    //#F8FaFc;
-  }
-
-
-  @media screen and (max-width: 1910px) {
-    :root {
-      font-size: 86%;
-    }
-  }
-  @media screen and (max-width: 1380px) {
-    :root {
-      font-size: 70%;
-    }
-  }
-
+}
 
 @import "theme/class";

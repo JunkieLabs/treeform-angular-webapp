@@ -11,7 +11,8 @@
                  (click)="openImageViewer(img)"
                  [src]="img['srcAfterFocus'] | safe:'url'"
                  [style.background]="img.dominantColor"
-                 [style.margin-right.px]="calcImageMargin()"/>
+                 [style.margin-right.px]="calcImageMargin()"
+                 />
         </div>
     </div>
 
@@ -24,5 +25,4 @@
              (click)="navigate(1)"/>
     </div>
 </div>
-
-<viewer></viewer>
+    <viewer></viewer>

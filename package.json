@@ -9,7 +9,9 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "convert:treeform": "node ./image-convert.js --gName=treeform ./src/assets/img/raw",
-    "convert:garden": "node ./image-convert.js --gName=garden ./src/assets/img/rawimages/gardening"
+    "convert:garden": "node ./image-convert.js --gName=gardening ./src/assets/img/gardening",
+    "convert:pots": "node ./image-convert.js --gName=pots ./src/assets/img/pots",
+    "convert:office": "node ./image-convert.js --gName=office ./src/assets/img/office"
   },
   "private": true,
   "dependencies": {
