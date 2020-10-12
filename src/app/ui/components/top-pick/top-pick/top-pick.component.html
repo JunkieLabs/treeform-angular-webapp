@@ -7,12 +7,12 @@
   </div> -->
   <div class="tb-padding--12"></div>
   <div fxLayout.gt-sm="column" fxLayout.lt-md="row" class="tb-height--full">
-    <div fxFlex.lt-md="none" ngClass.lt-md="shadow-right-light" ngclass.lt-md="">
+    <div fxFlex.lt-md="none" ngClass.lt-md="shadow-right-light">
       <app-slider *ngIf="_mTopPicks.length > 0" [model]="_mTopPicks" (slideChange)="_onSlideChange($event)"
         (direction)="_mDirection = $event"></app-slider>
     </div>
     <div ngClass.gt-sm="tb-padding--36"></div>
-    <div fxFlex.lt-md ngClass.lt-md="tb-height--full tb-overflow--auto tb-container">
+    <div fxFlex.lt-md ngClass.lt-md="tb-height--full tb-overflow--y-auto tb-container">
       <div fxLayout="column" class="tb-container tb-position--relative" ngClass.gt-sm="tb-overflow--hidden">
         <div class="tb-padding--h-8" ngClass.gt-sm="tb-display--none">
           <h3 class="tb-typo--h3 tb-color--grey-900 tb-font-weight--normal">
