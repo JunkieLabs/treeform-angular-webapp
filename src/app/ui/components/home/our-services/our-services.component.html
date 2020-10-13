@@ -6,8 +6,8 @@
   <div fxLayout="row" fxLayoutAlign="start center" fxLayout.lt-sm="column">
     <ng-container *ngFor="let service of _mServices; let index= index;let count= count">
       <div fxFlex.gt-sm="33.33">
-        <div class="tb-padding--36">
-          <div class="tb-padding--12">
+        <div ngClass.gt-sm="tb-padding--36">
+          <div class="tb-padding--12" ngClass.sm="tb-flex--shrink-0">
             <img src={{service.icon}} class="tb-image" alt="">
           </div>
           <div class="tb-padding--8"></div>

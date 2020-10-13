@@ -3,10 +3,9 @@
   <div class="tb-padding--48"></div>
   <div fxLayout="row" fxLayoutAlign="start stretch" fxLayout.lt-sm="column">
     <ng-container *ngFor="let item of _mAdvantages; let index= index;let count= count">
-      <div fxFlex.gt-sm="33.33">
-        <div  class="tb-border--thick tb-height--full tb-border--r10 tb-padding--36">
-
-          <div class="tb-height--126">
+      <div fxFlex.gt-xs="33.33">
+        <div class="tb-border--thick tb-height--full tb-border--r10" ngClass.lt-md="tb-padding--12" ngClass.gt-sm="tb-padding--36">
+          <div class="tb-height--126 tb-flex--shrink-0">
             <img src={{item.icon}} class="tb-image" alt="">
           </div>
           <div class="tb-padding--8"></div>
