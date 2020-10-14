@@ -37,7 +37,7 @@
 //   }
 // }
 
-@media screen and (min-width: $tb-fxM) and (max-width: $tb-fxS) {
+@media screen and (min-width: $tb-fxS) and (max-width: $tb-fxM) {
   .tb-container {
     max-width: $tb-resM;
   }
