@@ -1,63 +1,5 @@
 [
     {
-        "name": "3053dc46-a4ad-4ac2-bc71-23c8fd460df2.jpg",
-        "preview_xxs": {
-            "path": "assets/img/gallery/pots/preview_xxs/3053dc46-a4ad-4ac2-bc71-23c8fd460df2.jpg",
-            "width": 286,
-            "height": 200
-        },
-        "preview_xs": {
-            "path": "assets/img/gallery/pots/preview_xs/3053dc46-a4ad-4ac2-bc71-23c8fd460df2.jpg",
-            "width": 537,
-            "height": 375
-        },
-        "preview_m": {
-            "path": "assets/img/gallery/pots/preview_m/3053dc46-a4ad-4ac2-bc71-23c8fd460df2.jpg",
-            "width": 1043,
-            "height": 728
-        },
-        "preview_xl": {
-            "path": "assets/img/gallery/pots/preview_xl/3053dc46-a4ad-4ac2-bc71-23c8fd460df2.jpg",
-            "width": 1776,
-            "height": 1240
-        },
-        "raw": {
-            "path": "assets/img/gallery/pots/raw/3053dc46-a4ad-4ac2-bc71-23c8fd460df2.jpg",
-            "width": 3713,
-            "height": 2592
-        },
-        "dominantColor": "#697e5d"
-    },
-    {
-        "name": "3c628428-aa3f-4c81-8ed7-7852dd3d62d0.jpg",
-        "preview_xxs": {
-            "path": "assets/img/gallery/pots/preview_xxs/3c628428-aa3f-4c81-8ed7-7852dd3d62d0.jpg",
-            "width": 300,
-            "height": 200
-        },
-        "preview_xs": {
-            "path": "assets/img/gallery/pots/preview_xs/3c628428-aa3f-4c81-8ed7-7852dd3d62d0.jpg",
-            "width": 563,
-            "height": 375
-        },
-        "preview_m": {
-            "path": "assets/img/gallery/pots/preview_m/3c628428-aa3f-4c81-8ed7-7852dd3d62d0.jpg",
-            "width": 1092,
-            "height": 728
-        },
-        "preview_xl": {
-            "path": "assets/img/gallery/pots/preview_xl/3c628428-aa3f-4c81-8ed7-7852dd3d62d0.jpg",
-            "width": 1860,
-            "height": 1240
-        },
-        "raw": {
-            "path": "assets/img/gallery/pots/raw/3c628428-aa3f-4c81-8ed7-7852dd3d62d0.jpg",
-            "width": 5184,
-            "height": 3456
-        },
-        "dominantColor": "#383b40"
-    },
-    {
         "name": "7d512f1c-1320-4ebd-b63c-dca6fcc949d6.jpg",
         "preview_xxs": {
             "path": "assets/img/gallery/pots/preview_xxs/7d512f1c-1320-4ebd-b63c-dca6fcc949d6.jpg",
@@ -406,35 +348,6 @@
         "dominantColor": "#b4b594"
     },
     {
-        "name": "pexels-andreea-ch-1371635.jpg",
-        "preview_xxs": {
-            "path": "assets/img/gallery/pots/preview_xxs/pexels-andreea-ch-1371635.jpg",
-            "width": 300,
-            "height": 200
-        },
-        "preview_xs": {
-            "path": "assets/img/gallery/pots/preview_xs/pexels-andreea-ch-1371635.jpg",
-            "width": 563,
-            "height": 375
-        },
-        "preview_m": {
-            "path": "assets/img/gallery/pots/preview_m/pexels-andreea-ch-1371635.jpg",
-            "width": 1092,
-            "height": 728
-        },
-        "preview_xl": {
-            "path": "assets/img/gallery/pots/preview_xl/pexels-andreea-ch-1371635.jpg",
-            "width": 1860,
-            "height": 1240
-        },
-        "raw": {
-            "path": "assets/img/gallery/pots/raw/pexels-andreea-ch-1371635.jpg",
-            "width": 3963,
-            "height": 2642
-        },
-        "dominantColor": "#625440"
-    },
-    {
         "name": "pexels-annam-w-1066727.jpg",
         "preview_xxs": {
             "path": "assets/img/gallery/pots/preview_xxs/pexels-annam-w-1066727.jpg",
@@ -522,35 +435,6 @@
         "dominantColor": "#bdbbb8"
     },
     {
-        "name": "pexels-bongkarn-thanyakij-3787777.jpg",
-        "preview_xxs": {
-            "path": "assets/img/gallery/pots/preview_xxs/pexels-bongkarn-thanyakij-3787777.jpg",
-            "width": 356,
-            "height": 200
-        },
-        "preview_xs": {
-            "path": "assets/img/gallery/pots/preview_xs/pexels-bongkarn-thanyakij-3787777.jpg",
-            "width": 667,
-            "height": 375
-        },
-        "preview_m": {
-            "path": "assets/img/gallery/pots/preview_m/pexels-bongkarn-thanyakij-3787777.jpg",
-            "width": 1295,
-            "height": 728
-        },
-        "preview_xl": {
-            "path": "assets/img/gallery/pots/preview_xl/pexels-bongkarn-thanyakij-3787777.jpg",
-            "width": 2206,
-            "height": 1240
-        },
-        "raw": {
-            "path": "assets/img/gallery/pots/raw/pexels-bongkarn-thanyakij-3787777.jpg",
-            "width": 7200,
-            "height": 4047
-        },
-        "dominantColor": "#83847d"
-    },
-    {
         "name": "pexels-castorly-stock-3722570.jpg",
         "preview_xxs": {
             "path": "assets/img/gallery/pots/preview_xxs/pexels-castorly-stock-3722570.jpg",
@@ -607,35 +491,6 @@
             "height": 4000
         },
         "dominantColor": "#c9cccc"
-    },
-    {
-        "name": "pexels-cottonbro-4503745.jpg",
-        "preview_xxs": {
-            "path": "assets/img/gallery/pots/preview_xxs/pexels-cottonbro-4503745.jpg",
-            "width": 133,
-            "height": 200
-        },
-        "preview_xs": {
-            "path": "assets/img/gallery/pots/preview_xs/pexels-cottonbro-4503745.jpg",
-            "width": 250,
-            "height": 375
-        },
-        "preview_m": {
-            "path": "assets/img/gallery/pots/preview_m/pexels-cottonbro-4503745.jpg",
-            "width": 485,
-            "height": 728
-        },
-        "preview_xl": {
-            "path": "assets/img/gallery/pots/preview_xl/pexels-cottonbro-4503745.jpg",
-            "width": 827,
-            "height": 1240
-        },
-        "raw": {
-            "path": "assets/img/gallery/pots/raw/pexels-cottonbro-4503745.jpg",
-            "width": 4000,
-            "height": 6000
-        },
-        "dominantColor": "#958775"
     },
     {
         "name": "pexels-daria-shevtsova-1012506.jpg",
@@ -986,35 +841,6 @@
         "dominantColor": "#beb99e"
     },
     {
-        "name": "stephanie-harvey-T0inbt7nRME-unsplash.jpg",
-        "preview_xxs": {
-            "path": "assets/img/gallery/pots/preview_xxs/stephanie-harvey-T0inbt7nRME-unsplash.jpg",
-            "width": 150,
-            "height": 200
-        },
-        "preview_xs": {
-            "path": "assets/img/gallery/pots/preview_xs/stephanie-harvey-T0inbt7nRME-unsplash.jpg",
-            "width": 281,
-            "height": 375
-        },
-        "preview_m": {
-            "path": "assets/img/gallery/pots/preview_m/stephanie-harvey-T0inbt7nRME-unsplash.jpg",
-            "width": 546,
-            "height": 728
-        },
-        "preview_xl": {
-            "path": "assets/img/gallery/pots/preview_xl/stephanie-harvey-T0inbt7nRME-unsplash.jpg",
-            "width": 930,
-            "height": 1240
-        },
-        "raw": {
-            "path": "assets/img/gallery/pots/raw/stephanie-harvey-T0inbt7nRME-unsplash.jpg",
-            "width": 3024,
-            "height": 4032
-        },
-        "dominantColor": "#dee2da"
-    },
-    {
         "name": "stephanie-harvey-f7PfM2NklZ4-unsplash.jpg",
         "preview_xxs": {
             "path": "assets/img/gallery/pots/preview_xxs/stephanie-harvey-f7PfM2NklZ4-unsplash.jpg",
@@ -1042,34 +868,5 @@
             "height": 4032
         },
         "dominantColor": "#e1dee0"
-    },
-    {
-        "name": "stephanie-harvey-vHkj3fX9wCk-unsplash.jpg",
-        "preview_xxs": {
-            "path": "assets/img/gallery/pots/preview_xxs/stephanie-harvey-vHkj3fX9wCk-unsplash.jpg",
-            "width": 224,
-            "height": 200
-        },
-        "preview_xs": {
-            "path": "assets/img/gallery/pots/preview_xs/stephanie-harvey-vHkj3fX9wCk-unsplash.jpg",
-            "width": 419,
-            "height": 375
-        },
-        "preview_m": {
-            "path": "assets/img/gallery/pots/preview_m/stephanie-harvey-vHkj3fX9wCk-unsplash.jpg",
-            "width": 814,
-            "height": 728
-        },
-        "preview_xl": {
-            "path": "assets/img/gallery/pots/preview_xl/stephanie-harvey-vHkj3fX9wCk-unsplash.jpg",
-            "width": 1386,
-            "height": 1240
-        },
-        "raw": {
-            "path": "assets/img/gallery/pots/raw/stephanie-harvey-vHkj3fX9wCk-unsplash.jpg",
-            "width": 3098,
-            "height": 2772
-        },
-        "dominantColor": "#d7dadb"
     }
 ]
