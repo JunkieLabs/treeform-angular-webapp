@@ -10,7 +10,7 @@
 <h1 align="center">Demo</h1>
 
 <div align="center">
-<a  href="https://treeform.junkielabs.in/">https://treeform.junkielabs.in/</a> 
+<a  href="https://blissful-lalande-6f6f74.netlify.app/">https://blissful-lalande-6f6f74.netlify.app/</a> 
 </div>
 <br>
 <br>
@@ -27,7 +27,7 @@
 
 
 ## What is this repo? 
-This repository is maintained by [JunkieLabs](https://www.instagram.com/junkie_labs/) team, is meant to be a beautiful web-app example using Angular 9.0+.
+This repository is maintained by [Thedroid.io](https://thedroid.io) team, is meant to be a beautiful web-app example using Angular 9.0+, this is implemented not only for the client-side, but for server side rendering also (Note: If you need Server Side rendering [read here](#SSR)).
 
 This project contains all of the latest technologies, from design to developemnt, and common features needed in static webapp like Progressing webapp [read here](#PWA), SEO [ search engine]. 
 
@@ -84,6 +84,17 @@ npm start
 ```
 
 
+### **For SSR**
+- Clone the project you haven't done that.
+- then checkout into branch: `treeform-pwa-ssr`
+
+```bash
+
+git checkout treeform-pwa-ssr
+npm install
+npm start
+
+```
 **Note**: If you get any errors during install and build, please put report the issue in the same repo.
 
 <br>
@@ -92,9 +103,13 @@ npm start
 
 > These are some of the important features implemented in this starter!
 
+- **SEO: Search Engine Optimization**
+   - Programmable seo tags.
 - **PWA: Progressive Webapp**
   - For more details, [read here](#pwa:-progressive-webapp) 
 
+- **SSR: Server Side Rendering**
+  - For more details, [read here](#pwa:-server-side-rendering) 
 
 - **Fully responsive design using flex properties**
   - Responsiveness without using any grid based library.  
@@ -107,8 +122,6 @@ npm start
 
 <br>
 
-<br>
-
 # Components:
 
 > These are some of the important components in this app!
@@ -117,47 +130,31 @@ npm start
    - Very common gallery system needed in all apps.
 - **Angular Animations**
   
-<br>
+- **SEO: Programmable Tags**
+  - For more details, [read here](#seo:-programmable tags) 
+
 
 
 ## Image Gallery
 
-The out of box and responsive image gallery made by modifing angular2-image-gallery.
 
-
-To change the images in **[assets/img/gallery](https://github.com/JunkieLabs/treeform-angular-webapp/tree/master/src/assets/img/gallery)**.
-Follow these steps.
-
-- Install [Image Magick](https://imagemagick.org/index.php) in your system. 
-- Add Images in any folder except gallery inside assets/img  folder.
-- Craete command in pacakge.json file. For example
-
-```json
-    "convert:newImages": "node ./image-convert.js --gName=newImages ./src/assets/img/newImages",
-
-```
-- In above command newImages is a new folder. And [image-convert.js](https://github.com/JunkieLabs/treeform-angular-webapp/blob/master/image-convert.js) file is the script. After conversion one new folder will be there in assets/img/gallery.
-
-<br>
 
 ## PWA: Progressive Webapp
 
+## SSR: Server Side Rendering
 
 
-<br>
 
 ## SCSS: Styling
 
-``` 
-No CSS in any style related file ! The design is fully design using scss structure.
-
-```
-
-All the basic and common scss class has a prefix selector *tb-* to distinguish it from other angular material related classes. you can find the styles in [theme/tb](https://github.com/JunkieLabs/treeform-angular-webapp/tree/master/src/theme/tb)
-
-<br>
 
 
+**Theming**
+
+**Common Files**
+
+
+## SEO: Programmable Tags
 
 <br>
 
@@ -166,12 +163,7 @@ All the basic and common scss class has a prefix selector *tb-* to distinguish i
 
 ### Does this library require bootstrap?
 
-
-``` 
 No! There isn't a requirement of this library. The design is implemented only using angular material and SCSS styles.
-```
-
-
 
 <br>
 
