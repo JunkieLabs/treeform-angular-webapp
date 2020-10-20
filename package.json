@@ -10,7 +10,8 @@
     "e2e": "ng e2e",
     "convert:garden": "node ./image-convert.js --gName=gardening ./src/assets/img/gardening",
     "convert:pots": "node ./image-convert.js --gName=pots ./src/assets/img/pots",
-    "convert:office": "node ./image-convert.js --gName=office ./src/assets/img/office"
+    "convert:office": "node ./image-convert.js --gName=office ./src/assets/img/office",
+    "serve:pwa": "ng build --prod && http-server -p 9000 -c-1 ./dist/treeform-angular-webapp"
   },
   "private": true,
   "dependencies": {
