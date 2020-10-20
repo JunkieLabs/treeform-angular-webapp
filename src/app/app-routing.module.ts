@@ -18,13 +18,13 @@ const routes: Routes = [
         loadChildren: () =>
           import('./ui/components/test/test.module').then((m) => m.TestModule),
       },
-      {
-        path: 'default',
-        loadChildren: () =>
-          import('./ui/components/angular-default/angular-default.module').then(
-            (m) => m.AngularDefaultModule
-          ),
-      },
+      // {
+      //   path: 'default',
+      //   loadChildren: () =>
+      //     import('./ui/components/angular-default/angular-default.module').then(
+      //       (m) => m.AngularDefaultModule
+      //     ),
+      // },
       {
         path: 'contact-us',
         loadChildren: () =>

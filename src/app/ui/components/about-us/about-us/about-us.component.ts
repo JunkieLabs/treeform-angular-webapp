@@ -11,9 +11,10 @@ export class AboutUsComponent implements OnInit {
   ngOnInit(): void {}
 
   _mOptions = [
-    'To bring the natural system into balance, a new economy that is sustainable',
-    'To bring the natural system into balance',
-    'To bring the natural system into balance, a new economy that is sustainable',
-    'To bring the natural system into balance',
+    'Use of top quality  materials',
+    'Authentic High Quality Plants',
+    'Customization as you desire',
+    'Maintain and services designs, plantings',
+    'Services for  existing space',
   ];
 }

@@ -1,7 +1,7 @@
 <div fxLayout="column" fxLayout.lt-md="row" fxLayoutAlign="stretch" class="main" ngClass.lt-md="lt-md"
   ngClass.gt-sm="gt-sm">
-  <swiper class="swiper-container" [config]="config" (indexChange)="onIndexChange($event)"
-    (swiperTransitionStart)="onSwiperEvent('transitionStart')" (swiperTransitionEnd)="onSwiperEvent('transitionEnd')">
+  <swiper class="swiper-container" [config]="config" (indexChange)="_onIndexChange($event)"
+    (swiperTransitionStart)="_onSwiperEvent('transitionStart')" (swiperTransitionEnd)="_onSwiperEvent('transitionEnd')">
     <ng-container *ngFor="let slide of _mSlides">
       <div class="swiper-slide tb-cursor--pointer tb-border--r10" fxLayout="column" fxLayoutAlign="center center"
         ngClass.gt-sm="tb-padding--8">

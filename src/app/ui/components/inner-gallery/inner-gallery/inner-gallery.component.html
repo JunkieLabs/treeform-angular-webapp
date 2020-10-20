@@ -14,13 +14,13 @@
       <h2 class="tb-typo--h3 tb-color--grey-900">GALLERY</h2>
     </div>
     <div class="tb-padding--6"></div>
-    <div fxLayout="row" fxLayoutAlign="start center">
+    <div fxLayout.gt-xs="row" fxLayoutAlign.gt-xs="start center" fxLayout.lt-sm="column">
       <div class="tb-padding--h-36"></div>
       <h5 class="tb-typo--body1 tb-color--grey-700">Category:</h5>
-      <div class="tb-padding--h-24"></div>
-      <div class="btn-group">
+      <div class="tb-padding--h-24" ngClass.lt-sm="tb-padding--8"></div>
+      <div fxLayout="row wrap" class="btn-group">
         <ng-container *ngFor="let item of _mCategories;let i =index">
-          <button [class.active]="_mActiveCategory == i" mat-stroked-button (click)="_mToggleCategory(i)">
+          <button [class.active]="_mActiveCategory == i" mat-stroked-button (click)="_toggleCategory(i)">
             <span class="tb-padding--h-12 tb-text--capitalize">
               {{item}}
             </span>
@@ -32,7 +32,11 @@
     <div class="">
       <div fxLayout="column" fxLayout.lt-md="column" fxLayoutAlign="space-between stretch">
         <div fxFlex>
-          <gallery galleryScrollReferenceLink="dashboard-content" [flexBorderSize]="_mFlexBorderSize" [galleryName]="_mGalleryName" (viewerChange)="onViewerVisibilityChanged($event)">
+          <gallery galleryScrollReferenceLink="dashboard-content"
+           [flexImageSize]="8" [maxRowsPerPage]="100" 
+           [flexBorderSize]="_mFlexBorderSize" 
+           [galleryName]="_mGalleryName"
+            (viewerChange)="_onViewerVisibilityChanged($event)">
         </gallery>
       </div>
       </div>

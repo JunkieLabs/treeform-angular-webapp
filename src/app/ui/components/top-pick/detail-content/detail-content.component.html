@@ -1,8 +1,13 @@
-<div [@moveDownEffect]="_mIsTriggred" (@moveDownEffect.done)="onAnimationDone($event)">
-  <p class="tb-font-weight--medium tb-color--grey-900 tb-text--capitalize" ngClass.gt-sm="tb-typo--h2"
-    ngClass.lt-md="tb-typo--h2 tb-font-weight--normal"><span
-      [ngStyle]="{'color': _mModel?.textColor}">{{_mModel?.title.split(' ')[0]}}</span><span *ngIf="_mModel?.title.split(' ').length>1">&nbsp;&nbsp;</span>{{_mModel?.title.split(' ')[1]}}
-  </p>
+<div [@moveDownEffect]="_mIsTriggred" (@moveDownEffect.done)="_onAnimationDone($event)">
+  <div fxLayout.lt-sm="row wrap" fxLayoutAlign="start start">
+    <h2 class="tb-typo--h2 tb-font-weight--medium tb-text--capitalize" ngClass.lt-sm="tb-typo--h3"
+      [ngStyle]="{'color': _mModel?.textColor}">
+      {{_mModel?.title.split(' ')[0]}}&nbsp; </h2>
+    <h2 class="tb-typo--h2 tb-font-weight--medium tb-color--grey-900 tb-text--capitalize" ngClass.lt-sm="tb-typo--h3">
+      <span fxHide.lt-sm *ngIf="_mModel?.title.split(' ').length>1">&nbsp;</span>
+      {{_mModel?.title.split(' ')[1]}}
+    </h2>
+  </div>
   <div ngClass.gt-sm="tb-padding--18" ngClass.lt-md="tb-padding--8"></div>
 
   <ng-container *ngIf="_mModel">

@@ -106,7 +106,7 @@ export class ImageViewerComponent implements OnInit {
       this._mNextImage = nextImage;
   }
 
-  onAnimationDone(e) {
+  _onAnimationDone(e) {
       if (this._mDirection == 'right') {
         this._mTriggerRight = 'false';
       } else {

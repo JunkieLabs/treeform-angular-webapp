@@ -128,6 +128,11 @@
                 bottom: unset;
                 top: 0%;
             }
+            .illustrator-floor{
+                min-width: 600px;
+                left: 0%;
+                width: 100%;
+            }
 
             // img {
             //     max-height: 100%;
@@ -150,13 +155,19 @@
         }
 
         .background {
-            overflow: hidden;
+            // overflow: hidden;
 
             .illustrator-sun {
 
                 bottom: unset;
                 top: 0%;
             }
+            .illustrator-floor{
+                min-width: 600px;
+                left: 0%;
+                width: 100%;
+            }
+            
 
         }
     }
@@ -167,12 +178,19 @@
         }
         
         .background {
-            overflow: hidden;
+            // overflow: hidden;
             .illustrator-sun {
+                bottom: unset;
+                top: 0%;
+                // left: unset;
+                // bottom: 20%;
+                // right: 0%;
+            }
 
-                left: unset;
-                bottom: 20%;
-                right: 0%;
+            .illustrator-floor{
+                min-width: 600px;
+                left: 0%;
+                width: 110%;
             }
         }
     }
@@ -183,11 +201,12 @@
         }
         
         .background {
-            overflow: hidden;
+            // overflow: hidden;
             .illustrator-sun {
-
+                bottom: unset;
+                top: 0%;
                 left: unset;
-                bottom: 20%;
+                // bottom: 20%;
                 right: 0%;
             }
         }
@@ -195,12 +214,13 @@
 
     &.xl{
         .background {
-            overflow: hidden;
+            // overflow: hidden;
 
             .illustrator-sun {
-
+                bottom: unset;
+                top: 0%;
                 left: unset;
-                bottom: 20%;
+                // bottom: 20%;
                 right: 0%;
             }
 

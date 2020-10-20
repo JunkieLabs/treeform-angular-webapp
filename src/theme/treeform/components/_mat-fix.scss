@@ -1,3 +1,5 @@
+@import "./../../tb/container/variables";
+
 .mat-drawer-container {
   background-color: #fff !important;
 }
@@ -28,28 +30,129 @@
   .hide-mouse{
     cursor: default !important;
   }
+
   .videoplayer{
     border-radius: 24px;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden
+    // position: absolute;
+    // top: 0;
+    // bottom: 0;
+    // width: 100%;
+    // height: 100%;
+    overflow: hidden;
   }
   .videoplayer video {
-    /* Make video to at least 100% wide and tall */
-    min-width: 100%;
-    min-height: 100%;
+    // /* Make video to at least 100% wide and tall */
+    // min-width: 100%;
+    // min-height: 100%;
 
-    /* Setting width & height to auto prevents the browser from stretching or squishing the video */
-    width: auto;
-    height: auto;
+    // /* Setting width & height to auto prevents the browser from stretching or squishing the video */
+    // width: auto;
+    // height: auto;
 
-    /* Center the video */
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+
+    max-height: 500px;
+    // top: 50%;
+    // left: 50%;
+    // transform: translate(-50%,-50%);
   }
+
+  @media screen and (max-width: $tb-fxXS) {
+    .videoplayer, .videoplayer video {
+        max-height: 230px;
+        max-width: 330px;
+        
+    }
+    .videoplayer{
+
+        border-radius: 20px;
+      }
+
+  }
+  @media screen and (min-width: $tb-fxXS) and (max-width: $tb-fxS) {
+    .videoplayer, .videoplayer video {
+      max-height: 310px;
+      max-width: 400px;
+    }
+      .videoplayer{
+
+        border-radius: 24px;
+      }
+  }
+  @media screen and (min-width: $tb-fxS) and (max-width: $tb-fxM) {
+    .videoplayer, .videoplayer video {
+      max-height: 420px;
+      max-width: 600px;
+    }
+      .videoplayer{
+
+        border-radius: 28px;
+    }
+  }
+  @media screen and (min-width: $tb-fxM) and (max-width: $tb-fxL){
+    .videoplayer, .videoplayer video {
+      max-height: 520px;
+      max-width: 800px;
+    }
+      .videoplayer{
+
+        border-radius: 32px;
+      }
+  }
+  
+  @media screen and (min-width: $tb-fxL) and (max-width: $tb-fxXSL){
+    .videoplayer, .videoplayer video {
+      max-height: 760px;
+      max-width: 1200px;
+    }
+  
+      .videoplayer{
+
+        border-radius: 36px;
+      }
+  }
+  
+  @media screen and (min-width: $tb-fxXSL ) and (max-width: $tb-fxXL) {
+    .videoplayer, .videoplayer video {
+      max-height: 956px;
+      max-width: 1780px;
+    }
+   .videoplayer{
+
+        border-radius: 48px;
+      }
+
+  }
+  
+  // @media screen and (max-width: 959px) {
+  //   .videoplayer video{
+  //     margin-top: 48px !important;
+  //   }
+  //   margin-left: 0px !important;
+  //   overflow: hidden !important;
+  // }
+
+  // .videoplayer{
+  //   border-radius: 24px;
+  //   position: absolute;
+  //   top: 0;
+  //   bottom: 0;
+  //   width: 100%;
+  //   height: 100%;
+  //   overflow: hidden
+  // }
+  // .videoplayer video {
+  //   /* Make video to at least 100% wide and tall */
+  //   min-width: 100%;
+  //   min-height: 100%;
+
+  //   /* Setting width & height to auto prevents the browser from stretching or squishing the video */
+  //   width: auto;
+  //   height: auto;
+
+  //   /* Center the video */
+  //   position: absolute;
+  //   top: 50%;
+  //   left: 50%;
+  //   transform: translate(-50%,-50%);
+  // }
 }

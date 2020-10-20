@@ -1,14 +1,14 @@
-<div class="tb-container" fxLayout="column">
-  <h3 class="tb-typo--h3 tb-color--grey-900 tb-font-weight--medium tb-text-align--center">Welcome to Treeform</h3>
-  <h4 class="tb-typo--h5 tb-color--grey-500 
-  tb-font-weight--normal tb-padding--h-140  tb-text-align--center">
+<div class="main tb-container" ngClass.xs="xs" ngClass.sm="sm" ngClass.md="md" ngClass.sm="sm" ngClass.gt-md="gt-md"  fxLayout="column">
+  <h3 class="tb-typo--h3 tb-color--grey-900 tb-text-align--center">Welcome to Treeform</h3>
+  <h4 class="tb-typo--body1 tb-color--grey-500 
+  tb-font-weight--normal tb-text-align--center" ngClass.gt-sm="tb-padding--h-140">
   Our nurseries are a protected as it is totally concoction and toxin free. Also, these forms of nature pull in a scope of
   urban biodiversities like butterflies, feathered creatures, and honey bees.
   </h4>
   <div class="tb-padding--36"></div>
-  <div class="tb-position--relative video">
-    <div class=" tb-padding--24 tb-theme-bg--primary-alpha tb-border--r24 tb-height--full">
-      <mat-video #video  [ngClass]="ngclass" class="mat-video" title="Treeform" [autoplay]="false" [preload]="true" [fullscreen]="true"
+  <div class="tb-position--relative" fxItemAlign="center" fxLayoutAlign="start center" fxLayout="column">
+    <div class="tb-padding--24 tb-theme-bg--primary-alpha video-container swq">
+      <mat-video #video  [ngClass]="video" class="mat-video" title="Treeform" [autoplay]="false" [preload]="true" [fullscreen]="true"
             [download]="false" [overlay]="false" color="primary" spinner="spin" [src]="_mVideoSrc" [poster]="_mPosterSrc">
         </mat-video>
 
@@ -21,5 +21,6 @@
       </div>
     </div>
   </div>
-  <div class="tb-padding--24"></div>
+
+  <div class="tb-padding--24" ngClass.xs="tb-padding--0"></div>
 </div>

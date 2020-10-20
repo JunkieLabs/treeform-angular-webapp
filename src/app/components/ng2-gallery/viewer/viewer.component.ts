@@ -255,7 +255,7 @@ export class ViewerComponent {
             case 'auto': {
                 this.categorySelected = 'preview_xxs'
 
-                if (screenWidth > this.images[this.currentIdx]['preview_xxs'].width &&
+                if (screenWidth > this.images[this.currentIdx]['preview_xxs']?.width &&
                     screenHeight > this.images[this.currentIdx]['preview_xxs'].height) {
                     this.categorySelected = 'preview_xs'
                 }
@@ -263,7 +263,7 @@ export class ViewerComponent {
                 //     screenHeight > this.images[this.currentIdx]['preview_xs'].height) {
                 //     this.categorySelected = 'preview_s'
                 // }
-                if (screenWidth > this.images[this.currentIdx]['preview_s'].width &&
+                if (screenWidth > this.images[this.currentIdx]['preview_s']?.width &&
                     screenHeight > this.images[this.currentIdx]['preview_s'].height) {
                     this.categorySelected = 'preview_m'
                 }

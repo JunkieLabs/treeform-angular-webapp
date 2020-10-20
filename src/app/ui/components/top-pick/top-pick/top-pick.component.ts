@@ -39,7 +39,7 @@ export class TopPickComponent implements OnInit {
     this.getTopPicks();
   }
 
-  OnSlideChange(event) {
+  _onSlideChange(event) {
     setTimeout(() => {
       this.StartAnimation(event);
     });
@@ -50,7 +50,7 @@ export class TopPickComponent implements OnInit {
     this._mNextTopPick = next;
   }
 
-  onAnimationDone(e) {
+  _onAnimationDone(e) {
     this._mIsTriggred = 'true';
     this._mTopPick = this._mNextTopPick;
   }

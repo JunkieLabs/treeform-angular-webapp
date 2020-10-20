@@ -319,8 +319,8 @@ export class GalleryComponent implements OnInit, OnDestroy, OnChanges {
     private isScrolledIntoView(element: any): boolean {
         const elementTop = element.getBoundingClientRect().top
         const elementBottom = element.getBoundingClientRect().bottom
-
-        return elementTop < window.innerHeight && elementBottom >= 0 && (elementBottom > 0 || elementTop > 0)
+        return true
+        // return elementTop < window.innerHeight && elementBottom >= 0 && (elementBottom > 0 || elementTop > 0)
     }
 
     private refreshNavigationErrorState(): void {

@@ -1,21 +1,20 @@
 <div class="tb-container" fxLayout="column">
-  <h2 class="tb-typo--h2 tb-color--grey-900 tb-font-weight--medium  tb-text-align--center">Advantages</h2>
-  <div class="tb-padding--48"></div>
-  <div fxLayout="row" fxLayoutAlign="start center" fxLayout.lt-sm="column">
+  <h2 class="tb-typo--h3 tb-color--grey-900  tb-text-align--center">Advantages</h2>
+  <div class="tb-padding--48" ngClass.xs="tb-padding--24"></div>
+  <div fxLayout="row" fxLayoutAlign="start stretch" fxLayout.lt-sm="column" fxLayoutGap="20px" fxLayoutGap.lt-sm="20px">
     <ng-container *ngFor="let item of _mAdvantages; let index= index;let count= count">
-      <div fxFlex.gt-sm="33.33">
-        <div class="tb-border--thick tb-border--r10 tb-padding--36">
-
-          <div class="tb-height--126">
+      <div class="" fxFlex="3 3 calc(33.33% - 20px)" fxFlex.lt-sm="none">
+        <div class="advantage-card tb-height--full tb-border--r10" ngClass.lt-md="tb-padding--12" ngClass.gt-sm="tb-padding--36" fxLayout="column">
+          <div class="tb-height--96 tb-flex--shrink-0">
             <img src={{item.icon}} class="tb-image" alt="">
           </div>
           <div class="tb-padding--8"></div>
-          <h4 class="tb-typo--h4 tb-font-weight--medium tb-color--grey-900 tb-text-align--center">{{item.title}}</h4>
-          <div class="tb-padding--6"></div>
-          <p class="tb-typo--body1 tb-color-grey-900">{{item.body}} </p>
+          <h4 class="tb-typo--h4 tb-color--grey-900 tb-text-align--center">{{item.title}}</h4>
+          <div class="tb-padding--16"></div>
+          <p class="tb-typo--body2 tb-color-grey-900 tb-text-align--center">{{item.body}} </p>
         </div>
       </div>
-      <div *ngIf="count-1 !== index"  class="tb-padding--16"></div>
+      <!-- <div *ngIf="count-1 !== index"  class="tb-padding--16"></div> -->
     </ng-container>
     <div ngClass.lt-md="tb-padding--12"></div>
   </div>

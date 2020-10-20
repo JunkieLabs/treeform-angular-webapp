@@ -3,13 +3,13 @@
     height: 564px;
     width: 100%;
   }
-  &.gt-md{
+  &.gt-md {
     .plant-container {
       height: 600px;
       width: 100%;
     }
   }
-  &.lt-md{
+  &.lt-md {
     .plant-container {
       height: 264px;
       width: 100%;
@@ -17,7 +17,7 @@
   }
 }
 
-.erase{
+.erase {
   top: 0;
   left: 0;
   right: 0;
@@ -26,4 +26,9 @@
   opacity: 0;
   height: 100%;
   transition: all 4s ease;
+}
+
+.image-border {
+  border-style: none !important;
+  border-image-outset: 0;
 }

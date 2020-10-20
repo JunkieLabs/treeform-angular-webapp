@@ -16,8 +16,9 @@ $font-roboto: "Roboto", sans-serif;
 $font-montserrat: "Montserrat", sans-serif;
 $font-Baloo-Bhaina-2: "Baloo Bhaina 2", sans-serif;
 
-$tb-typo-family-primary: $font-Baloo-Bhaina-2 !default;
-// $tb-typo-family-secondary: $font-lato !default;
+$font-overlock: "Overlock", cursive;
+$tb-typo-family-primary: $font-overlock !default;
+$tb-typo-family-secondary: $font-montserrat !default;
 
 // $tb-typo-weight-thin: 100;
 // $tb-typo-weight-lightest:200;
@@ -48,7 +49,7 @@ $tb-typo-line-height: (
   subtitle1: 1.2,
   subtitle2: 1.2,
   body1: 1.3,
-  body2: 1.1,
+  body2: 1.2,
   body3: 0.85,
   button: 1.0,
   caption: 1,
@@ -75,16 +76,16 @@ $tb-typo-line-height: (
 $tb-typo-sizes: (
 
   h1: 7,
-  h2: 5.2,
-  h3: 3.9,
-  h4: 3.0,
+  h2: 4.8,
+  h3: 3.6,
+  h4: 2.4,
   h5: 1.3,
   h6: 0.95,
   subtitle1: 1.37,
   subtitle2: 1,
-  body1: 1.6,
-  body2: 0.89,
-  body3: 0.74,
+  body1: 1.35,
+  body2: 1.2,
+  body3: 0.84,
   button: 1.1,
   button2: 0.75,
   caption: 0.60,
@@ -92,11 +93,11 @@ $tb-typo-sizes: (
 );
 
 $tb-typo-weights: (
-  h1: 500,
+  h1: 400,
   // h2: 300,
-    h2: 600,
-  h3: 600,
-  h4: 500,
+    h2: 900,
+  h3: 700,
+  h4: 700,
   h5: 500,
   h6: 500,
   subtitle1: 400,
@@ -109,7 +110,7 @@ $tb-typo-weights: (
   overline: 400
 );
 $tb-typo-base: (
-  font-family: $tb-typo-family-primary,
+  font-family: $tb-typo-family-secondary,
   -moz-osx-font-smoothing: grayscale,
   -webkit-font-smoothing: antialiased
 );
@@ -120,6 +121,7 @@ $tb-typo-map: tbTypo(
       font-size: #{map-get($tb-typo-sizes, h1)}rem,
       /* 96sp*/ line-height: map-get($tb-typo-line-height, h1),
       font-weight: map-get($tb-typo-weights, h1),
+      font-family: $tb-typo-family-primary,
       text-decoration: inherit,
       text-transform: inherit
     ),
@@ -127,6 +129,7 @@ $tb-typo-map: tbTypo(
       font-size: #{map-get($tb-typo-sizes, h2)}rem,
       /* 60sp*/ line-height: map-get($tb-typo-line-height, h2),
       font-weight: map-get($tb-typo-weights, h2),
+      font-family: $tb-typo-family-primary,
       text-decoration: inherit,
       text-transform: inherit
     ),
@@ -134,6 +137,7 @@ $tb-typo-map: tbTypo(
       font-size: #{map-get($tb-typo-sizes, h3)}rem,
       /* 60sp*/ line-height: map-get($tb-typo-line-height, h3),
       font-weight: map-get($tb-typo-weights, h3),
+      font-family: $tb-typo-family-primary,
       text-decoration: inherit,
       text-transform: inherit
     ),
@@ -141,6 +145,7 @@ $tb-typo-map: tbTypo(
       font-size: #{map-get($tb-typo-sizes, h4)}rem,
       /* 60sp*/ line-height: map-get($tb-typo-line-height, h4),
       font-weight: map-get($tb-typo-weights, h4),
+      font-family: $tb-typo-family-primary,
       text-decoration: inherit,
       text-transform: inherit
     ),
@@ -176,7 +181,6 @@ $tb-typo-map: tbTypo(
       font-size: #{map-get($tb-typo-sizes, body1)}rem,
       /* 60sp*/ line-height: map-get($tb-typo-line-height, body1),
       font-weight: map-get($tb-typo-weights, body1),
-      font-family: $tb-typo-family-primary,
       text-decoration: inherit,
       text-transform: inherit
     ),
@@ -184,7 +188,6 @@ $tb-typo-map: tbTypo(
       font-size: #{map-get($tb-typo-sizes, body2)}rem,
       /* 60sp*/ line-height: map-get($tb-typo-line-height, body2),
       font-weight: map-get($tb-typo-weights, body2),
-      font-family: $tb-typo-family-primary,
       text-decoration: inherit,
       text-transform: inherit
     ),

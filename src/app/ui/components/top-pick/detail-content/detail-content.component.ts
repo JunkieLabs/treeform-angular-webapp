@@ -53,7 +53,7 @@ export class DetailContentComponent implements OnInit {
     this._mNext = next;
   }
 
-  onAnimationDone(e){
+  _onAnimationDone(e){
     this._mIsTriggred = 'true';
     this._mModel = this._mNext
   }
