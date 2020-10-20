@@ -1,27 +1,28 @@
 <div class="tb-container" fxLayout="column">
-  <h2 class="tb-typo--h2 tb-color--grey-900 tb-font-weight--medium tb-text-align--center">Our Services</h2>
-  <h3 class="tb-typo--h3 tb-color--grey-500 tb-font-weight--normal  tb-text-align--center">we care for your ecosystem
+  <h2 class="tb-typo--h3 tb-color--grey-900  tb-text-align--center">Our Services</h2>
+  <h3 class="tb-typo--h4 tb-color--grey-500 tb-font-weight--normal  tb-text-align--center">we care for your ecosystem
   </h3>
   <div class="tb-padding--12"></div>
-  <div fxLayout="row" fxLayoutAlign="start center" fxLayout.lt-sm="column">
+  <div fxLayout="row" fxLayoutAlign="start center" fxLayout.lt-sm="column" fxLayoutGap="20px" fxLayoutGap.gt-sm="none">
     <ng-container *ngFor="let service of _mServices; let index= index;let count= count">
       <div fxFlex.gt-sm="33.33">
         <div ngClass.gt-sm="tb-padding--36">
-          <div class="tb-padding--12" ngClass.sm="tb-flex--shrink-0">
+          <div class="tb-padding--12 image-area" ngClass.sm="tb-flex--shrink-0">
             <img src={{service.icon}} class="tb-image" alt="">
           </div>
           <div class="tb-padding--8"></div>
           <div class="tb-padding--left-24">
-            <h4 class="tb-typo--h4 tb-color--grey-500">{{service.title}} </h4>
-            <h4 class="tb-typo--h4 tb-color--grey-900 tb-font-weight--medium">{{service.subtitle}} </h4>
+            <h4 class="tb-typo--h4 tb-color--grey-500 tb-font-weight--medium text-wrap">{{service.title}} </h4>
+            <h4 class="tb-typo--h4 tb-color--grey-900 text-wrap">{{service.subtitle}} </h4>
             <div class="tb-padding--8"></div>
-            <ng-container *ngFor="let option of service?.options">
+            <p class="tb-typo--body2 tb-color--grey-700">{{service.detail}}</p>
+            <!-- <ng-container *ngFor="let option of service?.options">
               <h5 class="tb-typo--h5 tb-color--grey-900  tb-font-weight--medium">{{option.type}}
                 &thinsp;: &thinsp;
                 <span class="tb-color--grey-700 tb-font-weight--normal">{{option.value}} </span>
               </h5>
               <div class="tb-padding--2"></div>
-            </ng-container>
+            </ng-container> -->
           </div>
         </div>
       </div>
