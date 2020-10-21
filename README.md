@@ -74,12 +74,14 @@ npm start
 ### **For PWA**
 - Clone the project you haven't done that.
 - then checkout into branch: `treeform-pwa`
+- PWA requires a separate HTTP server because ng serve does not work with service workers.
+- To install http-server package from npm [click here](https://www.npmjs.com/package/http-server)
 
 ```bash
 
 git checkout treeform-pwa
 npm install
-npm start
+npm run serve:pwa or http-server -p 8080 -c-1 dist/<project-name>
 
 ```
 
@@ -93,7 +95,8 @@ npm start
 > These are some of the important features implemented in this starter!
 
 - **PWA: Progressive Webapp**
-  - For more details, [read here](#pwa:-progressive-webapp) 
+  - PWA gives our browser native support for offline availability and basic caching.
+  - For more details, [read here](https://angular.io/guide/service-worker-getting-started) 
 
 
 - **Fully responsive design using flex properties**
@@ -130,7 +133,7 @@ Follow these steps.
 
 - Install [Image Magick](https://imagemagick.org/index.php) in your system. 
 - Add Images in any folder except gallery inside assets/img  folder.
-- Craete command in pacakge.json file. For example
+- Create command in pacakge.json file. For example
 
 ```json
     "convert:newImages": "node ./image-convert.js --gName=newImages ./src/assets/img/newImages",
@@ -141,8 +144,30 @@ Follow these steps.
 <br>
 
 ## PWA: Progressive Webapp
+ - PWA gives our browser native support for offline availability and basic caching.
+ - Adding PWA support to Angular project.
 
+```bash
+ng add @angular/pwa --project *project-name*
+```
 
+ - The Above command creates two new files to the project.
+    1. The service worker configuration file called ngsw-config.json.
+    2. The manifest.webmanifest.
+
+ - The index.html file is Updated with manifest.webmanifest file using link tag.
+ - Also meta tags for theme-color is added.
+ - ngsw-config.json specifies the caching behaviors and other settings.
+
+```bash
+ng build --prod
+```
+ - Build the project for production with above command.
+
+```bash
+ http-server -p 8080 -c-1 dist/<project-name>
+```
+ - Run the project using above command.
 
 <br>
 

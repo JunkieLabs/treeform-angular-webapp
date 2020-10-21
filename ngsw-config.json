@@ -3,7 +3,7 @@
   "index": "/index.html",
   "dataGroups": [
     {
-      "name": "api",
+      "name": "api-performance",
       "urls": [
         "/data/**",
         "/api/**"

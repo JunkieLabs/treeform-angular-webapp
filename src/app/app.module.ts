@@ -6,20 +6,23 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ContainerModule } from './ui/container/container.module';
 import { HttpClientModule } from '@angular/common/http';
 import { ApiModule } from './components/api/api.module';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
+  declarations: [AppComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     HttpClientModule,
     ApiModule.forRoot(),
-    ContainerModule
+    ContainerModule,
+    ServiceWorkerModule.register('ngsw-worker.js', {
+      enabled: environment.production,
+    }),
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
