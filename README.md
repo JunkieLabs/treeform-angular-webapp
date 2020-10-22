@@ -210,7 +210,7 @@ This project is an open-source initiative by Junkie Labs team.
 
 For any questions or suggestions send a mail to junkielabs.dev@gmail.com or chat with the core-team on gitter.
 
-[![Gitter](https://badges.gitter.im/JunkieLabs/community.svg)](https://gitter.im/JunkieLabs/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+[![Gitter](https://badges.gitter.im/JunkieLabs/treeform-angular.svg)](https://gitter.im/JunkieLabs/treeform-angular?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
 
 <br>
