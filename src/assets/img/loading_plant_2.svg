@@ -1,0 +1,415 @@
+<svg id="el6nilphpwf1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+    viewBox="0 0 512 512" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+    <style>
+        <![CDATA[
+        #el6nilphpwf2 {
+            animation: el6nilphpwf2_c_o 3500ms linear infinite alternate forwards
+        }
+
+        @keyframes el6nilphpwf2_c_o {
+            0% {
+                opacity: 0
+            }
+
+            57.142857% {
+                opacity: 0;
+                animation-timing-function: cubic-bezier(0.420000, 0, 1, 1)
+            }
+
+            71.428571% {
+                opacity: 1;
+                animation-timing-function: cubic-bezier(0.420000, 0, 1, 1)
+            }
+
+            85.714286% {
+                opacity: 1
+            }
+
+            100% {
+                opacity: 1
+            }
+        }
+
+        #el6nilphpwf3 {
+            animation: el6nilphpwf3_c_o 3500ms linear infinite alternate forwards
+        }
+
+        @keyframes el6nilphpwf3_c_o {
+            0% {
+                opacity: 0
+            }
+
+            57.142857% {
+                opacity: 0;
+                animation-timing-function: cubic-bezier(0.420000, 0, 1, 1)
+            }
+
+            71.428571% {
+                opacity: 1;
+                animation-timing-function: cubic-bezier(0.420000, 0, 1, 1)
+            }
+
+            85.714286% {
+                opacity: 1
+            }
+
+            100% {
+                opacity: 1
+            }
+        }
+
+        #el6nilphpwf4 {
+            animation: el6nilphpwf4_c_o 3500ms linear infinite alternate forwards
+        }
+
+        @keyframes el6nilphpwf4_c_o {
+            0% {
+                opacity: 0
+            }
+
+            42.857143% {
+                opacity: 0;
+                animation-timing-function: cubic-bezier(0.420000, 0, 1, 1)
+            }
+
+            57.142857% {
+                opacity: 1;
+                animation-timing-function: cubic-bezier(0.420000, 0, 1, 1)
+            }
+
+            85.714286% {
+                opacity: 1
+            }
+
+            100% {
+                opacity: 1
+            }
+        }
+
+        #el6nilphpwf5 {
+            animation: el6nilphpwf5_c_o 3500ms linear infinite alternate forwards
+        }
+
+        @keyframes el6nilphpwf5_c_o {
+            0% {
+                opacity: 0
+            }
+
+            42.857143% {
+                opacity: 0;
+                animation-timing-function: cubic-bezier(0.420000, 0, 1, 1)
+            }
+
+            57.142857% {
+                opacity: 1;
+                animation-timing-function: cubic-bezier(0.420000, 0, 1, 1)
+            }
+
+            85.714286% {
+                opacity: 1
+            }
+
+            100% {
+                opacity: 1
+            }
+        }
+
+        #el6nilphpwf6 {
+            animation: el6nilphpwf6_c_o 3500ms linear infinite alternate forwards
+        }
+
+        @keyframes el6nilphpwf6_c_o {
+            0% {
+                opacity: 0
+            }
+
+            14.285714% {
+                opacity: 0;
+                animation-timing-function: cubic-bezier(0.420000, 0, 1, 1)
+            }
+
+            28.571429% {
+                opacity: 1;
+                animation-timing-function: cubic-bezier(0.420000, 0, 1, 1)
+            }
+
+            85.714286% {
+                opacity: 1
+            }
+
+            100% {
+                opacity: 1
+            }
+        }
+
+        #el6nilphpwf7 {
+            animation: el6nilphpwf7_c_o 3500ms linear infinite alternate forwards
+        }
+
+        @keyframes el6nilphpwf7_c_o {
+            0% {
+                opacity: 0
+            }
+
+            14.285714% {
+                opacity: 0;
+                animation-timing-function: cubic-bezier(0.420000, 0, 1, 1)
+            }
+
+            28.571429% {
+                opacity: 1;
+                animation-timing-function: cubic-bezier(0.420000, 0, 1, 1)
+            }
+
+            85.714286% {
+                opacity: 1
+            }
+
+            100% {
+                opacity: 1
+            }
+        }
+
+        #el6nilphpwf8 {
+            animation: el6nilphpwf8_c_o 3500ms linear infinite alternate forwards
+        }
+
+        @keyframes el6nilphpwf8_c_o {
+            0% {
+                opacity: 0
+            }
+
+            71.428571% {
+                opacity: 0;
+                animation-timing-function: cubic-bezier(0.420000, 0, 1, 1)
+            }
+
+            85.714286% {
+                opacity: 1
+            }
+
+            100% {
+                opacity: 1
+            }
+        }
+
+        #el6nilphpwf9 {
+            animation: el6nilphpwf9_c_o 3500ms linear infinite alternate forwards
+        }
+
+        @keyframes el6nilphpwf9_c_o {
+            0% {
+                opacity: 0
+            }
+
+            71.428571% {
+                opacity: 0;
+                animation-timing-function: cubic-bezier(0.420000, 0, 1, 1)
+            }
+
+            85.714286% {
+                opacity: 1
+            }
+
+            100% {
+                opacity: 1
+            }
+        }
+
+        #el6nilphpwf10 {
+            animation: el6nilphpwf10_c_o 3500ms linear infinite alternate forwards
+        }
+
+        @keyframes el6nilphpwf10_c_o {
+            0% {
+                opacity: 0
+            }
+
+            28.571429% {
+                opacity: 0;
+                animation-timing-function: cubic-bezier(0.420000, 0, 1, 1)
+            }
+
+            42.857143% {
+                opacity: 1;
+                animation-timing-function: cubic-bezier(0.420000, 0, 1, 1)
+            }
+
+            85.714286% {
+                opacity: 1
+            }
+
+            100% {
+                opacity: 1
+            }
+        }
+
+        #el6nilphpwf11 {
+            animation: el6nilphpwf11_c_o 3500ms linear infinite alternate forwards
+        }
+
+        @keyframes el6nilphpwf11_c_o {
+            0% {
+                opacity: 0
+            }
+
+            28.571429% {
+                opacity: 0;
+                animation-timing-function: cubic-bezier(0.420000, 0, 1, 1)
+            }
+
+            42.857143% {
+                opacity: 1;
+                animation-timing-function: cubic-bezier(0.420000, 0, 1, 1)
+            }
+
+            85.714286% {
+                opacity: 1
+            }
+
+            100% {
+                opacity: 1
+            }
+        }
+
+        #el6nilphpwf12 {
+            animation: el6nilphpwf12_c_o 3500ms linear infinite alternate forwards
+        }
+
+        @keyframes el6nilphpwf12_c_o {
+            0% {
+                opacity: 0;
+                animation-timing-function: cubic-bezier(0.420000, 0, 1, 1)
+            }
+
+            14.285714% {
+                opacity: 1;
+                animation-timing-function: cubic-bezier(0.420000, 0, 1, 1)
+            }
+
+            85.714286% {
+                opacity: 1
+            }
+
+            100% {
+                opacity: 1
+            }
+        }
+
+        #el6nilphpwf13 {
+            animation: el6nilphpwf13_c_o 3500ms linear infinite alternate forwards
+        }
+
+        @keyframes el6nilphpwf13_c_o {
+            0% {
+                opacity: 0;
+                animation-timing-function: cubic-bezier(0.420000, 0, 1, 1)
+            }
+
+            14.285714% {
+                opacity: 1;
+                animation-timing-function: cubic-bezier(0.420000, 0, 1, 1)
+            }
+
+            85.714286% {
+                opacity: 1
+            }
+
+            100% {
+                opacity: 1
+            }
+        }
+
+        #el6nilphpwf14 {
+            animation: el6nilphpwf14_c_o 3500ms linear infinite alternate forwards
+        }
+
+        @keyframes el6nilphpwf14_c_o {
+            0% {
+                opacity: 0;
+                animation-timing-function: cubic-bezier(0.420000, 0, 1, 1)
+            }
+
+            14.285714% {
+                opacity: 1;
+                animation-timing-function: cubic-bezier(0.420000, 0, 1, 1)
+            }
+
+            85.714286% {
+                opacity: 1
+            }
+
+            100% {
+                opacity: 1
+            }
+        }
+
+        #el6nilphpwf15 {
+            animation: el6nilphpwf15_c_o 3500ms linear infinite alternate forwards
+        }
+
+        @keyframes el6nilphpwf15_c_o {
+            0% {
+                opacity: 0;
+                animation-timing-function: cubic-bezier(0.420000, 0, 1, 1)
+            }
+
+            14.285714% {
+                opacity: 1;
+                animation-timing-function: cubic-bezier(0.420000, 0, 1, 1)
+            }
+
+            85.714286% {
+                opacity: 1
+            }
+
+            100% {
+                opacity: 1
+            }
+        }
+        ]]>
+    </style>
+    <path id="el6nilphpwf2"
+        d="M408.906000,45.536000C411.169000,51.722000,436.307000,125.340000,384.751000,212.153000C353.436000,264.882000,305.890000,268.371000,301.234000,268.587000C298.507000,264.806000,271.664000,225.408000,293.471000,168.090000C329.376000,73.721000,402.655000,47.612000,408.906000,45.536000Z"
+        opacity="0" fill="#dadada" stroke="none" stroke-width="1" />
+    <path id="el6nilphpwf3"
+        d="M408.906000,45.536000L301.234000,268.587000L301.234000,268.587000C305.891000,268.370000,353.436000,264.882000,384.751000,212.153000C436.308000,125.340000,411.169000,51.722000,408.906000,45.536000Z"
+        opacity="0" fill="#e9e9e9" stroke="none" stroke-width="1" />
+    <path id="el6nilphpwf4"
+        d="M103.094000,45.536000C100.831000,51.722000,75.693000,125.340000,127.249000,212.153000C158.564000,264.882000,206.110000,268.371000,210.766000,268.587000C213.493000,264.806000,240.336000,225.408000,218.528000,168.090000C182.624000,73.721000,109.345000,47.612000,103.094000,45.536000Z"
+        opacity="0" fill="#dadada" stroke="none" stroke-width="1" />
+    <path id="el6nilphpwf5"
+        d="M218.528000,168.090000C182.624000,73.721000,109.345000,47.612000,103.094000,45.536000C166.764000,167.146000,201.107000,245.042000,211.028000,268.218000C214.849000,262.756000,239.774000,223.930000,218.528000,168.090000Z"
+        opacity="0" fill="#e9e9e9" stroke="none" stroke-width="1" />
+    <path id="el6nilphpwf6"
+        d="M256,0C248.324000,7.449000,159.592000,97.362000,173.704000,260.712000C182.275000,359.930000,249.343000,398.595000,256,402.199000C262.657000,398.595000,329.725000,359.929000,338.296000,260.712000C352.408000,97.362000,263.676000,7.449000,256,0Z"
+        opacity="0" fill="#dadada" stroke="none" stroke-width="1" />
+    <path id="el6nilphpwf7"
+        d="M256,0L256,402.199000C262.657000,398.595000,329.725000,359.929000,338.296000,260.712000C352.408000,97.362000,263.676000,7.449000,256,0Z"
+        opacity="0" fill="#e9e9e9" stroke="none" stroke-width="1" />
+    <path id="el6nilphpwf8"
+        d="M445.966000,250.043000C462.661000,192.664000,457.010000,139.334000,457.010000,139.334000C457.010000,139.334000,424.859000,153.656000,344.061000,205.869000C281.256000,246.454000,261.824000,317.612000,256,336.790000L329.813000,336.790000C383.468000,336.790000,430.976000,301.562000,445.966000,250.043000Z"
+        opacity="0" fill="#dadada" stroke="none" stroke-width="1" />
+    <path id="el6nilphpwf9"
+        d="M457.011000,139.333000C457.011000,139.333000,373.972000,303.376000,256,336.790000L329.813000,336.790000C383.469000,336.790000,430.976000,301.562000,445.967000,250.043000C462.661000,192.664000,457.011000,139.333000,457.011000,139.333000Z"
+        opacity="0" fill="#e9e9e9" stroke="none" stroke-width="1" />
+    <path id="el6nilphpwf10"
+        d="M66.034000,250.043000C49.339000,192.664000,54.990000,139.334000,54.990000,139.334000C54.990000,139.334000,87.141000,153.656000,167.939000,205.869000C230.744000,246.454000,250.176000,317.612000,256,336.790000L182.187000,336.790000C128.532000,336.790000,81.024000,301.562000,66.034000,250.043000Z"
+        opacity="0" fill="#dadada" stroke="none" stroke-width="1" />
+    <path id="el6nilphpwf11"
+        d="M256,336.790000C250.176000,317.612000,230.744000,246.454000,167.939000,205.868000C87.140000,153.655000,54.989000,139.333000,54.989000,139.333000C54.989000,139.333000,138.028000,303.377000,256,336.790000Z"
+        opacity="0" fill="#e9e9e9" stroke="none" stroke-width="1" />
+    <path id="el6nilphpwf12"
+        d="M309.376000,512L202.624000,512C174.309000,512,150.020000,491.811000,144.843000,463.973000L121.956000,340.901000L390.045000,340.901000L367.158000,463.973000C361.980000,491.811000,337.691000,512,309.376000,512Z"
+        transform="matrix(1 0 0 1 1.52250000000004 0)" opacity="0" fill="#e9e9e9" stroke="none"
+        stroke-width="1" />
+    <path id="el6nilphpwf13"
+        d="M338.192000,340.902000L315.305000,463.974000C310.128000,491.811000,285.838000,512,257.523000,512L309.376000,512C337.691000,512,361.980000,491.811000,367.157000,463.973000L390.044000,340.901000L338.192000,340.901000L338.192000,340.902000Z"
+        opacity="0" fill="#e0e0e0" stroke="none" stroke-width="1" />
+    <path id="el6nilphpwf14"
+        d="M394.718000,368.559000L117.282000,368.559000C106.040000,368.559000,96.926000,359.445000,96.926000,348.203000L96.926000,348.203000C96.926000,336.961000,106.040000,327.847000,117.282000,327.847000L394.719000,327.847000C405.961000,327.847000,415.075000,336.961000,415.075000,348.203000L415.075000,348.203000C415.074000,359.445000,405.961000,368.559000,394.718000,368.559000Z"
+        opacity="0" fill="#e0e0e0" stroke="none" stroke-width="1" />
+    <path id="el6nilphpwf15"
+        d="M394.718000,327.846000L362.104000,327.846000L362.104000,368.558000L394.718000,368.558000C405.960000,368.558000,415.074000,359.444000,415.074000,348.202000L415.074000,348.202000C415.075000,336.960000,405.961000,327.846000,394.718000,327.846000Z"
+        opacity="0" fill="#e0e0e0" stroke="none" stroke-width="1" />
+</svg>
