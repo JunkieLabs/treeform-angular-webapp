@@ -7,9 +7,9 @@
   </div> -->
   <div class="tb-padding--12"></div>
   <div fxLayout.gt-sm="column" fxLayout.lt-md="row" class="tb-height--full">
-    <div fxLayout="row" fxLayout.lt-md="column" *ngIf="_mTopPicks.length == 0" class="">
+    <div fxLayout="row" fxLayout.lt-md="column" *ngIf="_mTopPicks.length == 0" class="shimmer-effect">
       <ng-container *ngFor="let item of [1,2,3,4,5,6,7,8,9,10]">
-        <div fxFlex.gt-sm ngClass.gt-sm="shimmer-effect tb-height--126 tb-border--r8 tb-margin--8"></div>
+        <div fxFlex.gt-sm ngClass.gt-sm="tb-height--126 tb-border--r8 tb-margin--8"></div>
       </ng-container>
     </div>
     <div *ngIf="_mTopPicks" fxFlex.lt-md="none" ngClass.lt-md="shadow-right-light">
@@ -31,7 +31,7 @@
         </div>
 
         <div *ngIf="_mTopPick" fxLayout="row" fxLayoutAlign="start center" fxLayout.lt-md="column">
-          <div fxFlex.gt-sm fxFlexOrder.lt-md="3" class="minheight">
+          <div fxFlex.gt-sm fxFlexOrder.lt-md="3">
             <app-detail-content [model]="_mTopPick"></app-detail-content>
           </div>
           <div ngClass.lt-md="tb-padding--8" fxFlexOrder.lt-md="2"></div>
@@ -41,12 +41,12 @@
           </div>
         </div>
         <div *ngIf="!_mTopPick" class="laoding" fxLayout="row" fxLayoutAlign="start center" fxLayout.lt-md="column">
-          <div fxFlex.gt-sm fxFlexOrder.lt-md="3" class="minheight" ngClass.lt-md="tb-width--full">
-            <div ngClass.gt-sm="shimmer-effect tb-padding--48 tb-margin--8 tb-border--r8 tb-width--full"></div>
-            <div ngClass.gt-sm="shimmer-effect tb-padding--36 tb-margin--8 tb-border--r8 tb-width--196"></div>
-            <div ngClass.gt-sm="shimmer-effect tb-padding--36 tb-margin--8 tb-border--r8 tb-width--196"></div>
-            <div ngClass.gt-sm="shimmer-effect tb-padding--36 tb-margin--8 tb-border--r8 tb-width--196"></div>
-            <div ngClass.gt-sm="tb-margin--8 tb-border--r8 shimmer-effect tb-width--full">
+          <div fxFlex.gt-sm fxFlexOrder.lt-md="3" class="shimmer-effect"  ngClass.lt-md="tb-width--full">
+            <div ngClass.gt-sm="tb-padding--48 tb-margin--8 tb-border--r8 tb-width--full"></div>
+            <div ngClass.gt-sm="tb-padding--36 tb-margin--8 tb-border--r8 tb-width--196"></div>
+            <div ngClass.gt-sm="tb-padding--36 tb-margin--8 tb-border--r8 tb-width--196"></div>
+            <div ngClass.gt-sm="tb-padding--36 tb-margin--8 tb-border--r8 tb-width--196"></div>
+            <div ngClass.gt-sm="tb-margin--8 tb-border--r8 tb-width--full">
               <div class="tb-padding--56"></div>
               <div class="tb-padding--56"></div>
             </div>

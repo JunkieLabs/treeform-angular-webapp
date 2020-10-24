@@ -60,9 +60,7 @@ export class TopPickComponent implements OnInit {
    */
   getTopPicks() {
     this.topPickService.getTopPicks().subscribe((response) => {
-      setTimeout(() => {
         this._mTopPicks = response;
-      }, 5000);
     });
   }
 }
