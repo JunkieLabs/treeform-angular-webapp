@@ -55,14 +55,10 @@ export class VideoComponent implements OnInit {
   }
 
   playVideo() {
-    console.log('playyyy');
-
     this.videoPlayer.play()
   }
 
   stopVideo() {
-    console.log('pauseeee');
-
     this.videoPlayer.pause();
   }
 

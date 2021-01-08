@@ -89,7 +89,7 @@ export class SliderComponent implements OnInit, AfterViewInit {
     }
   }
 
-  public setGradient(colors) {
+  public _setGradient(colors) {
     const gradientColors = colors.toString();
     const styles = {
       'background-image': `linear-gradient(${gradientColors})`,

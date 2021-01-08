@@ -41,11 +41,11 @@ export class TopPickComponent implements OnInit {
 
   _onSlideChange(event) {
     setTimeout(() => {
-      this.StartAnimation(event);
+      this.startAnimation(event);
     });
   }
 
-  StartAnimation(next) {
+  startAnimation(next) {
     this._mIsTriggred = this._mIsTriggred === 'true' ? 'false' : 'true';
     this._mNextTopPick = next;
   }

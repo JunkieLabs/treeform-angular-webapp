@@ -83,7 +83,7 @@ export class ImageViewerComponent implements OnInit {
   @Input('model') set slide(data: ParamTopPick) {
     if (data) {
       this._mModel = data;
-      this.StartAnimation(this._mModel.img);
+      this.startAnimation(this._mModel.img);
     }
   }
 
@@ -97,7 +97,7 @@ export class ImageViewerComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  StartAnimation(nextImage: string) {
+  startAnimation(nextImage: string) {
       if (this._mDirection == 'right') {
         this._mTriggerRight = this._mTriggerRight === 'true' ? 'false' : 'true';
       } else {
