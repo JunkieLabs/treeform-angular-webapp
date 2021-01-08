@@ -93,7 +93,8 @@ npm start
 > These are some of the important features implemented in this starter!
 
 - **PWA: Progressive Webapp**
-  - For more details, [read here](#pwa:-progressive-webapp) 
+  - For more details, [read here](https://web.dev/what-are-pwas/)
+  - service-workers, [read here](https://angular.io/guide/service-worker-getting-started) 
 
 
 - **Fully responsive design using flex properties**
@@ -137,12 +138,6 @@ Follow these steps.
 
 ```
 - In above command newImages is a new folder. And [image-convert.js](https://github.com/JunkieLabs/treeform-angular-webapp/blob/master/image-convert.js) file is the script. After conversion one new folder will be there in assets/img/gallery.
-
-<br>
-
-## PWA: Progressive Webapp
-
-
 
 <br>
 
