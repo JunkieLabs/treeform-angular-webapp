@@ -143,10 +143,10 @@ Follow these steps.
 
 ## SCSS: Styling
 
-``` 
-No CSS in any style related file ! The design is fully design using scss structure.
 
-```
+> No CSS in any style related file ! The design is fully design using scss structure.
+
+
 
 All the basic and common scss class has a prefix selector *tb-* to distinguish it from other angular material related classes. you can find the styles in [theme/tb](https://github.com/JunkieLabs/treeform-angular-webapp/tree/master/src/theme/tb)
 
@@ -159,12 +159,12 @@ All the basic and common scss class has a prefix selector *tb-* to distinguish i
 
 # FAQ:
 
-### Does this library require bootstrap?
+### Does this project require bootstrap?
 
 
-``` 
-No! There isn't a requirement of this library. The design is implemented only using angular material and SCSS styles.
-```
+
+>  No! There isn't a requirement of this library. The design is implemented only using angular material and SCSS styles.
+
 
 
 
