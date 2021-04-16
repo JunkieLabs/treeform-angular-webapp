@@ -23,52 +23,105 @@ import {
     //   ]),
     // ]),
     trigger('slideInOutRight', [
+      state('true', style({ opacity: 1, width: '100%' })),
+      state('false', style({ opacity: 1, width: '0%' })),
       transition('false => true', [
         animate(
-          '500ms',
+          '800ms',
           keyframes([
             style({
               opacity: 1,
               transform: 'translate3d(100%, 0, 0)',
+              width: '100%',
               offset: 0,
             }),
-            style({ opacity: 1, transform: 'translate3d(0, 0, 0)', offset: 1 }),
+            style({ opacity: 1, transform: 'translate3d(0, 0, 0)', width: '100%', offset: 1 }),
           ])
         ),
       ]),
+
       transition('true => false', [
         animate(
-          '500ms',
+          '400ms 600ms',
           keyframes([
             style({ opacity: 1, width: '100%', offset: 0 }),
             style({ opacity: 1, width: '0%', offset: 1 }),
           ])
         ),
       ]),
+
+
     ]),
     trigger('slideInOutLeft', [
-      transition('true => false', [
-        animate(
-          '500ms',
-          keyframes([
-            style({ opacity: 1, transform: 'translate3d(0, 0, 0)', offset: 0 }),
-            style({
-              opacity: 1,
-              transform: 'translate3d(100%, 0, 0)',
-              offset: 1,
-            }),
-          ])
-        ),
-      ]),
+      // transition('true => false', [
+      //   animate(
+      //     '500ms',
+      //     keyframes([
+      //       style({ opacity: 1, transform: 'translate3d(0, 0, 0)', offset: 0 }),
+      //       style({
+      //         opacity: 1,
+      //         transform: 'translate3d(100%, 0, 0)',
+      //         offset: 1,
+      //       }),
+      //     ])
+      //   ),
+      // ]),
+      // transition('false => true', [
+      //   animate(
+      //     '500ms',
+      //     keyframes([
+      //       style({ opacity: 1, width: '0%', offset: 0 }),
+      //       style({ opacity: 1, width: '100%', offset: 1 }),
+      //     ])
+      //   ),
+      // ]),
+      state('true', style({ opacity: 1, width: '100%' })),
+      state('false', style({ opacity: 1, width: '0%' })),
       transition('false => true', [
-        animate(
-          '500ms',
-          keyframes([
-            style({ opacity: 1, width: '0%', offset: 0 }),
-            style({ opacity: 1, width: '100%', offset: 1 }),
-          ])
-        ),
-      ]),
+          animate(
+            '500ms',
+            keyframes([
+              style({ opacity: 1, width: '0%', offset: 0 }),
+              style({ opacity: 1, width: '100%', offset: 1 }),
+            ])
+          ),
+        ]),
+        transition('true => false', [
+            animate(
+              '500ms 600ms',
+              keyframes([
+                style({ opacity: 1, transform: 'translate3d(0, 0, 0)', offset: 0 }),
+                style({
+                  opacity: 1,
+                  transform: 'translate3d(100%, 0, 0)',
+                  offset: 1,
+                }),
+              ])
+            ),
+          ]),
+      // transition('false => true', [
+      //   animate(
+      //     '800ms',
+      //     keyframes([
+      //       style({
+      //         opacity: 1,
+      //         transform: 'translate3d(-100%, 0, 0)',
+      //         width: '100%',
+      //         offset: 0,
+      //       }),
+      //       style({ opacity: 1, transform: 'translate3d(0, 0, 0)', width: '100%', offset: 1 }),
+      //     ])
+      //   ),
+      // ]),
+      // transition('true => false', [
+      //   animate(
+      //     '400ms 600ms',
+      //     keyframes([
+      //       style({ opacity: 1, width: '100%', offset: 0 }),
+      //       style({ opacity: 1, width: '0%', offset: 1 }),
+      //     ])
+      //   ),
+      // ]),
     ]),
   ],
 })
@@ -93,25 +146,28 @@ export class ImageViewerComponent implements OnInit {
     }
   }
 
-  constructor() {}
+  constructor() { }
 
-  ngOnInit(): void {}
+  ngOnInit(): void { }
 
   startAnimation(nextImage: string) {
-      if (this._mDirection == 'right') {
-        this._mTriggerRight = this._mTriggerRight === 'true' ? 'false' : 'true';
-      } else {
-        this._mTriggerLeft = this._mTriggerLeft === 'true' ? 'false' : 'true';
-      }
-      this._mNextImage = nextImage;
+    if (this._mDirection == 'right') {
+      this._mTriggerRight = this._mTriggerRight === 'true' ? 'false' : 'true';
+    } else {
+      this._mTriggerLeft = this._mTriggerLeft === 'true' ? 'false' : 'true';
+    }
+    console.log("startAnimation", this._mTriggerRight);
+    this._mNextImage = nextImage;
   }
 
   _onAnimationDone(e) {
-      if (this._mDirection == 'right') {
-        this._mTriggerRight = 'false';
-      } else {
-        this._mTriggerLeft = 'false';
-      }
-      this._mCurrentImage = this._mNextImage;
+    console.log("_onAnimationDone", this._mTriggerRight);
+
+    if (this._mDirection == 'right') {
+      this._mTriggerRight = 'false';
+    } else {
+      this._mTriggerLeft = 'false';
+    }
+    this._mCurrentImage = this._mNextImage;
   }
 }
