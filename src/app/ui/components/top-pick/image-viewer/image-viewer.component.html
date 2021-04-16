@@ -2,6 +2,6 @@
   <div class="plant-container tb-position--relative"  fxFlex.gt-sm>
       <div class="tb-position--absolute erase" [@slideInOutRight]="_mTriggerRight" (@slideInOutRight.done)="_onAnimationDone($event)" 
        [@slideInOutLeft]="_mTriggerLeft" (@slideInOutLeft.done)="_onAnimationDone($event)"></div>
-         <img [ngClass]="{'tb-display--none': !_mCurrentImage}"src="{{_mCurrentImage}}" class="tb-image image-border" alt="">
+         <img [ngClass]="{'tb-display--none': !_mImgVisible}"src="{{_mCurrentImage}}" (load)="_onImageLoaded()" class="tb-image image-border" alt="">
   </div>
 </div>

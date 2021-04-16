@@ -146,6 +146,8 @@ export class ImageViewerComponent implements OnInit {
     }
   }
 
+  _mImgVisible = true;
+
   constructor() { }
 
   ngOnInit(): void { }
@@ -168,6 +170,17 @@ export class ImageViewerComponent implements OnInit {
     } else {
       this._mTriggerLeft = 'false';
     }
-    this._mCurrentImage = this._mNextImage;
+
+    if(this._mCurrentImage!=this._mNextImage){
+      this._mCurrentImage = this._mNextImage;
+    
+      this._mImgVisible =  false;
+    }
+    
+  }
+
+  _onImageLoaded(){
+    console.log("_onImageLoaded()");
+    this._mImgVisible =  true;
   }
 }
