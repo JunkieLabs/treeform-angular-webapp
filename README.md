@@ -57,7 +57,7 @@ This project contains all of the latest technologies, from design to developemnt
 
 ```bash
 
-git clone https://github.com/nirajprakash/treeform-angular-webapp.git 
+git clone https://github.com/JunkieLabs/treeform-angular-webapp.git 
 cd treeform-angular-webapp
 npm install
 npm start
