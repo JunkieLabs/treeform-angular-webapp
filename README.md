@@ -176,7 +176,6 @@ All the basic and common scss class has a prefix selector *tb-* to distinguish i
 <table>
   <tr>
     <td align="center"><a href="https://github.com/bhrthkshr"><img src="https://avatars1.githubusercontent.com/u/14331601?s=460&u=2dd953a5e2f864746a9545a2208d2c3e4f962955&v=4" width="100px;" alt=""/><br /><sub><b>Bharath Kishore</b></sub></a><br /></td>
-    <td align="center"><a href="https://github.com/MayankKaushal"><img src="https://avatars2.githubusercontent.com/u/26189728?s=460&u=0c0740b7efdf4e1ea885e50317ec41bd57cfcb63&v=4" width="100px;" alt=""/><br /><sub><b>Mayank Kaushal</b></sub></a><br /></td>
     <td align="center"><a href="https://github.com/nirajprakash"><img src="https://avatars3.githubusercontent.com/u/4013595?s=400&u=09af7b3ce0c4695ddbc37fd9df5007660611b2e7&v=4" width="100px;" alt=""/><br /><sub><b>Niraj Prakash</b></sub></a><br /></td>
     </table>
 
